@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'de_valenciaregular';
+	src: 	url('de_valencia/de_valencia_beta-webfont.woff2') format('woff2'),
+			url('de_valencia/de_valencia_beta-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'densia_sansregular';
+	src: 	url('densiasans/densiasans-webfont.woff2') format('woff2'),
+			url('densiasans/densiasans-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'emblemregular';
+	src: 	url('emblem/emblem-webfont.woff2') format('woff2'),
+			url('emblem/emblem-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'haettenschweilerregular';
+	src: 	url('haettenschweiler/haettenschweiler-webfont.woff2') format('woff2'),
+			url('haettenschweiler/haettenschweiler-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Optima';
+	src: 	url('optima-cufonfonts-webfont/optima.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Optima Italic';
+	src: 	url('optima-cufonfonts-webfont/optima_Italic.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Optima Medium';
+	src: 	url('optima-cufonfonts-webfont/optima_medium.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Optima Bold';
+	src: 	url('optima-cufonfonts-webfont/optimo_b.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'restu_bundahregular';
+	src: 	url('restu_bundahregular/restu_bundah-webfont.woff2') format('woff2'),
+			url('restu_bundahregular/restu_bundah-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

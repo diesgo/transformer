@@ -1,0 +1,121 @@
+/*================================================================*/
+/*=                                                              =*/
+/*=      ===         ===      ===            ===      =====      =*/
+/*=    =======     =======    ===          =======    === ===    =*/
+/*=   ====  ===   ==== ====   ===         ==== ====   ===  ===   =*/
+/*=   ===         ===   ===   ===         ===   ===   === ===    =*/
+/*=   ===         ===   ===   ===         ===   ===   ======     =*/
+/*=   ====  ===   ==== ====   ===         ==== ====   === ===    =*/
+/*=    =======     =======    =========    =======    ===  ===   =*/
+/*=      ===         ===      =========      ===      ===   ===  =*/
+/*=                                                              =*/
+/*================================================================*/
+
+
+/*========*/
+/*= azul =*/
+/*========*/
+
+a{
+  color: initial;
+}
+h1,
+fieldset{
+  color: #B22222;
+}
+.color{
+  color: #B22222;
+}
+.fondo a, .fondo{
+  background-color: #B22222;
+  color: #FFF;
+}
+.elemento-activo{
+  color:  #B22222 !important;
+  text-shadow: 2px 2px 20px #B22222;
+}
+#menu a:hover {
+  color: #B22222;
+  text-shadow: 2px 2px 20px #B22222;
+}
+
+#goUp{
+  color: #B22222;
+}
+
+.rojo div h2,
+.rojo div{
+  color: #B22222;
+}
+.rojo, .color-rojo, {color:#B22222;}
+.fondo-rojo{background-color:#B22222;}
+.color-rojo legend{
+  color:#FFF;
+  background-color: #B22222;
+}
+input[type=button],[type=reset],[type=submit]{
+  border-bottom:1px solid #B22222;
+  color: white;
+  background-color: #B22222;
+}
+input[type=text]{
+  border-bottom: 1px solid #B22222;
+}
+.boton,
+.color-rojo .boton,
+.rojo .boton{
+  color:#FFF !important;
+  background-color: #B22222 !important; 
+}
+.color-rojo .boton:hover,
+.rojo .boton:hover{
+  color: #B22222; 
+  /*background-color:#ffd1aa;*/
+}
+
+/*==================*/
+/* Bordes y sombras */
+/*==================*/
+
+.borde-superior{border-top: 2px solid #B22222;}
+.borde-superior-fino{border-top: 0.5px solid #B22222;}
+.borde-inferior{border-bottom: 2px solid #B22222;}
+.borde-inferior-fino{border-bottom: 0.5px solid #B22222;}
+.borde-derecho{border-right: 2px solid #B22222;}
+.borde-derecho-fino{border-right: 0.5px solid #B22222;}
+.borde-izquierdo{border-left: 2px solid #B22222;}
+.borde-izquierdo-fino{border-left: 0.5px solid #B22222;}
+
+.marco-fino{border: 1px solid #B22222;}
+.marco{border: 2px solid #B22222;}
+.marco-grueso{border: 4px solid #B22222;}
+.marco-extra-grueso{border: 8px solid #B22222;}
+.marco-redondo{border-radius: 50%;}
+.redondeado{border-radius: 25px; border-color: #B22222;}
+.marco-en-u{
+  border-left: 0.5px solid #B22222;
+  border-right: 0.5px solid #B22222;
+  border-bottom: 0.5px solid #B22222;
+}
+
+.sombra-caja{box-shadow: 0.1px 0.1px 30px #B22222;}
+.sombra-caja-leve{box-shadow: 0px 0px 5px #B22222;}
+.sombra-texto{text-shadow: 0.1px 0px 20px #B22222;}
+
+.fondo-blanco{background-color: white;}
+.fondo-verde{background-color: green;}
+.fondo-rojo{background-color: #B22222;}
+.fondo-naranja{background-color: #F4A460;}
+.fondo-negro{background-color: black;}
+.fondo-violeta{background-color: purple;}
+.fondo-celeste{background-color: #A6E4E8;}
+.fondo-gris-oscuro{background-color: #5E5E5E;}
+
+.color-blanco{color: white;}
+.color-verde{color: green;}
+.color-rojo{color: #B22222;}
+.color-naranja{color: #F4A460;}
+.color-negro{color: black;}
+.color-violeta{color: purple;}
+.celeste{color: #A6E4E8;}
+.gris-oscuro{color: #5E5E5E;}
