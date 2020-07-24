@@ -1,67 +1,321 @@
+/*=======*/
+/*Amarath*/
+/*=======*/
+
 @font-face {
-	font-family: 'de_valenciaregular';
-	src: 	url('de_valencia/de_valencia_beta-webfont.woff2') format('woff2'),
-			url('de_valencia/de_valencia_beta-webfont.woff') format('woff');
+    font-family: 'amaranth-bold';
+    src: url('amarat/amaranth-bold-webfont.woff2') format('woff2'),
+         url('amarat/amaranth-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-amarant-bold{
+	font-family: 'amaranth-bold', sans-serif
+}
+
+/*=====*/
+/*Arima*/
+/*=====*/
+
+@font-face {
+    font-family: 'arima-madurai-light';
+    src: url('arima/arimamadurai-light-webfont.woff2') format('woff2'),
+         url('arima/arimamadurai-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-arima-madurai-light{
+	font-family: 'arima-madurai-light', sans-serif;
+}
+
+/*===========*/
+/*De Valencia*/
+/*===========*/
+
+@font-face {
+	font-family: 'de-valencia-regular';
+	src: 	url('de-valencia/de_valencia_beta-webfont.woff2') format('woff2'),
+			url('de-valencia/de_valencia_beta-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
+.font-de-valencia-regular{
+	font-family: 'de-valencia-regular', sans-serif;
+}
+
+/*======*/
+/*Densia*/
+/*======*/
+
 @font-face {
-	font-family: 'densia_sansregular';
+	font-family: 'densia-sans-regular';
 	src: 	url('densiasans/densiasans-webfont.woff2') format('woff2'),
 			url('densiasans/densiasans-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
+.font-densia-sans-regular{
+	font-family: 'densia-sans-regular', sans-serif;
+}
+
+/*======*/
+/*Emblem*/
+/*======*/
+
 @font-face {
-	font-family: 'emblemregular';
+	font-family: 'emblem-regular';
 	src: 	url('emblem/emblem-webfont.woff2') format('woff2'),
 			url('emblem/emblem-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
+.font-emblem-regular{
+	font-family: 'emblem-regular', sans-serif;
+}
+
+/*================*/
+/*Haettenschweiler*/
+/*================*/
+
+
 @font-face {
-	font-family: 'haettenschweilerregular';
-	src: 	url('haettenschweiler/haettenschweiler-webfont.woff2') format('woff2'),
-			url('haettenschweiler/haettenschweiler-webfont.woff') format('woff');
+	font-family: 'haetten-schweiler-regular';
+	src: 	url('haetten-schweiler/haettenschweiler-webfont.woff2') format('woff2'),
+			url('haetten-schweiler/haettenschweiler-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
+.font-haetten-schweiler-regular{
+	font-family: 'haetten-schweiler-regular', sans-serif;
+}
+
+/*==========*/
+/*Montserrat*/
+/*==========*/
+
 @font-face {
-	font-family: 'Optima';
-	src: 	url('optima-cufonfonts-webfont/optima.woff') format('woff');
+    font-family: 'montserrat-regular';
+    src: 	url('montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+    		url('montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-montserrat-regular{
+	font-family: 'montserrat-regular', sans-serif;
+}
+
+@font-face {
+    font-family: 'montserrat-italic';
+    src: 	url('montserrat/montserrat-italic-webfont.woff2') format('woff2'),
+    		url('montserrat/montserrat-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-montserrat-italic{
+	font-family: 'montserrat-italic', sans-serif;
+
+}
+
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-montserrat-bold{
+	font-family: 'montserrat-bold', sans-serif;
+}
+
+@font-face {
+    font-family: 'montserrat-light';
+    src: url('montserrat/montserrat-light-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-montserrat-light{
+	font-family: 'montserrat-light', sans-serif;
+}
+
+/*======*/
+/*Optima*/
+/*======*/
+
+@font-face {
+	font-family: 'optima';
+	src: 	url('optima/optima.woff') format('woff');
 	font-style: normal;
 	font-weight: normal;
 }
 
+.font-optima{
+	font-family: 'optima', sans-serif;
+}
+
 @font-face {
-	font-family: 'Optima Italic';
-	src: 	url('optima-cufonfonts-webfont/optima_Italic.woff') format('woff');
+	font-family: 'optima-italic';
+	src: 	url('optima/optima_Italic.woff') format('woff');
 	font-style: normal;
 	font-weight: normal;
 }
 
+.font-optima-italic{
+	font-family: 'optima-italic', sans-serif;
+}
+
 @font-face {
-	font-family: 'Optima Medium';
-	src: 	url('optima-cufonfonts-webfont/optima_medium.woff') format('woff');
+	font-family: 'optima-medium';
+	src: 	url('optima/optima_medium.woff') format('woff');
 	font-style: normal;
 	font-weight: normal;
 }
 
+.font-optima-medium{
+	font-family: 'optima-medium', sans-serif;
+}
+
 @font-face {
-	font-family: 'Optima Bold';
-	src: 	url('optima-cufonfonts-webfont/optimo_b.woff') format('woff');
+	font-family: 'optima-bold';
+	src: 	url('optima/optimo_b.woff') format('woff');
 	font-style: normal;
 	font-weight: normal;
 }
 
+.font-optima-bold{
+	font-family: 'optima-bold', sans-serif;
+}
+
+/*=====*/
+/*Restu*/
+/*=====*/
+
 @font-face {
-	font-family: 'restu_bundahregular';
-	src: 	url('restu_bundahregular/restu_bundah-webfont.woff2') format('woff2'),
-			url('restu_bundahregular/restu_bundah-webfont.woff') format('woff');
+	font-family: 'restu-bundah-regular';
+	src: 	url('restu/restu_bundah-webfont.woff2') format('woff2'),
+			url('restu/restu_bundah-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+}
+
+.font-restu-bundah-regular{
+	font-family: 'restu-bundah-regular', sans-serif;
+}
+
+/*======*/
+/*Samble*/
+/*======*/
+
+@font-face {
+	font-family: 'samble-tracie';
+	src: 	url('samble-tracie/Samble Tracie.woff2') format('woff2'),
+			url('samble-tracie/Samble Tracie.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font-samble-tracie{
+	font-family: 'samble-tracie', sans-serif;
+}
+
+@font-face {
+	font-family: 'samble-tracie-bold';
+	src: 	url('samble-tracie/Samble Tracie Bold.woff2') format('woff2'),
+			url('samble-tracie/Samble Tracie Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font-samble-tracie-bold{
+	font-family: 'samble-tracie-bold', sans-serif;
+}
+
+@font-face {
+	font-family: 'samble-tracie-swash';
+	src: 	url('samble-tracie/Samble Tracie_Swash.woff2') format('woff2'),
+			url('samble-tracie/Samble Tracie_Swash.woff') format('woff'),
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font-samble-tracie-swash{
+	font-family: 'samble-tracie-swash', sans-serif;
+}
+
+@font-face {
+	font-family: 'samble-tracie-swash-bold';
+	src: 	url('samble-tracie/Samble Tracie_Swash Bold.woff2') format('woff2'),
+			url('samble-tracie/Samble Tracie_Swash Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font-samble-tracie-swash-bold{
+	font-family: 'samble-tracie-swash-bold', sans-serif;
+}
+
+/*===========*/
+/*Fat Wandals*/
+/*===========*/
+
+@font-face {
+    font-family: 'fat-wandals';
+    src: url('spoken/fatwandals_personal-webfont.woff2') format('woff2'),
+         url('spoken/fatwandals_personal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-fat-wandals{
+	font-family: 'fat-wandals', sans-serif;
+}
+
+/*======*/
+/*Spoken*/
+/*======*/
+
+@font-face {
+    font-family: 'spoken';
+    src: url('spoken/spoken_personal-webfont.woff2') format('woff2'),
+         url('spoken/spoken_personal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-spoken{
+	font-family: 'spoken', sans-serif;
+}
+
+@font-face {
+    font-family: 'spoken-bg';
+    src: url('spoken/spokenbg_personal-webfont.woff2') format('woff2'),
+         url('spoken/spokenbg_personal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-spoken-bg{
+	font-family: 'spoken-bg', sans-serif;
+}
+
+@font-face {
+    font-family: 'spoken-plain';
+    src: url('spoken/spokenplain_personal-webfont.woff2') format('woff2'),
+         url('spoken/spokenplain_personal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-spoken-plain{
+	font-family: 'spoken-plain', sans-serif;
 }
