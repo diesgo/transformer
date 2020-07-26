@@ -1,1133 +1,175 @@
-/*=============================================================================================*/
-/*=                                                                                           =*/
-/*= Velazquez v1.0 - Mayo 2020                                                                =*/
-/*=                                                                                           =*/
-/*=============================================================================================*/
-/*=                                                                                           =*/
-/*=                                                                                           =*/
-/*=============================================================================================*/
-/*=                                                                                           =*/
-/*=                                                                                           =*/
-/*=============================================================================================*/
-/*= Ejemplo
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Velazquez.css</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="webfont/stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="css/velazquez.css">
-</head>
-<body>
-  <div class="contenedor-acolchado contenido-centrado marco">
-    <div><h1>velazquez.css</h1></div>
-  </div>
-  <div class="contenedor-acolchado">
-    <div class="cuarto fondo-verde" style="height: 50px;"></div>
-    <div class="cuarto fondo-rojo" style="height: 50px;"></div>
-    <div class="cuarto fondo-azul" style="height: 50px;"></div>
-    <div class="cuarto fondo-naranja" style="height: 50px;"></div>
-  </div>
-</body>
-</html>
-
-*/
-/*=                                                                                           =*/
-/*=============================================================================================*/
-
-/*===========================================================================================*/
-/*=                                  Formateo de página                                     =*/
-/*=                                                                                         =*/
-/*= http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) =*/
-/*===========================================================================================*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+/*======================================*/
+/*= Versión 1.0                        =*/
+/*= 24 de Julio de 2020                =*/
+/*= CSS plantilla transformer          =*/
+/*=                                    =*/
+/*= Normalizar página                  =*/
+/*======================================*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section {
+	display: block;
 }
 body {
-  line-height: 1;
+	line-height: 1.6;
 }
 ol, ul {
-  list-style: none;
+	list-style: none;
 }
 blockquote, q {
-  quotes: none;
+	quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none;
+	content: '';
+	content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
 
 /*=========================*/
-/*= Definición de estilos =*/
+/*=                       =*/
+/*= SLIDESWHOW básico     =*/
+/*=                       =*/
+/*= no requiere JQuery    =*/
+/*=                       =*/
 /*=========================*/
 
-
-body {
-  font-family: 'restu_bundahregular', sans-serif;
-  font-size: 1rem;
+#visor {
+	position: relative;
+	width: 960px;
+	height: 454px;
+	background-color: transparent;
+	margin: 0 auto;
+	overflow: hidden
 }
-/*aside{
-  width: 300px;
-  height: 100%;
-  position: fixed;
+#visor img,
+#fotoentra img {
+	width: 100%
+}
+#fotoSale,
+#fotoEntra,
+.diapositiva {
+	position: relative
+}
+#piefoto {
+	position: relative;
+	width: 960px;
+	display: flex
+}
+.contenedorSlider{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center
+}
+.cajaFlecha{
+	width: 25%;
+	padding: 10px;
+	text-align: right
+}
+.flecha{
+	position: relative;
+	padding: 10px 10px;
+	font-size: 30px;
+	cursor: pointer;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+/*Definición de los diferentes tipos de texto*/
+
+.precio{
+	color: #3cb57b;
+	font-size: 20px;
+}
+
+/*Slider artículos*/
+
+.sliderArticulos{
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin: 40px auto;
+	height: 454px;
+}
+.fichaArticuloSlider{
+	background-color: #f0f0f0;
+	text-align: center;
+	max-width: 273px;
+}
+
+.containerSliderArticles{
+	position: relative;
+}
+
+.image {
   display: block;
-  left: 0px;
-  top: 0px;
-}*/
-main{
-  position: absolute;
-  left: 301px;
-}
-
-fieldset{
-  border-style: none;
-  border-radius: 5px;
-  width: 60%;
-  margin: 3% auto;
-  padding: 1% 1%;
-}
-h1{
-  font-size: 4rem;
-  padding-bottom: 64px;
-}
-h2{
-  font-size: 2rem;
-  padding-bottom: 32px;
-}
-h3{
-  font-size: 1.5rem;
-  padding: 10px 8px;
-}
-h4{
-  font-size: 1rem;
-  padding-bottom: 16px;
-}
-input{
-  padding:1%;
-  background-color: transparent;
-  display:inline-block;
-  font-family: arimoitalic, sans-serif;
-  border:none;
-  font-size: 1em;
-}
-legend{
-  border-radius: 5px;
-  text-align: center;
-}
-section{
-  text-align: justify;
-}
-select{
-  width: 95%;
-}
-textarea{
-  height: 100px;
-  font-size: 1em;
-  overflow: auto;
-}
-form,
-input,
-section,
-textarea,
-legend{
   width: 100%;
-}
-article,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section{
-  display:block
-}
-code,
-kbd,
-pre,
-samp,
-var{
-  font-family:Consolas,"courier new";
-  font-size:1em
-}
-
-div.columnas-1{
-  text-align: left;
-  padding: .5%;
-}
-div.columnas-2{
-  display: inline-block;
-  width: 49%;
-  margin:1% 0;
-  padding: .5%;
-}
-div.columnas-3{
-  display: inline-block;
-  width: 32%;
-  vertical-align: top;
-  margin:1% 0;
-  padding: .5%;
-}
-
-/*========================================================================================================================*/
-/*=                                                                                                                      =*/
-/*=     =        =     ==     ==  ========  ========  ==     ==  =======  ====         =     ====      =======   =====   =*/
-/*=   =====    =====   ===    ==  ========  ========  ===    ==  =======  ======     =====   ======    =======  =======  =*/
-/*=  ==   ==  === ===  ====   ==     ==     ==        ====   ==  ==       ==   ==   === ===  ==   ==   ==       ==   ==  =*/
-/*=  ==       ==   ==  == ==  ==     ==     ======    == ==  ==  =====    ==    ==  ==   ==  ======    =====     ===     =*/
-/*=  ==       ==   ==  ==  == ==     ==     ======    ==  == ==  =====    ==    ==  ==   ==  == ==     =====       ===   =*/
-/*=  ==   ==  === ===  ==   ====     ==     ==        ==   ====  ==       ==   ==   === ===  ==  ==    ==       ==   ==  =*/
-/*=   =====    =====   ==    ===     ==     =======   ==    ===  =======  ======     =====   ==   ==   =======  =======  =*/
-/*=     =        =     ==     ==     ==     =======   ==     ==  =======  ====         =     ==    ==  =======   =====   =*/
-/*=                                                                                                                      =*/
-/*========================================================================================================================*/
-
-.contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: baseline;
-}
-
-.contenedor-estrecho{
-  width: 85%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-.fila{
-  flex-direction: row;
-}
-
-.columna{
-  flex-direction: column;
-}
-
-.acolchado-micro{
-  padding: 8px 4px
-}
-.acolchado-mini{
-  padding: 16px 8px;
-}
-.acolchado{
-  padding: 32px 16px;
-}
-.acolchado-medio{
-  padding: 64px 32px;
-}
-.acolchado-grande{
-  padding: 78px 39px;
-}
-.acolchado-extra-grande{
-  padding: 96px 48px;
-}
-.acolchado-lateral-micro{
-  padding-right: 8px;
-  padding-left: 8px;
-}
-.acolchado-lateral-mini{
-  padding-right: 16px;
-  padding-left: 16px;
-}
-.acolchado-lateral{
-  padding-right: 32px;
-  padding-left: 32px;
-}
-.acolchado-lateral-medio{
-  padding-right: 64px;
-  padding-left: 64px;
-}
-.acolchado-lateral-grande{
-  padding-right: 78px;
-  padding-left: 78px;
-}
-.acolchado-lateral-extra-grande{
-  padding-right: 96px;
-  padding-left: 96px;
-}
-.acolchado-derecha-micro{
-  padding-right: 8px;
-}
-.acolchado-derecha-mini{
-  padding-right: 16px;
-}
-.acolchado-derecha{
-  padding-right: 32px;
-}
-.acolchado-derecha-medio{
-  padding-right: 64px;
-}
-.acolchado-derecha-grande{
-  padding-right: 78px;
-}
-.acolchado-derecha-extra-grande{
-  padding-right: 96px;
-}
-.acolchado-izquierda-micro{
-  padding-left: 8px;
-}
-.acolchado-izquierda-mini{
-  padding-left: 16px;
-}
-.acolchado-izquierda{
-  padding-left: 32px;
-}
-.acolchado-izquierda-medio{
-  padding-left: 64px;
-}
-.acolchado-izquierda-grande{
-  padding-left: 78px;
-}
-.acolchado-izquierda-extra-grande{
-  padding-left: 96px;
-}
-.contenido-izquierda{
-  justify-content: flex-start;
-}
-.contenido-centrado{
-  /*align-self: baseline;*/
-  align-content: center;
-  justify-content: center;
-  /*align-items: baseline;*/
-}
-.contenido-derecha{
-  justify-content: flex-end;
-}
-.contenido-justificado{
-  justify-content: space-between;
-}
-.cuarto{
-  width: 25%;
-  display: inline-block;
-}
-.mitad{
-  width: 50%;
-}
-.tercio{
-  width: 33.3333%;
-}
-.dos-tercios{
-  width: 66.6666%;
-}
-.tres-cuartos{
-  width: 75%;
-}
-
-/*=====================*/
-/* Márgenes y paddings */
-/*=====================*/
-
-.margen-izquierdo-micro{
-  margin-left: 8px;
-}
-.margen-izquierdo-mini{
-  margin-left: 16px;
-}
-.margen-izquierdo{
-  margin-left: 32px;
-}
-.margen-izquierdo-grande{
-  margin-left: 64px;
-}
-.margen-izquierdo-extra-grande{
-  margin-left: 78px;
-}
-
-.margen-derecho-micro{
-  margin-right: 8px;
-}
-.margen-derecho-mini{
-  margin-right: 16px;
-}
-.margen-derecho{
-  margin-right: 32px;
-}
-.margen-derecho-grande{
-  margin-right: 64px;
-}
-.margen-derecho-extra-grande{
-  margin-right: 78px;
-}
-
-.margen-superior-micro{
-  margin-top: 8px;
-}
-.margen-superior-mini{
-  margin-top: 16px;
-}
-.margen-superior{
-  margin-top: 32px;
-}
-.margen-superior-grande{
-  margin-top: 64px;
-}
-.margen-superior-extra-grande{
-  margin-top: 78px;}
-
-.margen-inferior-micro{
-  margin-bottom: 8px;
-}
-.margen-inferior-mini{
-  margin-bottom: 16px;
-}
-.margen-inferior{
-  margin-bottom: 32px;
-}
-.margen-inferior-grande{
-  margin-bottom: 64px;
-}
-.margen-inferior-extra-grande{
-  margin-bottom: 78px;
-}
-
-
-/*============*/
-/*= Copyleft =*/
-/*============*/
-
-.copy-left {
-  display: inline-block;
-  text-align: right;
-  margin: 0px;
-  transform: scaleX(-1);
-}
-
-/*===================================================================*/
-/*=                                                                 =*/
-/*=   =========   =========   ===     ===   =========      ===      =*/
-/*=   =========   =========    ===   ===    =========    =======    =*/
-/*=      ===      ===           === ===        ===      ==== ====   =*/
-/*=      ===      =======        =====         ===      ===   ===   =*/
-/*=      ===      =======        =====         ===      ===   ===   =*/
-/*=      ===      ===           === ===        ===      ==== ====   =*/
-/*=      ===      =========    ===   ===       ===       =======    =*/
-/*=      ===      =========   ===     ===      ===         ===      =*/
-/*=                                                                 =*/
-/*===================================================================*/
-
-.texto-micro{
-  font-size: 9px;
-}
-.texto-mini{
-  font-size:12px;
-}
-.texto-grande{
-  font-size: 24px;
-}
-.texto-gigante{
-  font-size: 64px
-}
-.texto-centrado{
-  text-align: center !important;
-}
-.texto-justificado{
-  text-align: justify !important;
-}
-.alineacion-izquierda{
-  text-align: left !important;
-}
-.alineacion-derecha{
-  text-align: right !important;
-}
-.super-indice{
-  vertical-align: super;}
-
-/*======================================================================================================================*/
-/*=                                                                                                                    =*/
-/*=   =======        ===      =======     =======        ===         ===     ===   =========   ===   ===   ===   ===   =*/
-/*=   =========     =====     =========   =========     =====        ====   ====   =========   ====  ===   ===   ===   =*/
-/*=   ===   ===    === ===    ===   ===   ===   ===    === ===       ===== =====   ===         ===== ===   ===   ===   =*/
-/*=   ========    ===   ===   =======     =======     ===   ===      ===========   =======     =========   ===   ===   =*/
-/*=   ========    =========   ======      ======      =========      === === ===   =======     =========   ===   ===   =*/
-/*=   ===   ===   =========   === ===     === ===     =========      ===  =  ===   ===         === =====   ===   ===   =*/
-/*=   =========   ===   ===   ===  ===    ===  ===    ===   ===      ===     ===   =========   ===  ====   =========   =*/
-/*=   ========    ===   ===   ===   ===   ===   ===   ===   ===      ===     ===   =========   ===   ===     =====     =*/
-/*=                                                                                                                    =*/
-/*======================================================================================================================*/
-
-/*==================*/
-/*= Barra superior =*/
-/*==================*/
-
-
-/*==============*/
-/*= Barra menú =*/
-/*==============*/
-.menu li{
-  float: left;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.menu a{
-  text-decoration: none;
-  display: block;
-}
-#barra {
-  overflow: auto;
-  z-index: 2;
-  width: 100%
-}
-#barra>div>span{
-  cursor:pointer;
-  text-align: left;
-  font-size: 30px;
-}
-#barra-movil{
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;  
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-#barra-movil .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-#barra a {
-  float:left;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 24px;
-  width: 20%;
-  text-align: center;
-  color:#5E5E5E; 
-}
-#barra a {
-    transition: color 0.5s linear 0.1s;
-    transition: background-color 0.5s linear 0.1s;
-} 
-#barra-movil a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color:#5E5E5E;
-  display: block;
-  transition: 0.3s;
-}
-#barra-movil a:hover {
-  background-color: inherit !important;
-  border-radius: 35px !important;
-}
-.elemento-menu{
-  text-decoration: none;
-  list-style: none;
-}
-.content {
-  padding: 16px;
-}
-.container input, .container2 input{
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/*================*/
-/*= Menú lateral =*/
-/*================*/
-
-.menu-lateral{
-  display: block;
-  height: 100%;
-  overflow: auto;
-}
-.menu-lateral a{
-  display: block;
-  padding: 4px 0 2px 10px;
-}
-
-/*==========*/
-/*= Sticky =*/
-/*==========*/
-
-.menu-pegajoso {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.menu-pegajoso + .content {
-  padding-top: 60px;
-}
-
-  /*****************/
- /*Tabla alquiler */
-/*****************/
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.cuerpo-principal,#cuerpo-principal{
-  transition:margin-left .4s
-}
-
-/*==========================*/
-/*= Checkbox personalizado =*/
-/*= Checkbox custom        =*/
-/*==========================*/
-
-/*###################*/
-/* checkbox and radio*/
-/*###################*/
-.checkbox, .radio{
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  user-select: none;
-}
-.checkbox input, .radio input{
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-.checkbox input{
-  height: 0;
-  width: 0;
-}
-.check, .rad{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: transparent;
-  border: 1px solid;
-}
-.rad {
-  border-radius: 50%;
-}
-/* Create the indicator (hidden when not checked) */
-.check:after, .rad:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-/* When the checkbox is checked, add a currentcolor background */
-.checkbox input:checked ~ .check,
-.radio input:checked ~ .rad {
-  background-color: currentColor;
-}
-/* Show the checkmark when checked */
-.checkbox input:checked ~ .check:after,
-.radio input:checked ~ .rad:after{
-  display: block;
-}
-/* Style the checkmark/indicator */
-.checkbox .check:after {
-  left: 5px;
-  top: 1px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
-}
-.radio .rad:after {
-  top: 4px;
-  left: 4px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: white;
-}
-.flex {
-  width: 100% !important; 
-  text-align: center;
-}
-.flex > div{
-  display: inline-block;
-  width: 12% !important;
-  text-align: center;
-}
-
-.forms, .formas{
-  display: inline-block;
-}
-/*########################*/
-/* End checkbox and radio */
-/*########################*/
-
-/*====================*/
-/*= Botón ir arriba  =*/
-/*= Button scroll up =*/
-/*====================*/
-
-.ir-arriba{
-    position: fixed;
-    bottom: 3rem;
-    right: 3rem;
-    transition: 1s all;
-    z-index: 10000;
-}
-.mostrar-ir-arriba{
-    transform: translateX(0);
-}
-.ocultar-ir-arriba{
-    transform: translateX(100px);
-}
-
-
-/*==============================*/
-/*= dirección en dónde estamos =*/
-/*==============================*/
-
-.direccion{
-  width: 19px;
-  margin-right: 10px;
-}
-/*=================*/
-/*= pie de página =*/
-/*=================*/
-
-.pie-de-pagina{
-  background-color: #535353;
-  color: #fff;
-}
-
-/*=======================================================================================*/
-/*=                                                                                      */
-/*=   =======        ==      =========      ==      ===    ===   ========     =====      */
-/*=   ========     ======    =========    ======    ====   ===   ========   ==== ====    */
-/*=   ===  ===    ===  ===      ===      ===  ===   =====  ===   ===       ===     ===   */
-/*=   =======     ===  ===      ===      ===  ===   ====== ===   =======    ====         */
-/*=   ===  ===    ===  ===      ===      ===  ===   === ======   =======       =====     */
-/*=   ===   ===   ===  ===      ===      ===  ===   ===  =====   ===       ===    ====   */
-/*=   =========    ======       ===       ======    ===   ====   ========   ==== =====   */
-/*=   ========       ==         ===         ==      ===    ===   ========     ======     */
-/*=                                                                                      */
-/*=======================================================================================*/
-
-.boton{
-  width: auto;
-  padding: 12px 12px;
-  margin: 1%;
-  font-size: 1em;
-  text-decoration: none;
-  border: 1px solid;
-  opacity: 0.8;
-  transition: 0.3s;
-}
-
-.boton-redondo{
-  width: auto;
-  padding: 12px 12px;
-  margin: 1%;
-  font-size: 1em;
-  text-decoration: none;
-  border: 1px solid;
-  border-radius: 50px;
-  opacity: 0.8;
-  transition: 0.3s;
-}
-
-.boton-redondeado{
-  width: auto;
-  padding: 12px 12px;
-  margin: 1%;
-  font-size: 1em;
-  text-decoration: none;
-  border: 1px solid;
-  border-radius: 6px;
-  opacity: 0.8;
-  transition: 0.3s;
-}
-
-.boton:hover,
-.boton-redondo:hover,
-.boton-redondeado:hover{
-  opacity: 1;
-}
-
-/* ==========*/
-/* = Select =*/
-/* ==========*/
-
- /* The container must be positioned relative: */
-.custom-select {
-  position: relative;
-}
-
-.custom-select select {
-  display: none; /*hide original SELECT element: */
-}
-
-.select-selected {
-  background-color: #01a261;
-}
-
-/* Style the arrow inside the select element: */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  /*right: 5px;*/
-  width: 0;
-  height: 0;
-  border: 6px solid #01a261;
-  border-color: #fff #01a261 #01a261 #01a261;
-}
-
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-  border-color: #01a261 #01a261 #fff #01a261;
-  top: 7px;
-}
-
-/* style the items (options), including the selected item: */
-.select-items div,
-.select-selected {
-  /*color: #ffffff;*/
-  padding: 8px 16px;
-  border: 1px solid #01a261;
-  border-color: #01a261 #01a261 rgba(0, 0, 0, 0.1) #01a261;
-  cursor: pointer;
-}
-
-/* Style items (options): */
-.select-items {
-  position: absolute;
-  background-color: #01a261;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
-} 
-
-/*======================================================================================*/
-/*=                                                                                     */
-/*=  =========   ===    ===   ========   ===    ===  =========== ========     ====      */
-/*=  =========   ===    ===   ========   ====   ===  =========== ========   ========    */
-/*=  ===         ===    ===   ===        =====  ===      ===     ===       ===    ===   */
-/*=  =======     ===    ===   ======     ====== ===      ===     ======     ====        */
-/*=  =======     ===    ===   ======     === ======      ===     ======        ====     */
-/*=  ===         ====  ====   ===        ===  =====      ===     ===       ===    ===   */
-/*=  ===          ========    ========   ===   ====      ===     ========   ========    */
-/*=  ===            ====      ========   ===    ===      ===     ========     ====      */
-/*=                                                                                     */
-/*======================================================================================*/
-
-.dbold{
-  font-family: densia_sansregular, sans-serif;
-}
-.velazquez{
-  font-family: 'restu_bundahregular', sans-serif;
-}
-.amaranth{
-  font-family: amaranthbold, sans-serif;
-}
-.arima{
-  font-family: arima_madurai-light, sans-serif;
-  }
-.valencia{
-  font-family: de_valenciaregular, sans-serif;
-}
-.montserrat{
-  font-family: montserratregular, sans-serif;
-}
-.samble{
-  font-family: 'Samble Tracie Bold', sans-serif;
-}
-.spoken{
-  font-family: spoken, sans-serif;
-}
-.fatwandals{
-  font-family: fatwandals, sans-serif;
-}
-.emblemregular{
-  font-family: emblemregular, sans-serif;
-}
-.haettenschweiler{
-  font-family: haettenschweiler, sans-serif;
-}
-
-/*::placeholder {
-  color:;
-  opacity: 1; /* Firefox 
-}*/
-
-/*:-ms-input-placeholder {  Internet Explorer 10-11 
- color:;
-}*/
-
-/*::-ms-input-placeholder {  Microsoft Edge 
- color:;
-}*/
-
-/*================*/
-/*= Media querys =*/
-/*================*/
-
-.example {
-  padding: 20px;
-  color: white;
-}
-/* Dispositivos pequeños (móviles con 600px o menos) */
-@media only screen and (max-width: 600px) {
-  .example {
-    background: red;
-  }
-
-  .oculto-movil{
-    display: none;
-  }
-  .boton-leermas{
-    font-size: 15px;
-  }
-  .margen-superior-grande{
-    margin-top: 32px;
-  }
-  .acolchado{
-    padding: 4%;
-  }
-  .acolchado-grande{
-    padding: 4%;
-  }
-  .tercio + .acolchado-mini{
-    padding-left: 4px;
-    padding-right: 4px;
-    vertical-align: middle;
-  }
-  .contenedor-estrecho .c, .contenido .c{
-    width: 100%;
-    margin: 0px;}
-  h1{
-    font-size: 32px;
-  }
-  h2{
-    font-size: 20px;
-  }
-  p{
-    font-size: 12px;
-  }
-  .leermas{
-    display: none;
-  }
-  .boton-leermas{
-    cursor: pointer;
-  }
-  .mitad .c{
-    width: 100%;
-  }
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .example {background: green;}  
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .example {
-    background: blue;
-  }
-  .acolchado-grande{
-    padding: 32px 10px;
-  }
-  .acolchado{
-    padding: 8px;
-  }
-  .contenedor-estrecho{
-    width: 100%;
-  }
-  /*.mitad + .acolchado + .c{
-    padding: 0px !important;
-  }*/
-
-  .contenedor.c{
-    width: 100%; flex-direction: column;
-  }
-  .contenedor.c>.mitad{
-    width: 100%;padding: 10px;
-  }
-  #titulo{
-    width: 100%;
-    padding: 20px;
-  }
-  .texto-gigante{
-    font-size: 32px;
-  }
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .example {
-    background: orange;
-  }
-  .oculto-escritorio{
-    display:none !important;
-  }
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .example {
-    background: pink;
-  }
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px
-  }
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
-
-@media (max-width:1205px){
-  .w3-auto{
-    max-width:95%
-  }
-}
-
-@media (max-width:992px) and (min-width:601px){
-  .oculto-tablet{
-    display:none !important;
-  }
+  height: auto;
+}
+
+.fichaSlider{
+	background-color: #f0f0f0;
+	text-align: center;
+	max-width: 273px;
+}
+
+.overlay {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 100%;
+	height: 0px;
+	transition: .5s ease;
+}
+
+.containerSliderArticles:hover .overlay {
+  height: 50px;
+}
+
+/*Botones*/
+
+.addCartButton{
+	width: 50%;
+	display:flex;
+	padding: 10px;
+	height: 40px;
+	background-color: #01a261;
+	color: #FFFFFF;
+	align-items: center;
+	/*align-content: center;*/
+}
+
+.shareButton{
+	width: 50%;
+	display:flex;
+	padding: 10px;
+	height: 40px;
+	background-color: #cccccc;
+	color: #FFFFFF;
+	align-items: center;
 }
