@@ -4,29 +4,172 @@
 	<meta charset="utf-8">
 	<meta lang="es">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	<title>JS Bin</title>
+	<link rel="stylesheet" href="css/velazquez.css">
+	<link rel="stylesheet" type="text/css" href="webfonts/fontello-a0fe6bd0/css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="webfonts/fontello-a0fe6bd0/css/animation.css">
+	<title>Transformer</title>
 </head>
 <body>
-	<div id="app">
-		<!-- <ul>
-			<li v-for="(curso, index) in cursos" v-bind:key="index">
-				<a v-bind:href="curso.url">{{ curso.name }}</a>
-			</li>
-		</ul> -->
+	<script type="text/javascript" src="js/scripts.js"></script>
+	
+	<div id="topbar" style="background-color:#01a261;text-align:center;height: 43px;"></div>
+
+	<div id="navbar" style="text-align:center;height: 88px;"></div>
+
+	<div id="slider" style="background-color:#cccccc;text-align:center;">
+		<div class="contenedorSlider">
+			<div id="controlesre" style="display:flex;justify-content: flex-end; align-items:center;align-self:center;width: 25%;">
+				<span class="fto-left-open-3 flecha" onclick="mueve('retro')"></span>
+			</div>
+			<div id="visor" style="width: 50%;">
+				<div id="fotoEntra"></div>
+				<div id="fotoSale">
+					<img src='slider/lp0.jpg' alt='1. Gibson Les Paul 01' name='fotos0'>
+				</div>
+			</div>
+			<div id="controlesav" style="display:flex;justify-content: flex-start; align-items:center;align-self:center;width: 25%;">
+				<span class="fto-right-open-3 flecha" onclick="mueve('avance')"></span>
+			</div>
+		</div>
+	</div>
+	<div id="cuerpo">
+		<div style="width: 70%; margin: 0 auto; height: 205px;"></div>
+		<div style="display: flex; justify-content: space-between; width: 70%; margin: 40px auto; height: 270px;">
+			<div style="background-color: #f0f0f0;">
+				<img src="imgs/design/dbold_373x273_transparente.png" alt="ddbold" width="373">
+			</div>
+			<div style="background-color: #f0f0f0;">
+				<img src="imgs/design/velazquez-373x273_oscuro_transparente.png" alt="velazquez" width="373">
+			</div>
+			<div style="background-color: #f0f0f0;">
+				<img src="imgs/design/logo_dbold_373x273_fondot_transparente.png" alt="dbold" width="373">
+			</div>
+		</div>
+
+		<!-- slider productos -->
+
+		<div id="sliderArticulos" class="sliderArticulos">
+			
+			<!-- Ficha artículo -->
+
+			<div class="fichaArticuloSlider">
+				<div class="containerSliderArticles">
+					<img src="imgs/products/jeans1.jpg" alt="jeans1" width="273">
+					<div class="overlay">
+						<div class="addCartButton fto-basket-3"> Add to cart</div>
+						<div class="shareButton">Share</div>
+					</div>
+				</div>
+				<h3>Jeans azules rotos</h3>
+				<p class="precio">99,90 €</p>
+				<ul>
+					<li style="display: inline-block;" class="fto-star-filled"></li>
+					<li style="display: inline-block;" class="fto-star-filled"></li>
+					<li style="display: inline-block;" class="fto-star-filled"></li>
+					<li style="display: inline-block;" class="fto-star-filled"></li>
+					<li style="display: inline-block;" class="fto-star-filled"></li>
+				</ul>
+			</div>
+			
+			<div class="fichaArticuloSlider">
+				<div class="containerSliderArticles">
+					<img src="imgs/products/jeans2.jpg" alt="jeans2" width="273">
+					<div class="overlay">
+						<div class="addCartButton fto-basket-3"> Add to cart</div>
+						<div class="shareButton">Share</div>
+					</div>
+				</div>
+				<h3>Jeans gastados rotos</h3>
+				<p class="precio">85,00 €</p>
+				<ul>
+					<li style="display: inline-block;" class="fto-star"></li>
+					<li style="display: inline-block;" class="fto-star"></li>
+					<li style="display: inline-block;" class="fto-star"></li>
+					<li style="display: inline-block;" class="fto-star"></li>
+					<li style="display: inline-block;" class="fto-star"></li>
+				</ul>
+			</div>
+			
+			<div class="fichaArticuloSlider">
+				<div class="containerSliderArticles">
+					<img src="imgs/products/jeans3.jpg" alt="jeans3" width="273">
+					<div class="overlay">
+						<div class="addCartButton fto-basket-3"> Add to cart</div>
+						<div class="shareButton">Share</div>
+					</div>
+				</div>
+				<h3>Jeans clásicos skiny</h3>
+				<p class="precio">70,95 €</p>
+			</div>
+			
+			<div class="fichaArticuloSlider">
+				<div class="containerSliderArticles">
+					<img src="imgs/products/jeans4.jpg" alt="jeans4" width="273">
+					<div class="overlay">
+						<div class="addCartButton fto-basket-3"> Add to cart</div>
+						<div class="shareButton">Share</div>
+					</div>
+				</div>
+				<h3>Jeans clásicos skiny gastados</h3>
+				<p class="precio">70,95 €</p>
+			</div>
+		</div>
 	</div>
 
-	<template id="ejemplo">
-		<div>
-			<div v-if="mostrar">
-				{{ mensaje }}
-				<img v-bind:src="imagen" />
-			</div>
-			<button v-on:click="toggleMostrar()">Mostrar/Ocultar</button>
+
+	
+		<!-- <style>
+		* {
+			box-sizing: border-box;
+		}
+		.menu {
+			float:left;
+			width:20%;
+			text-align:center;
+		}
+		.menu a {
+			background-color:#e5e5e5;
+			padding:8px;
+			display:block;
+			width:100%;
+			color:black;
+		}
+		.main {
+			float:left;
+			width:80%;
+			padding:0 20px;
+		}
+		.right {
+			background-color:#e5e5e5;
+			float:left;
+			width:20%;
+			padding:15px;
+			margin-top:7px;
+			text-align:center;
+		}
+
+		@media only screen and (max-width:980px) {
+			.menu, .main, .right {
+				width:100%;
+			}
+		}
+	</style>
+	<div style="overflow:auto">
+		<div class="menu">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+			<a href="#">Link 4</a>
 		</div>
-	</template>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script> -->
-	<script type="text/javascript" src="js/vue.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+
+		<div class="main">
+			<h2>Lorum Ipsum</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+		</div>
+	</div> -->
+
+	<div style="display: flex; justify-content: center;background-color:#666666; color: #8e8e8e; text-align:center;padding:10px;height: 49px;vertical-align: middle;">© copyleft dbold
+		<img src="imgs/design/logo.png" alt="dbold design" width="30px" height="30px"></div>
 
 </body>
 </html>
