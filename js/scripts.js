@@ -78,3 +78,42 @@ function parar() {
 	pantalla.style.backgroundImage=imagenFondo;
 	pantalla.style.backgroundSize = 'cover'
 }
+
+// Carrusel básico
+
+var current = 0;
+var imagenes = new Array();
+ 
+$(document).ready(function() {
+    var numImages = 16;
+    if (numImages <= 4) {
+        $('.right-arrow').css('display', 'none');
+        $('.left-arrow').css('display', 'none');
+    }
+ 
+    $('.left-arrow').on('click',function() {
+        if (current > 0) {
+            current = current - 1;
+        } else {
+            current = numImages - 4;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+        console.log(current);
+ 
+        return false;
+    });
+ 
+    $('.right-arrow').on('click', function() {
+        if (numImages > current + 4) {
+            current = current + 1;
+        } else {
+            current = 0;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+        console.log(current);
+ 
+        return false;
+    }); 
+ });

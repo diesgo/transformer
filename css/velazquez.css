@@ -102,7 +102,81 @@ table {
 	font-size: 20px;
 }
 
-/*Slider artículos*/
+/*=========================*/
+/*=                       =*/
+/*= Carrusel de productos =*/
+/*=                       =*/
+/*= Requiere JQuery       =*/
+/*=                       =*/
+/*=========================*/
+
+#carrusel {
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    margin-top:20px;
+    /*margin-bottom:20px;*/
+    text-align: right;
+}
+ 
+#carrusel .left-arrow {
+    position:relative;
+    background-color: #c2c2c2;
+    color: #FFFFFF;
+    text-decoration: none;
+    z-index:1;
+    padding: 2px;
+}
+ 
+#carrusel .right-arrow {
+    position:relative;
+    background-color: #c2c2c2;
+    color: #FFFFFF;
+    text-decoration: none;
+    z-index:1;
+    padding: 2px
+}
+
+#carrusel .left-arrow:hover,
+#carrusel .right-arrow:hover{
+	color:#555555;
+}
+
+#carrusel .left-arrow:active,
+#carrusel .right-arrow:active{
+	background-color: #555555;
+	color: #FFFFFF;
+}
+
+#carrusel img {
+	width: 100%;
+}
+
+ 
+.carrusel {
+	display: flex;
+	justify-content: space-between;
+    width:4800px;
+    left:0px;
+    position:relative;
+    z-index:0;
+}
+ 
+.carrusel>div {
+    /*float: left;*/
+    /*height: 203px;*/
+    margin-right: 15px;
+    /*width: 195px;*/
+    text-align:center;
+}
+ 
+.carrusel img {
+    cursor:pointer;
+}
+ 
+.product {
+    border:#CCCCCC 1px solid;
+}
 
 .sliderArticulos{
 	display: flex;
@@ -114,7 +188,8 @@ table {
 .fichaArticuloSlider{
 	background-color: #f0f0f0;
 	text-align: center;
-	max-width: 273px;
+	/*max-width: 273px;*/
+	/*margin: 0 45px;*/
 }
 
 .containerSliderArticles{
