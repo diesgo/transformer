@@ -107,6 +107,9 @@ $(document).ready(function() {
     $('.right-arrow').on('click', function() {
         if (numImages > current + 4) {
             current = current + 1;
+        } else if (numImages === current-4){
+
+        	$('.right-arrow').css({display: 'none'});
         } else {
             current = 0;
         }
@@ -117,3 +120,14 @@ $(document).ready(function() {
         return false;
     }); 
  });
+
+// Menú
+
+function menu() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
