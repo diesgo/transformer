@@ -4,49 +4,67 @@
 	<meta charset="utf-8">
 	<meta lang="es">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="css/velazquez.css">
 	<link rel="stylesheet" type="text/css" href="webfonts/fontello-a0fe6bd0/css/fontello.css">
 	<link rel="stylesheet" type="text/css" href="webfonts/fontello-a0fe6bd0/css/animation.css">
+	<link rel="stylesheet" type="text/css" href="webfonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/velazquez.css">
 	<title>Transformer</title>
 </head>
 
 <body>
-	
-	<div id="topbar" style="background-color:#01a261;text-align:center;height: 43px;"></div>
 
-	<div id="navbar" style="text-align:center;">
-		<div id="searchBar" class="topnav">
-			<div style="width: 70%;margin: 0 auto;display: flex;">
-				<div style="display: flex;width: 33.33%;padding: 15px;">
-					<img src="imgs/design/transformer.png" class="imagen" alt="" width="150">
-				</div>
-				<div style="width: 33.33%;"></div>
-				<div class="search-container" style="padding: 15px;">
-					<form action="/action_page.php">
-						<input type="text" placeholder="Search.." name="search">
-						<button type="submit"><i class="fto-search-1"></i></button>
-					</form>
+	<!-- Cabecera -->
+
+	<div id="navbar" class="sticky">
+		<section>
+			<div id="topbar" class="menutop">
+				<div style="width: 70%;margin:0 auto; background-color:#01a261;">
+					<a href="#" class="topbarButton">Bienvenido</a>
+					<a href="login.html" class="topbarButton">Inicio sesión</a>
+					<a href="singin.html" class="topbarButton">Registro</a>
 				</div>
 			</div>
-		</div>
-		<div class="menu" id="myTopnav">
-			<a href="index.html" class="fto-home"></a>
-			<a href="#news">News</a>
-			<a href="#contact">Contact</a>
-			<div class="dropdown">
-				<button class="dropbtn">Dropdown <i class="fto-down-dir-2"></i></button>
-				<div class="dropdown-content">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
+		</section>
+		
+		<section>
+			<div id="searchBar" class="topnav">
+				<div class="contenedorContenido">
+					<div class="mitad" style="padding: 15px 30px;">
+						<img id="logo" src="imgs/design/transformer.png" class="imagen" alt="logo_transformer">
+					</div>
+					<div class="search-container">
+						<form action="/action_page.php">
+							<input type="text" placeholder="Search.." name="search">
+							<button type="submit"><i class="fto-search-1"></i></button>
+						</form>
+					</div>
 				</div>
-			</div> 
-			<a href="#about">About</a>
-			<a href="javascript:void(0);" style="font-size:15px;" class="icon fto-menu" onclick="menu()"></a>
-		</div>
+			</div>
+		</section>
+		
+		<section>
+			<div class="menu" id="myMenu">
+				<a href="index.html" class="fto-home"></a>
+				<a href="#news">News</a>
+				<a href="#contact">Contact</a>
+				<div class="dropdown">
+					<button class="dropbtn">Dropdown <i class="fto-down-dir-2"></i></button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div> 
+				<a href="#about">About</a>
+				<a href="javascript:void(0);" style="font-size:15px;" class="icon fto-menu" onclick="menu()"></a>
+			</div>
+		</section>
 	</div>
 
-	<div id="slider" style="background-color:#cccccc;text-align:center;">
+	<!-- Slider -->
+
+	<section>
+		<div id="slider">
 		<div class="contenedorSlider">
 			<div id="controlesre" style="display:flex;justify-content: flex-end; align-items:center;align-self:center;width: 25%;">
 				<span class="fto-left-open-3 flecha" onclick="mueve('retro')"></span>
@@ -54,14 +72,18 @@
 			<div id="visor" style="width: 50%;">
 				<div id="fotoEntra"></div>
 				<div id="fotoSale">
-					<img src='slider/lp0.jpg' alt='1. Gibson Les Paul 01' name='fotos0'>
+					<img src='imgs/slider/0.jpg' alt='Solo Jeans' name='fotos0'>
 				</div>
 			</div>
 			<div id="controlesav" style="display:flex;justify-content: flex-start; align-items:center;align-self:center;width: 25%;">
 				<span class="fto-right-open-3 flecha" onclick="mueve('avance')"></span>
 			</div>
 		</div>
-	</div>
+		</div>
+	</section>
+	
+
+	<!-- Cuerpo del documento -->
 
 	<div id="cuerpo">
 
@@ -98,7 +120,7 @@
 							<img src="imgs/products/j/0.jpg" alt="jeans0">
 							<div class="overlay">
 								<div class="addCartButton"><a href="#"><p><span class="fto-basket-3"></span> comprar</p></a></div>
-								<div class="shareButton"><a href="#"><p><span class="fto-eye-2"></span> ver más</p></a></div>
+								<div class="shareButton"><a href="product_page.html"><p><span class="fto-eye-2"></span> ver más</p></a></div>
 							</div>
 						</div>
 						<h3>Jeans azules rotos</h3>
@@ -209,7 +231,7 @@
 
 					<div class="fichaArticuloSlider product" id="product_6">
 						<div class="containerSliderArticles">
-							<img src="imgs/products/j/6.jpg" alt="jeans6">
+							<img src="imgs/products/j/6.jpg" alt="jeans5">
 							<div class="overlay">
 								<div class="addCartButton"><a href="#"><p><span class="fto-basket-3"></span> comprar</p></a></div>
 								<div class="shareButton"><a href="#"><p><span class="fto-eye-2"></span> ver más</p></a></div>
@@ -228,178 +250,7 @@
 
 					<div class="fichaArticuloSlider product" id="product_7">
 						<div class="containerSliderArticles">
-							<img src="imgs/products/j/7.jpg" alt="jeans7">
-							<div class="overlay">
-								<div class="addCartButton"><a href="#"><p><span class="fto-basket-3"></span> comprar</p></a></div>
-								<div class="shareButton"><a href="#"><p><span class="fto-eye-2"></span> ver más</p></a></div>
-							</div>
-						</div>
-						<h3>Jeans gastados rotos</h3>
-						<p class="precio">85,00 €</p>
-						<ul>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-						</ul>
-					</div>
-
-					<div class="fichaArticuloSlider product" id="product_8">
-						<div class="containerSliderArticles">
-							<img src="imgs/products/j/8.jpg" alt="jeans8">
-							<div class="overlay">
-								<div class="addCartButton"><a href="#"><p><span class="fto-basket-3"></span> comprar</p></a></div>
-								<div class="shareButton"><a href="#"><p><span class="fto-eye-2"></span> ver más</p></a></div>
-							</div>
-						</div>
-						<h3>Jeans gastados rotos</h3>
-						<p class="precio">85,00 €</p>
-						<ul>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-						</ul>
-					</div>
-
-					<div class="fichaArticuloSlider product" id="product_9">
-						<div class="containerSliderArticles">
-							<img src="imgs/products/j/9.jpg" alt="jeans9">
-							<div class="overlay">
-								<div class="addCartButton"><a href="#"><p><span class="fto-basket-3"></span> comprar</p></a></div>
-								<div class="shareButton"><a href="#"><p><span class="fto-eye-2"></span> ver más</p></a></div>
-							</div>
-						</div>
-						<h3>Jeans gastados rotos</h3>
-						<p class="precio">85,00 €</p>
-						<ul>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-						</ul>
-					</div>
-
-					<div class="fichaArticuloSlider product" id="product_10">
-						<div class="containerSliderArticles">
-							<img src="imgs/products/j/10.jpg" alt="jeans10">
-							<div class="overlay">
-								<div class="addCartButton"><a href="#"><p><span class="fto-basket-3"></span> comprar</p></a></div>
-								<div class="shareButton"><a href="#"><p><span class="fto-eye-2"></span> ver más</p></a></div>
-							</div>
-						</div>
-						<h3>Jeans gastados rotos</h3>
-						<p class="precio">85,00 €</p>
-						<ul>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-						</ul>
-					</div>
-
-					<div class="fichaArticuloSlider product" id="product_11">
-						<div class="containerSliderArticles">
-							<img src="imgs/products/j/11.jpg" alt="jeans11">
-							<div class="overlay">
-								<div class="addCartButton"><a href="#"><p><span class="fto-basket-3"></span> comprar</p></a></div>
-								<div class="shareButton"><a href="#"><p><span class="fto-eye-2"></span> ver más</p></a></div>
-							</div>
-						</div>
-						<h3>Jeans gastados rotos</h3>
-						<p class="precio">85,00 €</p>
-						<ul>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-						</ul>
-					</div>
-
-					<div class="fichaArticuloSlider product" id="product_12">
-						<div class="containerSliderArticles">
-							<img src="imgs/products/j/12.jpg" alt="jeans12">
-							<div class="overlay">
-								<div class="addCartButton"><a href="#"><p><span class="fto-basket-3"></span> comprar</p></a></div>
-								<div class="shareButton"><a href="#"><p><span class="fto-eye-2"></span> ver más</p></a></div>
-							</div>
-						</div>
-						<h3>Jeans gastados rotos</h3>
-						<p class="precio">85,00 €</p>
-						<ul>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-						</ul>
-					</div>
-
-					<div class="fichaArticuloSlider product" id="product_13">
-						<div class="containerSliderArticles">
-							<img src="imgs/products/j/13.jpg" alt="jeans13">
-							<div class="overlay">
-								<div class="addCartButton"><a href="#"><p><span class="fto-basket-3"></span> comprar</p></a></div>
-								<div class="shareButton"><a href="#"><p><span class="fto-eye-2"></span> ver más</p></a></div>
-							</div>
-						</div>
-						<h3>Jeans gastados rotos</h3>
-						<p class="precio">85,00 €</p>
-						<ul>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-						</ul>
-					</div>
-
-					<div class="fichaArticuloSlider product" id="product_14">
-						<div class="containerSliderArticles">
-							<img src="imgs/products/j/14.jpg" alt="jeans14">
-							<div class="overlay">
-								<div class="addCartButton"><a href="#"><p><span class="fto-basket-3"></span> comprar</p></a></div>
-								<div class="shareButton"><a href="#"><p><span class="fto-eye-2"></span> ver más</p></a></div>
-							</div>
-						</div>
-						<h3>Jeans gastados rotos</h3>
-						<p class="precio">85,00 €</p>
-						<ul>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-						</ul>
-					</div>
-
-					<div class="fichaArticuloSlider product" id="product_15">
-						<div class="containerSliderArticles">
-							<img src="imgs/products/j/15.jpg" alt="jeans15">
-							<div class="overlay">
-								<div class="addCartButton"><a href="#"><p><span class="fto-basket-3"></span> comprar</p></a></div>
-								<div class="shareButton"><a href="#"><p><span class="fto-eye-2"></span> ver más</p></a></div>
-							</div>
-						</div>
-						<h3>Jeans gastados rotos</h3>
-						<p class="precio">85,00 €</p>
-						<ul>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-							<li style="display: inline-block;" class="fto-star-filled"></li>
-						</ul>
-					</div>
-
-					<div class="fichaArticuloSlider product" id="product_16">
-						<div class="containerSliderArticles">
-							<img src="imgs/products/j/16.jpg" alt="jeans16">
+							<img src="imgs/products/j/7.jpg" alt="jeans5">
 							<div class="overlay">
 								<div class="addCartButton"><a href="#"><p><span class="fto-basket-3"></span> comprar</p></a></div>
 								<div class="shareButton"><a href="#"><p><span class="fto-eye-2"></span> ver más</p></a></div>
@@ -426,7 +277,7 @@
 
 				<div class="fichaCuadricula">
 					<div class="mitad">
-						<img src="imgs/products/s/0.jpg" class="imagen" alt="">
+						<img src="imgs/products/j/9.jpg" class="imagen" alt="">
 					</div>
 					<div>
 						<p>short</p>
@@ -436,7 +287,7 @@
 				
 				<div class="fichaCuadricula">
 					<div class="mitad">
-						<img src="imgs/products/s/6.jpg" class="imagen" alt="">
+						<img src="imgs/products/j/10.jpg" class="imagen" alt="">
 					</div>
 					<div>
 						<p>short</p>
@@ -446,7 +297,7 @@
 				
 				<div class="fichaCuadricula">
 					<div class="mitad">
-						<img src="imgs/products/s/8.jpg" class="imagen" alt="">
+						<img src="imgs/products/j/11.jpg" class="imagen" alt="">
 					</div>
 					<div>
 						<p>short</p>
@@ -456,7 +307,7 @@
 				
 				<div class="fichaCuadricula">
 					<div class="mitad">
-						<img src="imgs/products/s/3.jpg" class="imagen" alt="">
+						<img src="imgs/products/j/12.jpg" class="imagen" alt="">
 					</div>
 					<div>
 						<p>short</p>
@@ -466,7 +317,7 @@
 				
 				<div class="fichaCuadricula">
 					<div class="mitad">
-						<img src="imgs/products/s/9.jpg" class="imagen" alt="">
+						<img src="imgs/products/j/13.jpg" class="imagen" alt="">
 					</div>
 					<div>
 						<p>short</p>
@@ -476,7 +327,7 @@
 				
 				<div class="fichaCuadricula">
 					<div class="mitad">
-						<img src="imgs/products/s/5.jpg" class="imagen" alt="">
+						<img src="imgs/products/j/14.jpg" class="imagen" alt="">
 					</div>
 					<div>
 						<p>short</p>
@@ -485,10 +336,64 @@
 				</div>
 			</div>
 			<div class="cuarto" style="width: 25%; height: 100%;background-color: #c2c2c2;">
-				<img src="imgs/products/b0.jpeg" class="imagen" alt="">
+				<img src="imgs/products/s/0.jpg" class="imagen" alt="">
 			</div>
 		</div>
 	</div>
+
+	<!-- Antepié de página-->
+
+	<div class="contenedorContenido espaciado">
+		<div class="cuarto contenedorFooter">
+			<h4>Información</h4>
+			<ul class="elemento-menu">
+				<li><a href="html/aviso-legal.html" class="elemento-menu"><span class="fto-angle-double-right">Entrega</span></a></li>
+				<li><a href="html/politica-cookies.html" class="elemento-menu"><span class="fto-angle-double-right">Aviso legal</span></a></li>
+				<li><a href="html/politica-privacidad.html" class="elemento-menu"><span class="fto-angle-double-right">Pago seguro</span></a></li>
+			</ul>
+		</div>
+		<div class="cuarto contenedorFooter">
+			<h4>Catálogo</h4>
+			<ul class="elemento-menu">
+				<li><a href="html/emplazamiento.html" class="elemento-menu"><span class="fto-angle-double-right">Promociones especiales</span></a></li>
+				<li><a href="html/contacto.html" class="elemento-menu"><span class="fto-angle-double-right">Nuevos productos</span></a></li>
+				<li><a href="html/sobre_nosotros.html" class="elemento-menu" target="_blank"><span class="fto-angle-double-right">Más vendidos</span></a></li>
+			</ul>
+		</div>
+		<div class="cuarto contenedorFooter">
+			<h4>Newsletter</h4>
+			<ul class="elemento-menu">
+				<li><a href="html/aviso-legal.html" class="elemento-menu"><span class="fto-angle-double-right">Aviso legal</span></a></li>
+				<li><a href="html/politica-cookies.html" class="elemento-menu"><span class="fto-angle-double-right">Política de cookies</span></a></li>
+				<li><a href="html/politica-privacidad.html" class="elemento-menu"><span class="fto-angle-double-right">Política de privacidad</span></a></li>
+			</ul>
+		</div>
+		<div class="cuarto contenedorFooter">
+			<h4>Social</h4>
+			<ul class="elemento-menu">
+				<li><a href="html/aviso-legal.html" class="elemento-menu"><span class="fto-angle-double-right">Aviso legal</span></a></li>
+				<li><a href="html/politica-cookies.html" class="elemento-menu"><span class="fto-angle-double-right">Política de cookies</span></a></li>
+				<li><a href="html/politica-privacidad.html" class="elemento-menu"><span class="fto-angle-double-right">Política de privacidad</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Pie de página -->
+
+	<footer class="contenedorCentrado pie-de-pagina">
+		<div class="cuarto texto-centrado">
+			<p>Design by <span class="texto-grande font-densia-sans-regular">dbold</span></p>
+		</div>
+		<div class="cuarto texto-centrado">
+			<span class="fto-cc-visa"></span> <span class="fto-cc-mastercard"></span> <span class="fto-cc-discover"></span> <span class="fto-cc-amex"></span> <span class="fto-cc-paypal"></span> <span class="fto-cc-stripe"></span>
+		</div>
+		<div class="cuarto texto-centrado">
+			<p>Powered by <a class="texto-grande font-restu-bundah-regular" href="#" target="_blank">Velázquez</a></p>
+		</div>
+		<div class="cuarto texto-centrado">
+			<p>Transformer template <span class="copy-left">©</span> copyleft 2020</p>
+		</div>
+	</footer>
 	<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>

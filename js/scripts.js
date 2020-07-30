@@ -2,19 +2,19 @@
 
 // Array con la ruta de las imágenes
 misFotos=[
-"<img src='slider/lp0.jpg' alt='1. Gibson Les Paul 01' name='fotos0'>",
-"<img src='slider/lp1.jpg' alt='2. Gibson Les Paul 02' name='fotos1'>",
-"<img src='slider/lp2.jpg' alt='3. Gibson Les Paul 03' name='fotos2'>",
-"<img src='slider/lp3.jpg' alt='4. Gibson Les Paul 04' name='fotos3'>",
-"<img src='slider/lp4.jpg' alt='5. Gibson Les Paul 05' name='fotos4'>",
-"<img src='slider/lp5.jpg' alt='6. Gibson Les Paul 06' name='fotos5'>"]
+"<img src='imgs/slider/0.jpg' alt='No solo Jeans' name='fotos0'>",
+"<img src='imgs/slider/1.jpg' alt='Women Jeans' name='fotos1'>",
+"<img src='imgs/slider/2.jpg' alt='3. Gibson Les Paul 03' name='fotos2'>",
+"<img src='imgs/slider/3.jpg' alt='4. Gibson Les Paul 04' name='fotos3'>",
+"<img src='imgs/slider/4.jpg' alt='5. Gibson Les Paul 05' name='fotos4'>",
+"<img src='imgs/slider/5.jpg' alt='6. Gibson Les Paul 06' name='fotos5'>"]
 muestra=0
 
 window.onload = function() {
 	pantalla=document.getElementById("visor");
 	foto=document.getElementById("fotoSale");
 	fotoAnt=document.getElementById("fotoEntra");
-	pantalla.style.backgroundImage="url('slider/lp1.jpg')";
+	pantalla.style.backgroundImage="url('imgs/slider/1.jpg')";
 	pantalla.style.backgroundSize = 'cover'
 }
 
@@ -36,7 +36,7 @@ function mueve(opcion) {
 		estilo="izquierdo";
 		break;
 	}
-	pantalla.style.backgroundImage="url('slider/lp"+muestra+".jpg')";
+	pantalla.style.backgroundImage="url('imgs/slider/"+muestra+".jpg')";
 	ver=misFotos[muestra];
 	mueveFoto = 960;
 	mueveFoto2=-960;
@@ -73,7 +73,7 @@ function parar() {
 	clearInterval(completado);
 	numFoto="fotos"+muestra;
 	numff=muestra;
-	fotoFondo="slider/lp"+numff+".jpg"
+	fotoFondo="imgs/slider/"+numff+".jpg"
 	imagenFondo="url("+fotoFondo+")";
 	pantalla.style.backgroundImage=imagenFondo;
 	pantalla.style.backgroundSize = 'cover'
@@ -85,7 +85,7 @@ var current = 0;
 var imagenes = new Array();
  
 $(document).ready(function() {
-    var numImages = 16;
+    var numImages = 8;
     if (numImages <= 4) {
         $('.right-arrow').css('display', 'none');
         $('.left-arrow').css('display', 'none');
@@ -118,7 +118,7 @@ $(document).ready(function() {
         console.log(current);
  
         return false;
-    }); 
+    });
  });
 
 // Menú
@@ -131,3 +131,31 @@ function menu() {
     x.className = "topnav";
   }
 }
+
+
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+// 	var nav = document.getElementById("navbar");
+// 	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+// 		nav.style.position = 'fixed';
+// 		$("#navbar").animate({
+// 			top : '0',
+// 			zIndex : '99'
+// 		});
+// 	} else {
+// 		nav.style.position = 'initial';
+// 	}
+// } 
+
+// window.onscroll = function() {myFunction()};
+// 	var nav = document.getElementById("navbar");
+// 	var sticky = nav.offsetTop;
+// 	function myFunction() {
+// 		if (window.pageYOffset >= sticky) {
+// 			nav.classList.add("sticky")
+// 		}else {
+// 			nav.classList.remove("sticky");
+// 		}
+// 	};

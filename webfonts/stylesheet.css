@@ -319,3 +319,31 @@
 .font-spoken-plain{
 	font-family: 'spoken-plain', sans-serif;
 }
+
+/*===========*/
+/*Transformer*/
+/*===========*/
+
+@font-face {
+    font-family: 'robofan-symbols-regular';
+    src: url('transformer/robofan_symbol.woff2') format('woff2'),
+         url('transformer/robofan_symbol.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-robofan-symbols-regular{
+	font-family: 'robofan-symbols-regular', sans-serif;
+}
+
+@font-face {
+    font-family: 'transformers-regular';
+    src: url('transformer/transformers_movie.woff2') format('woff2'),
+         url('transformer/transformers_movie.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-transformers-regular{
+	font-family: 'transformers-regular', sans-serif;
+}

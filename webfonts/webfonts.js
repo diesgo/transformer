@@ -1,4 +1,4 @@
-var fonts=["amaranth-bold","arima-madurai-light","de-valencia-regular","densia-sans-regular","emblem-regular","haetten-schweiler-regular","montserrat-regular","montserrat-italic","montserrat-bold","montserrat-light","optima","optima-italic","optima-medium","optima-bold","restu-bundah-regular","samble-tracie","samble-tracie-bold","samble-tracie-swash","samble-tracie-swash-bold","fat-wandals","spoken-bg","spoken","spoken-plain"];
+var fonts=["amaranth-bold","arima-madurai-light","de-valencia-regular","densia-sans-regular","emblem-regular","haetten-schweiler-regular","montserrat-regular","montserrat-italic","montserrat-bold","montserrat-light","optima","optima-italic","optima-medium","optima-bold","restu-bundah-regular","samble-tracie","samble-tracie-bold","samble-tracie-swash","samble-tracie-swash-bold","fat-wandals","spoken-bg","spoken","spoken-plain","robofan-symbols-regular","transformers-regular"];
 
 var numFonts=fonts.length;
 var x = document.getElementById("body");
