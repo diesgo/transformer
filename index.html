@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta lang="es">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="webfonts/fontello-a0fe6bd0/css/fontello.css">
-	<link rel="stylesheet" type="text/css" href="webfonts/fontello-a0fe6bd0/css/animation.css">
+	<link rel="stylesheet" type="text/css" href="webfonts/fontello/css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="webfonts/fontello/css/animation.css">
 	<link rel="stylesheet" type="text/css" href="webfonts/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="css/velazquez.css">
 	<title>Transformer</title>
@@ -16,7 +16,6 @@
 	<!-- Cabecera -->
 
 	<div id="navbar" class="sticky">
-		<section>
 			<div id="topbar" class="menutop">
 				<div style="width: 70%;margin:0 auto; background-color:#01a261;">
 					<a href="#" class="topbarButton">Bienvenido</a>
@@ -24,9 +23,7 @@
 					<a href="singin.html" class="topbarButton">Registro</a>
 				</div>
 			</div>
-		</section>
 		
-		<section>
 			<div id="searchBar" class="topnav">
 				<div class="contenedorContenido">
 					<div class="mitad" style="padding: 15px 30px;">
@@ -40,9 +37,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
 		
-		<section>
 			<div class="menu" id="myMenu">
 				<a href="index.html" class="fto-home"></a>
 				<a href="#news">News</a>
@@ -58,13 +53,11 @@
 				<a href="#about">About</a>
 				<a href="javascript:void(0);" style="font-size:15px;" class="icon fto-menu" onclick="menu()"></a>
 			</div>
-		</section>
 	</div>
 
 	<!-- Slider -->
 
-	<section>
-		<div id="slider">
+	<div id="slider">
 		<div class="contenedorSlider">
 			<div id="controlesre" style="display:flex;justify-content: flex-end; align-items:center;align-self:center;width: 25%;">
 				<span class="fto-left-open-3 flecha" onclick="mueve('retro')"></span>
@@ -72,15 +65,14 @@
 			<div id="visor" style="width: 50%;">
 				<div id="fotoEntra"></div>
 				<div id="fotoSale">
-					<img src='imgs/slider/0.jpg' alt='Solo Jeans' name='fotos0'>
+					<img class="animated" src='imgs/slider/0.jpg' alt='Solo Jeans' name='fotos0'>
 				</div>
 			</div>
 			<div id="controlesav" style="display:flex;justify-content: flex-start; align-items:center;align-self:center;width: 25%;">
 				<span class="fto-right-open-3 flecha" onclick="mueve('avance')"></span>
 			</div>
 		</div>
-		</div>
-	</section>
+	</div>
 	
 
 	<!-- Cuerpo del documento -->

@@ -2,19 +2,19 @@
 
 // Array con la ruta de las imágenes
 misFotos=[
-"<img src='imgs/slider/0.jpg' alt='No solo Jeans' name='fotos0'>",
-"<img src='imgs/slider/1.jpg' alt='Women Jeans' name='fotos1'>",
-"<img src='imgs/slider/2.jpg' alt='3. Gibson Les Paul 03' name='fotos2'>",
-"<img src='imgs/slider/3.jpg' alt='4. Gibson Les Paul 04' name='fotos3'>",
-"<img src='imgs/slider/4.jpg' alt='5. Gibson Les Paul 05' name='fotos4'>",
-"<img src='imgs/slider/5.jpg' alt='6. Gibson Les Paul 06' name='fotos5'>"]
+"<img src='imgs/slider/0.jpg' alt='Primera diapositiva' name='fotos0'>",
+"<img src='imgs/slider/1.jpg' alt='Segunda diapositiva' name='fotos1'>",
+"<img src='imgs/slider/2.jpg' alt='Tercera diapositiva' name='fotos2'>",
+"<img src='imgs/slider/3.jpg' alt='Cuarta diapositiva' name='fotos3'>",
+"<img src='imgs/slider/4.jpg' alt='Quinta diapositiva' name='fotos4'>",
+"<img src='imgs/slider/5.jpg' alt='Sexta diapositiva' name='fotos5'>"]
 muestra=0
 
 window.onload = function() {
 	pantalla=document.getElementById("visor");
 	foto=document.getElementById("fotoSale");
 	fotoAnt=document.getElementById("fotoEntra");
-	pantalla.style.backgroundImage="url('imgs/slider/1.jpg')";
+	pantalla.style.backgroundImage="url('imgs/slider/0.jpg')";
 	pantalla.style.backgroundSize = 'cover'
 }
 
