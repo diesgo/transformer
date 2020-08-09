@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="webfonts/fontello/css/fontello.css">
 	<link rel="stylesheet" type="text/css" href="webfonts/fontello/css/animation.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/coin-slider-styles.css">
 	<link rel="stylesheet" type="text/css" href="webfonts/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="css/velazquez.css">
 	<title>Transformer</title>
@@ -15,64 +17,67 @@
 
 	<!-- Cabecera -->
 
-	<div id="navbar" class="sticky">
-			<div id="topbar" class="menutop">
-				<div style="width: 70%;margin:0 auto; background-color:#01a261;">
-					<a href="#" class="topbarButton">Bienvenido</a>
-					<a href="login.html" class="topbarButton">Inicio sesión</a>
-					<a href="singin.html" class="topbarButton">Registro</a>
+	<div id="navbar" class="">
+		<div id="topbar" class="menutop">
+			<div style="width: 70%;margin:0 auto; background-color:#01a261;">
+				<a href="#" class="topbarButton">Bienvenido</a>
+				<a href="login.html" class="topbarButton">Inicio sesión</a>
+				<a href="singin.html" class="topbarButton">Registro</a>
+			</div>
+		</div>
+		<div id="searchBar" class="topnav">
+			<div class="contenedorContenido">
+				<div class="mitad" style="padding: 15px 30px;">
+					<img id="logo" src="imgs/design/transformer.png" class="imagen" alt="logo_transformer">
+				</div>
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit"><i class="fto-search-1"></i></button>
+					</form>
 				</div>
 			</div>
+		</div>
 		
-			<div id="searchBar" class="topnav">
-				<div class="contenedorContenido">
-					<div class="mitad" style="padding: 15px 30px;">
-						<img id="logo" src="imgs/design/transformer.png" class="imagen" alt="logo_transformer">
-					</div>
-					<div class="search-container">
-						<form action="/action_page.php">
-							<input type="text" placeholder="Search.." name="search">
-							<button type="submit"><i class="fto-search-1"></i></button>
-						</form>
-					</div>
+		<div class="menu" id="myMenu">
+			<a href="index.html" class="fto-home"></a>
+			<a href="#news">News</a>
+			<a href="#contact">Contact</a>
+			<div class="dropdown">
+				<button class="dropbtn">Dropdown <i class="fto-down-dir-2"></i></button>
+				<div class="dropdown-content">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
 				</div>
-			</div>
-		
-			<div class="menu" id="myMenu">
-				<a href="index.html" class="fto-home"></a>
-				<a href="#news">News</a>
-				<a href="#contact">Contact</a>
-				<div class="dropdown">
-					<button class="dropbtn">Dropdown <i class="fto-down-dir-2"></i></button>
-					<div class="dropdown-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
-					</div>
-				</div> 
-				<a href="#about">About</a>
-				<a href="javascript:void(0);" style="font-size:15px;" class="icon fto-menu" onclick="menu()"></a>
-			</div>
+			</div> 
+			<a href="#about">About</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon fto-menu" onclick="menu()"></a>
+		</div>
 	</div>
 
 	<!-- Slider -->
+<div class="jcarousel" dir="rtl">
+    <ul>
+    	<li><img id='diapositiva' src='imgs/slider/0.jpg' alt='Primera diapositiva' name='fotos0'></li>
+    	<li><img id='diapositiva' src='imgs/slider/1.jpg' alt='Segunda diapositiva' name='fotos1'></li>
+    	<li><img id='diapositiva' src='imgs/slider/2.jpg' alt='Tercera diapositiva' name='fotos2'></li>
+    	<li><img id='diapositiva' src='imgs/slider/3.jpg' alt='Cuarta diapositiva' name='fotos3'></li>
+    	<li><img id='diapositiva' src='imgs/slider/4.jpg' alt='Quinta diapositiva' name='fotos4'></li>
+    	<li><img id='diapositiva' src='imgs/slider/5.jpg' alt='Sexta diapositiva' name='fotos5'></li>
+	</ul>
+</div>
 
-	<div id="slider">
+	<!-- <div id="slider">
 		<div class="contenedorSlider">
-			<div id="controlesre" style="display:flex;justify-content: flex-end; align-items:center;align-self:center;width: 25%;">
-				<span class="fto-left-open-3 flecha" onclick="mueve('retro')"></span>
-			</div>
-			<div id="visor" style="width: 50%;">
+			<div id="antSlide" class="anterior"><span class="fto-left-open-3 flecha" onclick="mueve('retro')"></span></div>
+			<div id="visor" class="mitad">
 				<div id="fotoEntra"></div>
-				<div id="fotoSale">
-					<img class="animated" src='imgs/slider/0.jpg' alt='Solo Jeans' name='fotos0'>
-				</div>
+				<div id="fotoSale"><img class="animated" src='imgs/slider/0.jpg' alt='Solo Jeans' name='fotos0'></div>
 			</div>
-			<div id="controlesav" style="display:flex;justify-content: flex-start; align-items:center;align-self:center;width: 25%;">
-				<span class="fto-right-open-3 flecha" onclick="mueve('avance')"></span>
-			</div>
+			<div id="nextSlide" class="siguiente"><span class="fto-right-open-3 flecha" onclick="mueve('avance')"></span></div>
 		</div>
-	</div>
+	</div> -->
 	
 
 	<!-- Cuerpo del documento -->
@@ -387,6 +392,7 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="js/coin-slider.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

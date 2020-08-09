@@ -2,32 +2,39 @@
 
 // Array con la ruta de las imágenes
 misFotos=[
-"<img src='imgs/slider/0.jpg' alt='Primera diapositiva' name='fotos0'>",
-"<img src='imgs/slider/1.jpg' alt='Segunda diapositiva' name='fotos1'>",
-"<img src='imgs/slider/2.jpg' alt='Tercera diapositiva' name='fotos2'>",
-"<img src='imgs/slider/3.jpg' alt='Cuarta diapositiva' name='fotos3'>",
-"<img src='imgs/slider/4.jpg' alt='Quinta diapositiva' name='fotos4'>",
-"<img src='imgs/slider/5.jpg' alt='Sexta diapositiva' name='fotos5'>"]
-muestra=0
+"<img id='diapositiva' src='imgs/slider/0.jpg' alt='Primera diapositiva' name='fotos0'>",
+"<img id='diapositiva' src='imgs/slider/1.jpg' alt='Segunda diapositiva' name='fotos1'>",
+"<img id='diapositiva' src='imgs/slider/2.jpg' alt='Tercera diapositiva' name='fotos2'>",
+"<img id='diapositiva' src='imgs/slider/3.jpg' alt='Cuarta diapositiva' name='fotos3'>",
+"<img id='diapositiva' src='imgs/slider/4.jpg' alt='Quinta diapositiva' name='fotos4'>",
+"<img id='diapositiva' src='imgs/slider/5.jpg' alt='Sexta diapositiva' name='fotos5'>"]
+muestra=misFotos.length;
 
-window.onload = function() {
-	pantalla=document.getElementById("visor");
-	foto=document.getElementById("fotoSale");
-	fotoAnt=document.getElementById("fotoEntra");
-	pantalla.style.backgroundImage="url('imgs/slider/0.jpg')";
-	pantalla.style.backgroundSize = 'cover'
-}
+$('.jcarousel').jcarousel({
+    rtl: true
+});
+
 
 
 function mueve(opcion) {
-	anterior=misFotos[muestra];
-	fotoAnt.innerHTML=anterior;
+	// anterior=misFotos[muestra];
+	// fotoAnt.innerHTML=anterior;
 	switch (opcion) {
 		case "avance":muestra++;
 		if (muestra>5) {
 			muestra=0
 		}
-		estilo="derecho";
+		actual=document.getElementById("visor");
+		$("#visor").addClass('animated slideOutLeft');
+		actual.innerHTML=misFotos[muestra];
+		
+		// actual.className="animated slideOutLeft";
+		// pantalla.innerHTML=misFotos[muestra];
+		console.log(misFotos[muestra]);
+		$("#diapositiva").removeClass("animated slideOutLeft");
+		
+
+		// estilo="derecho";
 		break;
 		case "retro":muestra--;
 		if (muestra<0) {
@@ -36,7 +43,7 @@ function mueve(opcion) {
 		estilo="izquierdo";
 		break;
 	}
-	pantalla.style.backgroundImage="url('imgs/slider/"+muestra+".jpg')";
+	// pantalla.style.backgroundImage="url('imgs/slider/"+muestra+".jpg')";
 	ver=misFotos[muestra];
 	mueveFoto = 960;
 	mueveFoto2=-960;
@@ -44,29 +51,29 @@ function mueve(opcion) {
 }
 
 function transicion() {
-	if (estilo=="izquierdo") {
-		mueveFoto-=30;
-		mueveAnt=mueveFoto-960;
-		cambioFoto=mueveFoto+"px";
-		cambioAnt=mueveAnt+"px";
-		foto.style.left=cambioFoto;
-		fotoAnt.style.left=cambioAnt;
-		if (mueveFoto<=0) {
-			parar()
-		}
-	}
-	else if (estilo=="derecho") {
-		mueveFoto2+=30;
-		mueveAnt=mueveFoto2+960;
-		cambioFoto=mueveFoto2+"px";
-		cambioAnt=mueveAnt+"px";
-		foto.style.left=cambioFoto;
-		fotoAnt.style.left=cambioAnt;
-		foto.innerHTML=ver;
-		if (mueveFoto2>=0) {
-			parar()
-		}
-	}
+	// if (estilo=="izquierdo") {
+	// 	mueveFoto-=30;
+	// 	mueveAnt=mueveFoto-960;
+	// 	cambioFoto=mueveFoto+"px";
+	// 	cambioAnt=mueveAnt+"px";
+	// 	foto.style.left=cambioFoto;
+	// 	fotoAnt.style.left=cambioAnt;
+	// 	if (mueveFoto<=0) {
+	// 		parar()
+	// 	}
+	// }
+	// else if (estilo=="derecho") {
+	// 	mueveFoto2+=30;
+	// 	mueveAnt=mueveFoto2+960;
+	// 	cambioFoto=mueveFoto2+"px";
+	// 	cambioAnt=mueveAnt+"px";
+	// 	foto.style.left=cambioFoto;
+	// 	fotoAnt.style.left=cambioAnt;
+	// 	foto.innerHTML=ver;
+	// 	if (mueveFoto2>=0) {
+	// 		parar()
+	// 	}
+	// }
 }
 
 function parar() {
