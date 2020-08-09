@@ -10,9 +10,19 @@ misFotos=[
 "<img id='diapositiva' src='imgs/slider/5.jpg' alt='Sexta diapositiva' name='fotos5'>"]
 muestra=misFotos.length;
 
-$('.jcarousel').jcarousel({
-    rtl: true
-});
+$('.jcarousel')
+	.on('jcarousel:create jcarousel:reload', function () {
+		var element = $(this),
+			width = element.innerWidth();
+
+		if (width > 900) {
+			width = width / 3;
+		} else if (width > 600) {
+			width = width / 2;
+		}
+
+		element.jcarousel('items').css('width', width + 'px');
+	});
 
 
 
@@ -166,3 +176,16 @@ function menu() {
 // 			nav.classList.remove("sticky");
 // 		}
 // 	};
+(function ($) {
+		$(function () {
+			$('[data-jcarousel]').each(function () {
+				var el = $(this);
+				el.jcarousel(el.data());
+			});
+
+			$('[data-jcarousel-control]').each(function () {
+				var el = $(this);
+				el.jcarouselControl(el.data());
+			});
+		});
+	})(jQuery);

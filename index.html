@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta lang="es">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="webfonts/fontello/css/fontello.css">
-	<link rel="stylesheet" type="text/css" href="webfonts/fontello/css/animation.css">
+	<link rel="stylesheet" type="text/css" href="webfonts/font-fontello/css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="webfonts/font-fontello/css/animation.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/coin-slider-styles.css">
 	<link rel="stylesheet" type="text/css" href="webfonts/stylesheet.css">
@@ -57,28 +57,22 @@
 	</div>
 
 	<!-- Slider -->
-<div class="jcarousel" dir="rtl">
-    <ul>
-    	<li><img id='diapositiva' src='imgs/slider/0.jpg' alt='Primera diapositiva' name='fotos0'></li>
-    	<li><img id='diapositiva' src='imgs/slider/1.jpg' alt='Segunda diapositiva' name='fotos1'></li>
-    	<li><img id='diapositiva' src='imgs/slider/2.jpg' alt='Tercera diapositiva' name='fotos2'></li>
-    	<li><img id='diapositiva' src='imgs/slider/3.jpg' alt='Cuarta diapositiva' name='fotos3'></li>
-    	<li><img id='diapositiva' src='imgs/slider/4.jpg' alt='Quinta diapositiva' name='fotos4'></li>
-    	<li><img id='diapositiva' src='imgs/slider/5.jpg' alt='Sexta diapositiva' name='fotos5'></li>
-	</ul>
-</div>
 
-	<!-- <div id="slider">
-		<div class="contenedorSlider">
-			<div id="antSlide" class="anterior"><span class="fto-left-open-3 flecha" onclick="mueve('retro')"></span></div>
-			<div id="visor" class="mitad">
-				<div id="fotoEntra"></div>
-				<div id="fotoSale"><img class="animated" src='imgs/slider/0.jpg' alt='Solo Jeans' name='fotos0'></div>
-			</div>
-			<div id="nextSlide" class="siguiente"><span class="fto-right-open-3 flecha" onclick="mueve('avance')"></span></div>
+	<div class="jcarousel-wrapper">
+		<div data-jcarousel="true" data-wrap="circular" class="jcarousel">
+			<ul>
+				<li><img src="imgs/slider/0.jpg" class="imagen" alt=""></li>
+				<li><img src="imgs/slider/1.jpg" class="imagen" alt=""></li>
+				<li><img src="imgs/slider/2.jpg" class="imagen" alt=""></li>
+				<li><img src="imgs/slider/3.jpg" class="imagen" alt=""></li>
+				<li><img src="imgs/slider/4.jpg" class="imagen" alt=""></li>
+				<li><img src="imgs/slider/5.jpg" class="imagen" alt=""></li>
+			</ul>
 		</div>
-	</div> -->
-	
+
+		<a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
+		<a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
+	</div>	
 
 	<!-- Cuerpo del documento -->
 
@@ -276,7 +270,7 @@
 					<div class="mitad">
 						<img src="imgs/products/j/9.jpg" class="imagen" alt="">
 					</div>
-					<div>
+					<div class="mitad acolchado">
 						<p>short</p>
 						<p class="precio">49,95 €</p>
 					</div>
@@ -286,7 +280,7 @@
 					<div class="mitad">
 						<img src="imgs/products/j/10.jpg" class="imagen" alt="">
 					</div>
-					<div>
+					<div class="mitad acolchado">
 						<p>short</p>
 						<p class="precio">49,95 €</p>
 					</div>
@@ -296,7 +290,7 @@
 					<div class="mitad">
 						<img src="imgs/products/j/11.jpg" class="imagen" alt="">
 					</div>
-					<div>
+					<div class="mitad acolchado">
 						<p>short</p>
 						<p class="precio">49,95 €</p>
 					</div>
@@ -306,7 +300,7 @@
 					<div class="mitad">
 						<img src="imgs/products/j/12.jpg" class="imagen" alt="">
 					</div>
-					<div>
+					<div class="mitad acolchado">
 						<p>short</p>
 						<p class="precio">49,95 €</p>
 					</div>
@@ -316,7 +310,7 @@
 					<div class="mitad">
 						<img src="imgs/products/j/13.jpg" class="imagen" alt="">
 					</div>
-					<div>
+					<div class="mitad acolchado">
 						<p>short</p>
 						<p class="precio">49,95 €</p>
 					</div>
@@ -326,7 +320,7 @@
 					<div class="mitad">
 						<img src="imgs/products/j/14.jpg" class="imagen" alt="">
 					</div>
-					<div>
+					<div class="mitad acolchado">
 						<p>short</p>
 						<p class="precio">49,95 €</p>
 					</div>
@@ -392,7 +386,8 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
-	<script type="text/javascript" src="js/coin-slider.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+	<!-- <script type="text/javascript" src="js/coin-slider.js"></script> -->
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
