@@ -41,6 +41,10 @@
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
     }
     
+    .w3-card-4 {
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    
     .w3-animate-zoom {
         animation: animatezoom 0.6s
     }
@@ -68,8 +72,9 @@
         white-space: nowrap
     }
     
-    .w3-large {
-        font-size: 18px!important
+    .w3-button:hover {
+        color: #000!important;
+        background-color: #ccc!important
     }
     
     .w3-transparent {
@@ -93,15 +98,119 @@
     .w3-container {
         padding: 0.01em 16px
     }
+    
+    .w3-tiny {
+        font-size: 10px!important
+    }
+    
+    .w3-small {
+        font-size: 12px!important
+    }
+    
+    .w3-medium {
+        font-size: 15px!important
+    }
+    
+    .w3-large {
+        font-size: 18px!important
+    }
+    
+    .w3-xlarge {
+        font-size: 24px!important
+    }
+    
+    .w3-xxlarge {
+        font-size: 36px!important
+    }
+    
+    .w3-xxxlarge {
+        font-size: 48px!important
+    }
+    
+    .w3-jumbo {
+        font-size: 64px!important
+    }
+    
+    .w3-section,
+    .w3-code {
+        margin-top: 16px!important;
+        margin-bottom: 16px!important
+    }
+    
+    .w3-input {
+        padding: 8px;
+        display: block;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        width: 100%
+    }
+    
+    .w3-border {
+        border: 1px solid #ccc!important
+    }
+    
+    .w3-block {
+        display: block;
+        width: 100%
+    }
+    
+    .w3-padding-small {
+        padding: 4px 8px!important
+    }
+    
+    .w3-padding {
+        padding: 8px 16px!important
+    }
+    
+    .w3-padding-large {
+        padding: 12px 24px!important
+    }
+    
+    .w3-padding-16 {
+        padding-top: 16px!important;
+        padding-bottom: 16px!important
+    }
+    
+    .w3-padding-24 {
+        padding-top: 24px!important;
+        padding-bottom: 24px!important
+    }
+    
+    .w3-padding-32 {
+        padding-top: 32px!important;
+        padding-bottom: 32px!important
+    }
+    
+    .w3-padding-48 {
+        padding-top: 48px!important;
+        padding-bottom: 48px!important
+    }
+    
+    .w3-padding-64 {
+        padding-top: 64px!important;
+        padding-bottom: 64px!important
+    }
+    
+    .w3-check,
+    .w3-radio {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top: 6px
+    }
+    
+    .w3-right {
+        float: right!important
+    }
 </style>
 
 <body>
 
     <!-- Cabecera -->
 
-    <div id="navbar" class="">
+    <div id="navbar">
         <div id="topbar" class="menutop">
-            <div style="width: 70%;margin:0 auto; background-color:#01a261;">
+            <div style="width: 65%;margin:0 auto; background-color:#01a261;">
                 <a href="#" class="topbarButton">Bienvenido</a>
                 <a href="#" onclick="document.getElementById('login').style.display='block'" class="topbarButton">Inicio sesión</a>
                 <a href="singin.html" class="topbarButton">Registro</a>
@@ -112,7 +221,7 @@
             <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
 
                 <div class="texto-centrado"><br>
-                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+                    <span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
                     <img src="imgs/design/logo.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
                 </div>
 
@@ -122,13 +231,13 @@
                         <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
                         <label><b>Password</b></label>
                         <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
-                        <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+                        <button class="w3-button w3-block fondo-verde w3-section" type="submit">Login</button>
                         <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
                     </div>
                 </form>
 
-                <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
-                    <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+                <div class="w3-container w3-border-top w3-padding-16 fondo-grisClaro">
+                    <button onclick="document.getElementById('login').style.display='none'" type="button" class="w3-button fondo-rojo">Cancel</button>
                     <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
                 </div>
 
@@ -194,11 +303,16 @@
 
         <!-- Contenido personalizado -->
 
-        <div style="width: 70%; margin: 0 auto; height: 205px;"></div>
+        <div style="width: 65%; margin: 0 auto;">
+            <div class="mitad">
+                <p class="w3-xxlarge">Bienvenido a la </p>
+                <p>tienda de ejemplo</p>
+            </div>
+        </div>
 
         <!-- Contenido personalizado -->
 
-        <div id="contenidoPersonalizado" style="display: flex; justify-content: space-between; width: 70%; margin: 40px auto; height: 270px;">
+        <div id="contenidoPersonalizado" style="display: flex; justify-content: space-between; width: 65%; margin: 40px auto; height: 270px;">
             <div style="background-color: #f0f0f0;">
                 <img src="imgs/design/dbold_373x273_transparente.png" alt="ddbold" width="373">
             </div>
@@ -441,7 +555,7 @@
 
         <!-- Artículos destacados -->
 
-        <div id="featuredProducts" style="width: 70%; margin: 0 auto;display: flex;">
+        <div id="featuredProducts" style="width: 65%; margin: 0 auto;display: flex;">
             <div class="cuadricula">
 
                 <div class="fichaCuadricula">

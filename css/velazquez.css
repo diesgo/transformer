@@ -175,7 +175,7 @@ pre {
 .jcarousel-wrapper {
     margin: 20px auto;
     position: relative;
-    width: 600px;
+    width: 1200px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -299,7 +299,8 @@ pre {
 .carrusel {
     display: flex;
     justify-content: space-between;
-    width: 2650px;
+    width: 2497px;
+    overflow: hidden;
     left: 0px;
     position: relative;
     z-index: 0;
@@ -307,7 +308,6 @@ pre {
 
 .carrusel>div {
     margin-right: 15px;
-    margin-left: 15px;
     text-align: center;
 }
 
@@ -322,7 +322,7 @@ pre {
 .sliderArticulos {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 65%;
     margin: 40px auto;
     height: 100%;
 }
@@ -775,8 +775,8 @@ MENÚ TOPBAR
 }
 
 .fondo-verde {
-    background-color: #2fa549;
-    color: white;
+    background-color: #2fa549 !important;
+    color: white !important;
 }
 
 .fondo-grisOscuro,
@@ -825,8 +825,8 @@ MENÚ TOPBAR
 
 .fondo-rojo,
 .bg-red {
-    background-color: #B22222;
-    color: white;
+    background-color: #B22222 !important;
+    color: white !important;
 }
 
 .fondo-negro,
