@@ -138,7 +138,7 @@
 @font-face {
 	font-family: 'catamaran';
 	src: url('catamaran/catamaran-v7-latin-regular.woff2') format('woff2');
-	src: url('catamaran/catamaran-v7-latin-reguar.woff') format('woff');
+	src: url('catamaran/catamaran-v7-latin-regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
