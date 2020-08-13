@@ -8,202 +8,10 @@
     <link rel="stylesheet" type="text/css" href="webfonts/font-fontello/css/fontello.css">
     <link rel="stylesheet" type="text/css" href="webfonts/font-fontello/css/animation.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/coin-slider-styles.css">
     <link rel="stylesheet" type="text/css" href="webfonts/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css/velazquez.css">
     <title>Transformer | Inicio</title>
 </head>
-<style>
-    .w3-modal {
-        z-index: 3;
-        display: none;
-        padding-top: 100px;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.4)
-    }
-    
-    .w3-modal-content {
-        margin: auto;
-        background-color: #fff;
-        position: relative;
-        padding: 0;
-        outline: 0;
-        width: 600px;
-    }
-    
-    .w3-card {
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
-    }
-    
-    .w3-card-4 {
-        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
-    }
-    
-    .w3-animate-zoom {
-        animation: animatezoom 0.6s
-    }
-    
-    @keyframes animatezoom {
-        from {
-            transform: scale(0)
-        }
-        to {
-            transform: scale(1)
-        }
-    }
-    
-    .w3-button {
-        border: none;
-        display: inline-block;
-        padding: 8px 16px;
-        vertical-align: middle;
-        overflow: hidden;
-        text-decoration: none;
-        color: inherit;
-        background-color: inherit;
-        text-align: center;
-        cursor: pointer;
-        white-space: nowrap
-    }
-    
-    .w3-button:hover {
-        color: #000!important;
-        background-color: #ccc!important
-    }
-    
-    .w3-transparent {
-        background-color: transparent!important
-    }
-    
-    .w3-display-topright {
-        position: absolute;
-        right: 0;
-        top: 0
-    }
-    
-    .w3-circle {
-        border-radius: 50%
-    }
-    
-    .w3-margin-top {
-        margin-top: 16px!important
-    }
-    
-    .w3-container {
-        padding: 0.01em 16px
-    }
-    
-    .w3-tiny {
-        font-size: 10px!important
-    }
-    
-    .w3-small {
-        font-size: 12px!important
-    }
-    
-    .w3-medium {
-        font-size: 15px!important
-    }
-    
-    .w3-large {
-        font-size: 18px!important
-    }
-    
-    .w3-xlarge {
-        font-size: 24px!important
-    }
-    
-    .w3-xxlarge {
-        font-size: 36px!important
-    }
-    
-    .w3-xxxlarge {
-        font-size: 48px!important
-    }
-    
-    .w3-jumbo {
-        font-size: 64px!important
-    }
-    
-    .w3-section,
-    .w3-code {
-        margin-top: 16px!important;
-        margin-bottom: 16px!important
-    }
-    
-    .w3-input {
-        padding: 8px;
-        display: block;
-        border: none;
-        border-bottom: 1px solid #ccc;
-        width: 100%
-    }
-    
-    .w3-border {
-        border: 1px solid #ccc!important
-    }
-    
-    .w3-block {
-        display: block;
-        width: 100%
-    }
-    
-    .w3-padding-small {
-        padding: 4px 8px!important
-    }
-    
-    .w3-padding {
-        padding: 8px 16px!important
-    }
-    
-    .w3-padding-large {
-        padding: 12px 24px!important
-    }
-    
-    .w3-padding-16 {
-        padding-top: 16px!important;
-        padding-bottom: 16px!important
-    }
-    
-    .w3-padding-24 {
-        padding-top: 24px!important;
-        padding-bottom: 24px!important
-    }
-    
-    .w3-padding-32 {
-        padding-top: 32px!important;
-        padding-bottom: 32px!important
-    }
-    
-    .w3-padding-48 {
-        padding-top: 48px!important;
-        padding-bottom: 48px!important
-    }
-    
-    .w3-padding-64 {
-        padding-top: 64px!important;
-        padding-bottom: 64px!important
-    }
-    
-    .w3-check,
-    .w3-radio {
-        width: 24px;
-        height: 24px;
-        position: relative;
-        top: 6px
-    }
-    
-    .w3-right {
-        float: right!important
-    }
-</style>
-
 <body>
 
     <!-- Cabecera -->
@@ -213,16 +21,18 @@
             <div style="width: 65%;margin:0 auto; background-color:#01a261;">
                 <a href="#" class="topbarButton">Bienvenido</a>
                 <a href="#" onclick="document.getElementById('login').style.display='block'" class="topbarButton">Inicio sesión</a>
-                <a href="singin.html" class="topbarButton">Registro</a>
+                <a href="registro.html" class="topbarButton">Registro</a>
             </div>
         </div>
+
+        <!-- MODAL INICIO SESIÓN -->
 
         <div id="login" class="w3-modal">
             <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
 
                 <div class="texto-centrado"><br>
                     <span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
-                    <img src="imgs/design/logo.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+                    <img src="imgs/design/velazquez-373x273_oscuro_transparente.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
                 </div>
 
                 <form class="contenedorFooter" action="/action_page.php">
@@ -231,23 +41,26 @@
                         <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
                         <label><b>Password</b></label>
                         <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
-                        <button class="w3-button w3-block fondo-verde w3-section" type="submit">Login</button>
-                        <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+                        <button class="w3-button fondo-verde w3-section" type="submit">Login</button>
+                        <label class="checkbox">Remember me
+                            <input type="checkbox">
+                            <span class="check"></span>
+                        </label>
                     </div>
                 </form>
 
                 <div class="w3-container w3-border-top w3-padding-16 fondo-grisClaro">
                     <button onclick="document.getElementById('login').style.display='none'" type="button" class="w3-button fondo-rojo">Cancel</button>
-                    <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+                    <span class="w3-right w3-padding w3-hide-small"><a href="#">Forgot password?</a></span>
                 </div>
-
             </div>
         </div>
 
+        <!-- BARRA DE BÚSQUEDA -->
 
         <div id="searchBar" class="topnav">
             <div class="contenedorContenido">
-                <div class="mitad" style="padding: 15px 12px;">
+                <div class="mitad" style="padding: 10px 12px;">
                     <img id="logo" src="imgs/design/transformer.png" class="imagen" alt="logo_transformer">
                 </div>
                 <div class="search-container">
@@ -258,6 +71,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- BARRA DE MENÚ -->
 
         <div class="menu" id="myMenu">
             <a href="index.html" class="fto-home"></a>
@@ -276,24 +91,28 @@
         </div>
     </div>
 
-    <!-- Slider -->
+    <!-- CUERPO DEL DOCUMENTO -->
+
+    <!-- SLIDER -->
 
     <div class="contenedor fondo-grisClaro">
+        <div class="contenedorCentradoDerecha">
+            <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev fto-left-open-big fondo-negro"></a>
+        </div>
         <div class="jcarousel-wrapper">
             <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
                 <ul>
-                    <li><img src="imgs/slider/0.jpg" class="imagen" alt=""></li>
-                    <li><img src="imgs/slider/1.jpg" class="imagen" alt=""></li>
-                    <li><img src="imgs/slider/2.jpg" class="imagen" alt=""></li>
-                    <li><img src="imgs/slider/3.jpg" class="imagen" alt=""></li>
-                    <li><img src="imgs/slider/4.jpg" class="imagen" alt=""></li>
-                    <li><img src="imgs/slider/5.jpg" class="imagen" alt=""></li>
+                    <li><img src="imgs/slider/0-0.jpg" class="imagen" height="auto"></li>
+                    <li><img src="imgs/slider/1-0.jpg" class="imagen" height="auto"></li>
+                    <li><img src="imgs/slider/2-0.jpg" class="imagen" height="auto"></li>
+                    <li><img src="imgs/slider/3-0.jpg" class="imagen" height="auto"></li>
+                    <li><img src="imgs/slider/4-0.jpg" class="imagen" height="auto"></li>
+                    <li><img src="imgs/slider/5-0.jpg" class="imagen" height="auto"></li>
                 </ul>
             </div>
-            <div class="contenedor centrado">
-                <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
-                <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
-            </div>
+        </div>
+        <div class="contenedorCentradoIzquierda">
+            <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next fto-right-open-big fondo-negro"></a>
         </div>
     </div>
 
@@ -303,16 +122,23 @@
 
         <!-- Contenido personalizado -->
 
-        <div style="width: 65%; margin: 0 auto;">
-            <div class="mitad">
-                <p class="w3-xxlarge">Bienvenido a la </p>
-                <p>tienda de ejemplo</p>
+        <div class="centrado" style="width: 65%; margin: 40px auto;display: flex; justify-content: space-between;">
+            <div class="mitad acolchado" style="text-align: right;">
+                <p class="w3-xxxlarge font-oswald" style="font-weight: 700;">Bienvenido a la </p>
+                <p class="w3-xxxlarge font-oswald" style="font-weight: 700;"><span class="verde">tienda</span> de ejemplo</p>
+            </div>
+            <div class="mitad acolchado">
+                <div>
+                    <p>Transformer es una moderna plantilla para e-comerce basada en el tema ST-THEMES.</p>
+                    <p>Adaptable a cualquier tipo de negocio.</p>
+                </div>
+                <a href="#" class="w3-button fondo-grisOscuro w3-round">Contacto</a>
             </div>
         </div>
 
         <!-- Contenido personalizado -->
 
-        <div id="contenidoPersonalizado" style="display: flex; justify-content: space-between; width: 65%; margin: 40px auto; height: 270px;">
+        <div id="contenidoPersonalizado" style="width: 65%; margin: 40px auto;display: flex; justify-content: space-between;">
             <div style="background-color: #f0f0f0;">
                 <img src="imgs/design/dbold_373x273_transparente.png" alt="ddbold" width="373">
             </div>
