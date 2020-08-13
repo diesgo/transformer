@@ -7,87 +7,13 @@
 
 /* NORMALIZAR PÁGINA */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,
+em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,
+i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,
+section,summary,time,mark,audio,video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -96,17 +22,8 @@ video {
     vertical-align: baseline;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article,aside,details,figcaption,figure,footer,header,
+hgroup,menu,nav,section {
     display: block;
 }
 
@@ -173,7 +90,7 @@ pre {
 }
 
 .jcarousel-wrapper {
-    margin: 20px auto;
+    margin: 0 auto;
     position: relative;
     width: 1200px;
     -webkit-border-radius: 5px;
@@ -217,30 +134,21 @@ pre {
 
 .jcarousel-control-prev,
 .jcarousel-control-next {
-    position: absolute;
-    top: 200px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    background: #4E443C;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 0 0 1px #000;
-    font: 24px/27px Arial, sans-serif;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    -webkit-box-shadow: 0 0 2px #999;
-    -moz-box-shadow: 0 0 2px #999;
-    box-shadow: 0 0 2px #999;
+   position: relative;
+   width: 100px;
+   height: 100px;
+   text-decoration: none;
+   font-size: 3.5rem;
+   padding: 4px;
 }
-
-.jcarousel-control-prev {
-    left: -50px;
+.jcarousel-control-prev:hover,
+.jcarousel-control-next:hover {
+    background-color: #696969;
 }
-
-.jcarousel-control-next {
-    right: -50px;
+.jcarousel-control-prev:active,
+.jcarousel-control-next:active {
+    background-color: #696969;
+    color: #999;
 }
 
 .jcarousel-control-prev:hover span,
@@ -391,7 +299,7 @@ MENÚ TOPBAR
 .menutop {
     width: 100%;
     background-color: #01a261;
-    padding: 1px;
+    padding: 10px 0;
     text-align: right;
     overflow: hidden;
 }
@@ -445,7 +353,7 @@ MENÚ TOPBAR
 
 .topnav input[type=text] {
     padding: 6px;
-    margin-top: 8px;
+    /* margin-top: 8px; */
     font-size: 17px;
 }
 
@@ -618,6 +526,26 @@ MENÚ TOPBAR
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    align-self: center;
+    content: "";
+    clear: both
+}
+
+.contenedorCentradoIzquierda {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-self: center;
+    content: "";
+    clear: both
+}
+.contenedorCentradoDerecha {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:right;
+    align-self: center;
     content: "";
     clear: both
 }
@@ -643,6 +571,13 @@ MENÚ TOPBAR
 
 .espaciado {
     padding: 40px 0px;
+}
+
+.centrado,
+.center {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .cuarto {
@@ -782,8 +717,8 @@ MENÚ TOPBAR
 .fondo-grisOscuro,
 .bg-darkGrey,
 .bg-darkGray {
-    background-color: #696969;
-    color: white;
+    background-color: #696969 !important;
+    color: white !important;
 }
 
 .fondo-grisClaro,
@@ -911,7 +846,6 @@ MENÚ TOPBAR
 
 .imagen {
     width: 100%;
-    height: auto;
 }
 
 .texto-centrado {
