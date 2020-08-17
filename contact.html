@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta lang="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="webfonts/font-fontello/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="webfonts/font-fontello/css/animation.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="webfonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/velazquez_bak.css">
+    <link rel="stylesheet" type="text/css" href="css/velazquez.css">
+    <title>Transformer | Inicio</title>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    
+    <div id="navbar" class="animated">
+        <div id="topbar" class="menutop">
+            <div class=" container contenido derecha fondo-verde">
+                <a href="#">Bienvenido</a>
+                <a href="#" onclick="document.getElementById('login').style.display='block'">Inicio sesión</a>
+                <a href="registro.html">Registro</a>
+            </div>
+        </div>
+    
+        <!-- MODAL INICIO SESIÓN -->
+    
+        <div id="login" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+    
+                <div class="texto-centrado"><br>
+                    <span onclick="document.getElementById('login').style.display='none'"
+                        class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+                    <img src="imgs/design/velazquez-373x273_oscuro_transparente.png" alt="Avatar" style="width:30%"
+                        class="w3-circle w3-margin-top">
+                </div>
+    
+                <form class="contenedor contenido centrado-h" action="/action_page.php">
+                    <div class="seccion">
+                        <label><b>Nombre de usuario</b></label>
+                        <input class="w3-input marco w3-margin-bottom w3-round margen" type="text"
+                            placeholder="Nombre de  Usuario" name="usrname" required>
+                        <label><b>Contraseña</b></label>
+                        <input class="w3-input marco w3-round margen" type="text" placeholder="Contraseña" name="psw"
+                            required>
+                        <button class="w3-button fondo-verde seccion" type="submit">Login</button>
+                        <label class="checkbox margen">Remember me
+                            <input type="checkbox">
+                            <span class="check"></span>
+                        </label>
+                    </div>
+                </form>
+    
+                <div class="w3-container w3-border-top w3-padding-16 fondo-grisClaro">
+                    <button onclick="document.getElementById('login').style.display='none'" type="button"
+                        class="w3-button fondo-rojo">Cancel</button>
+                    <span class="w3-right w3-padding w3-hide-small"><a href="#">Forgot password?</a></span>
+                </div>
+            </div>
+        </div>
+    
+        <!-- BARRA DE BÚSQUEDA -->
+    
+        <div id="searchBar" class="topnav">
+            <div class="contenedor contenido justificado">
+                <div class="mitad f-m" style="padding: 10px 12px;">
+                    <img id="logo" src="imgs/design/transformer.png" class="imagen" alt="logo_transformer">
+                </div>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Buscar..." name="search">
+                        <button type="submit"><i class="fto-search-1"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <!-- BARRA DE MENÚ -->
+    
+        <div class="contenedor">
+            <div class="menu" id="myMenu">
+                <a href="index.html" class="fto-home"></a>
+                <a href="#news">News</a>
+                <a href="contact.html">Contact</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown <i class="fto-down-dir-2"></i></button>
+                    <div class="dropdown-content">
+                        <a href="documentacion.html">Documentación</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon fto-menu" onclick="menu()"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO DEL DOCUMENTO -->
+
+    <div class="contenedor contenido">
+        <div class="mitad centrado-h">
+            <form action="contactodef.php" method="post">
+                <div class="elem-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@email.com" required>
+                </div>
+                <div class="elem-group">
+                    <label for="departamento">Con que departamento quieres hablar?</label>
+                    <select id="departamento" name="departamento" required>
+                        <option value="">Selecciona un departamento</option>
+                        <option value="Facturación">Facturación</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="Servicio técnico">Servicio técnico</option>
+                    </select>
+                </div>
+                <div class="elem-group">
+                    <label for="title">Motivo del contacto</label>
+                    <input type="text" id="title" name="title" required placeholder="No puedo recuperar mi password"
+                        pattern=[A-Za-z0-9\s]{8,60}>
+                </div>
+                <div class="elem-group">
+                    <label for="mensaje">Explícanos que necesitas</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe lo que quieras." required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="mitad">
+
+        </div>
+
+    </div>
+
+  
+
+
+
+    <!-- Antepié de página-->
+    
+    <div class="contenedor contenido espaciado">
+        <div class="cuarto contenedor contenido columna">
+            <h4>Información</h4>
+            <a href="html/aviso-legal.html" class="elemento-menu"><span class="fto-angle-double-right">Entrega</span></a>
+            <a href="html/politica-cookies.html" class="elemento-menu"><span class="fto-angle-double-right">Aviso
+                    legal</span></a>
+            <a href="html/politica-privacidad.html" class="elemento-menu"><span class="fto-angle-double-right">Pago
+                    seguro</span></a>
+        </div>
+        <div class="cuarto contenedor contenido columna">
+            <h4>Catálogo</h4>
+            <a href="html/emplazamiento.html" class="elemento-menu"><span class="fto-angle-double-right">Promociones
+                    especiales</span></a>
+            <a href="html/contacto.html" class="elemento-menu"><span class="fto-angle-double-right">Nuevos
+                    productos</span></a>
+            <a href="html/sobre_nosotros.html" class="elemento-menu" target="_blank"><span
+                    class="fto-angle-double-right">Más vendidos</span></a>
+        </div>
+        <div class="cuarto contenedor contenido columna">
+            <h4>Newsletter</h4>
+            <a href="html/aviso-legal.html" class="elemento-menu"><span class="fto-angle-double-right">Aviso
+                    legal</span></a>
+            <a href="html/politica-cookies.html" class="elemento-menu"><span class="fto-angle-double-right">Política de
+                    cookies</span></a>
+            <a href="html/politica-privacidad.html" class="elemento-menu"><span class="fto-angle-double-right">Política de
+                    privacidad</span></a>
+        </div>
+        <div class="cuarto contenedor contenido columna">
+            <h4>Social</h4>
+            <a href="html/aviso-legal.html" class="elemento-menu"><span class="fto-angle-double-right">Aviso
+                    legal</span></a>
+            <a href="html/politica-cookies.html" class="elemento-menu"><span class="fto-angle-double-right">Política de
+                    cookies</span></a>
+            <a href="html/politica-privacidad.html" class="elemento-menu"><span class="fto-angle-double-right">Política de
+                    privacidad</span></a>
+        </div>
+    </div>
+    
+    <!-- Pie de página -->
+    
+    <footer class="contenedor centrado-h full pie-de-pagina">
+        <div class="cuarto texto-centrado">
+            <p>Design by <span class="texto-grande font-densia-sans-regular">dbold</span></p>
+        </div>
+        <div class="cuarto texto-centrado">
+            <span class="fto-cc-visa"></span> <span class="fto-cc-mastercard"></span> <span class="fto-cc-discover"></span>
+            <span class="fto-cc-amex"></span> <span class="fto-cc-paypal"></span> <span class="fto-cc-stripe"></span>
+        </div>
+        <div class="cuarto texto-centrado">
+            <p>Powered by <a class="texto-grande font-restu-bundah-regular" href="#" target="_blank">Velázquez</a></p>
+        </div>
+        <div class="cuarto texto-centrado">
+            <p>Transformer template <span class="copy-left">©</span> copyleft 2020</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/carousel-scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+    
+    </html>
