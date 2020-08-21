@@ -1,10 +1,6 @@
-/*=======*/
-
-
-/*Amarath*/
-
-
-/*=======*/
+/*=======
+AMARATH
+=======*/
 
 @font-face {
     font-family: 'amaranth';
@@ -17,8 +13,9 @@
     font-family: 'amaranth', sans-serif;
 }
 
-
-/*ARIMA-MADURAI*/
+/*=============
+ARIMA-MADURAI
+=============*/
 
 @font-face {
     font-family: 'arima-madurai';
@@ -80,8 +77,9 @@
     font-family: 'arima-madurai', sans-serif;
 }
 
-
-/*CATAMARAN*/
+/*=========
+CATAMARAN
+=========*/
 
 @font-face {
     font-family: 'catamaran';
@@ -159,14 +157,9 @@
     font-family: 'catamaran', sans-serif;
 }
 
-
-/*===========*/
-
-
-/*De Valencia*/
-
-
-/*===========*/
+/*=========
+DE VALENCIA
+=========*/
 
 @font-face {
     font-family: 'de-valencia';
@@ -179,14 +172,9 @@
     font-family: 'de-valencia', sans-serif;
 }
 
-
-/*======*/
-
-
-/*Densia*/
-
-
-/*======*/
+/*=====
+DENSIA
+=====*/
 
 @font-face {
     font-family: 'densia-sans';
@@ -199,14 +187,9 @@
     font-family: 'densia-sans', sans-serif;
 }
 
-
-/*======*/
-
-
-/*Emblem*/
-
-
-/*======*/
+/*======
+EMBLEM
+======*/
 
 @font-face {
     font-family: 'emblem';
@@ -219,14 +202,9 @@
     font-family: 'emblem', sans-serif;
 }
 
-
-/*================*/
-
-
-/*Haettenschweiler*/
-
-
-/*================*/
+/*===============
+HAETTENSHWEILER
+===============*/
 
 @font-face {
     font-family: 'haetten-schweiler';
@@ -239,8 +217,9 @@
     font-family: 'haetten-schweiler', sans-serif;
 }
 
-
-/*LEMONADA*/
+/*========
+LEMONADA
+========*/
 
 @font-face {
     font-family: 'lemonada';
@@ -286,8 +265,9 @@
     font-family: lemonada, sans-serif;
 }
 
-
-/* LOBSTER */
+/*======
+ LOBSTER 
+ ======*/
 
 @font-face {
     font-family: 'lobster';
@@ -303,8 +283,9 @@
     font-style: normal;
 }
 
-
-/*MONOTON*/
+/*=======
+MONOTON
+========*/
 
 @font-face {
     font-family: 'monoton';
@@ -320,8 +301,9 @@
     font-style: normal;
 }
 
-
-/*MONTSERRAT*/
+/*==========
+MONTSERRAT
+==========*/
 
 @font-face {
     font-family: 'montserrat';
@@ -471,8 +453,9 @@
     font-family: 'montserrat', sans-serif;
 }
 
-
-/* NUNITO */
+/*=====
+ NUNITO
+ =====*/
 
 @font-face {
     font-family: 'nunito';
@@ -587,17 +570,12 @@
 }
 
 .font-nunito {
-    font-family: nunito, sans-serif;
+    font-family: 'nunito', sans-serif;
 }
 
-
-/*======*/
-
-
-/*Optima*/
-
-
-/*======*/
+/*=====
+OPTIMA
+=====*/
 
 @font-face {
     font-family: 'optima';
@@ -631,8 +609,9 @@
     font-family: 'optima', sans-serif;
 }
 
-
-/* OSWALD */
+/*======
+ OSWALD
+ ======*/
 
 @font-face {
     font-family: 'oswald';
@@ -686,14 +665,24 @@
     font-family: 'oswald', sans-serif;
 }
 
+/* ===============
+PERMANENT MAKER
+=============== */
 
-/*=====*/
+@font-face {
+    font-family: 'permanent-maker';
+    src: url('permanent-marker/permanent-marker-v9-latin-regular.woff2') format('woff2'), url('permanent-marker/permanent-marker-v9-latin-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+.font-permanent-maker {
+    font-family: 'permanent-maker', sans-serif;
+}
 
-/*Restu*/
-
-
-/*=====*/
+/*====
+RESTU
+====*/
 
 @font-face {
     font-family: 'restu';
@@ -706,8 +695,9 @@
     font-family: 'restu', sans-serif;
 }
 
-
-/* ROBOTO */
+/*======
+ROBOTO
+======*/
 
 @font-face {
     font-family: 'roboto';
@@ -806,17 +796,12 @@
 }
 
 .font-roboto {
-    font-family: roboto, sans-serif;
+    font-family: 'roboto', sans-serif;
 }
 
-
-/*=============*/
-
-
-/*Samble-tracie*/
-
-
-/*=============*/
+/*===========
+SAMBLE TRACIE
+===========*/
 
 @font-face {
     font-family: 'samble-tracie';
@@ -836,18 +821,13 @@
     font-family: 'samble-tracie', sans-serif;
 }
 
-
-/*====================*/
-
-
-/*Samble-tracie-swasch*/
-
-
-/*====================*/
+/*================
+Samble-tracie-swasch
+================*/
 
 @font-face {
     font-family: 'samble-tracie-swash';
-    src: url('samble-tracie/Samble Tracie_Swash.woff2') format('woff2'), url('samble-tracie/Samble Tracie_Swash.woff') format('woff'), font-weight: normal;
+    src: url('samble-tracie/Samble Tracie_Swash.woff2') format('woff2'), url('samble-tracie/Samble Tracie_Swash.woff') format('woff'); font-weight: normal;
     font-style: normal;
 }
 
@@ -862,14 +842,9 @@
     font-family: 'samble-tracie-swash', sans-serif;
 }
 
-
-/*===========*/
-
-
-/*Fat Wandals*/
-
-
-/*===========*/
+/*===========
+FAT WANDALS
+===========*/
 
 @font-face {
     font-family: 'fat-wandals';
@@ -882,14 +857,9 @@
     font-family: 'fat-wandals', sans-serif;
 }
 
-
-/*======*/
-
-
-/*Spoken*/
-
-
-/*======*/
+/*=====
+SPOKEN
+=====*/
 
 @font-face {
     font-family: 'spoken';
@@ -916,14 +886,9 @@
     font-family: 'spoken', sans-serif;
 }
 
-
-/*===========*/
-
-
-/*Transformer*/
-
-
-/*===========*/
+/*===========
+TRANSFORMER
+============*/
 
 @font-face {
     font-family: 'robofan-symbols';
@@ -945,4 +910,19 @@
 
 .font-transformers {
     font-family: 'transformers', sans-serif;
+}
+
+/* =====
+VARELA
+===== */
+
+@font-face {
+    font-family: 'varela';
+    src: url('varela/varela-round-v12-latin-regular.woff2') format('woff2'), url('varela/varela-round-v12-latin-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-varela {
+    font-family: 'varela', sans-serif;
 }
