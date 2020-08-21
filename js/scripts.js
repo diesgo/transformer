@@ -16,24 +16,41 @@ muestra = misFotos.length;
 // Menú
 
 function menu() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+    var x = document.getElementById("myMenu");
+    if (x.className === "w3-bar topnav") {
         x.className += " responsive";
     } else {
-        x.className = "topnav";
+        x.className = "w3-bar topnav";
     }
+}
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }
 
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
     block=document.getElementById("navbar");
-    if (document.body.scrollTop > 170 || document.documentElement.scrollTop > 170) {
+    if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
         block.style.top = "0px";
         block.style.position="fixed";
-        block.classList.add("slideInDown");
+        block.classList.add("w3-animate-top");
     } else {
         block.style.top = "";
         block.style.position="relative";
-        block.classList.remove("slideInDown");
+        block.classList.remove("w3-animate-top");
     }
-} 
+}
+
+function dropdownNavbar() {
+    var x = document.getElementById("drop");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}

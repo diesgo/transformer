@@ -6,73 +6,78 @@
     <meta lang="es">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="webfonts/font-fontello/css/fontello.css">
-    <link rel="stylesheet" type="text/css" href="webfonts/font-fontello/css/animation.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="webfonts/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="css/velazquez.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Transformer | Inicio</title>
 </head>
-
 <body>
 
     <!-- Cabecera -->
 
-    <div id="navbar">
-        <div id="topbar" class="menutop">
-            <div style="width: 65%;margin:0 auto; background-color:#01a261;">
-                <a href="#" class="topbarButton">Bienvenido</a>
-                <a href="#" onclick="document.getElementById('login').style.display='block'" class="topbarButton">Inicio
-                    sesión</a>
-                <a href="registro.html" class="topbarButton">Registro</a>
+    <div id="navbar" class="w3-white">
+        <div class="menutop w3-green">
+            <div class="w3-container w3-content w3-right-align">
+                <a class="w3-button w3-hover-opacity" href="#">Bienvenido</a>
+                <a class="w3-button w3-hover-opacity" href="#"
+                    onclick="document.getElementById('login').style.display='block'">Inicio sesión</a>
+                <a class="w3-button w3-hover-opacity" href="registro.html">Registro</a>
             </div>
         </div>
 
         <!-- MODAL INICIO SESIÓN -->
 
         <div id="login" class="w3-modal">
-            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
 
-                <div class="texto-centrado"><br>
+                <div class="w3-center"><br>
                     <span onclick="document.getElementById('login').style.display='none'"
                         class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
                     <img src="imgs/design/velazquez-373x273_oscuro_transparente.png" alt="Avatar" style="width:30%"
                         class="w3-circle w3-margin-top">
                 </div>
 
-                <form class="contenedorFooter" action="/action_page.php" name="login">
+                <form class="w3-container" action="/action_page.php">
                     <div class="w3-section">
-                        <label><b>Username</b></label>
-                        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username"
-                            name="usrname" required>
-                        <label><b>Password</b></label>
-                        <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
-                        <button class="w3-button fondo-verde w3-section" type="submit">Login</button>
-                        <label class="checkbox">Remember me
-                            <input type="checkbox">
-                            <span class="check"></span>
-                        </label>
+                        <label><b>Nombre de usuario</b></label>
+                        <input class="w3-input w3-border w3-margin-bottom w3-round" type="text"
+                            placeholder="Nombre de  Usuario" name="usrname" required>
+                        <label><b>Contraseña</b></label>
+                        <input class="w3-input w3-border w3-round" type="text" placeholder="Contraseña" name="psw"
+                            required>
+                        <div class="w3-row">
+                            <div class="w3-half">
+                                <button class="w3-button w3-green w3-section" type="submit">Acceder</button>
+                            </div>
+                            <div class="w3-half w3-padding-24">
+                                <label class="checkbox w3-right">Reruérdame
+                                    <input type="checkbox">
+                                    <span class="check"></span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </form>
 
-                <div class="w3-container w3-border-top w3-padding-16 fondo-grisClaro">
+                <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
                     <button onclick="document.getElementById('login').style.display='none'" type="button"
-                        class="w3-button fondo-rojo">Cancel</button>
-                    <span class="w3-right w3-padding w3-hide-small"><a href="#">Forgot password?</a></span>
+                        class="w3-button w3-red">Cancelar</button>
+                    <span class="w3-right w3-padding w3-hide-small"><a href="#">Recuperar contraseña</a></span>
                 </div>
             </div>
         </div>
 
         <!-- BARRA DE BÚSQUEDA -->
 
-        <div id="searchBar" class="topnav">
-            <div class="contenedorContenido">
-                <div class="mitad" style="padding: 10px 12px;">
-                    <img id="logo" src="imgs/design/transformer.png" class="imagen" alt="logo_transformer">
+        <div id="searchBar" class="searchBar">
+            <div class="w3-row-padding w3-content">
+                <div id="logo" class="w3-half w3-padding">
+                    <img src="imgs/design/transformer.png" class="w3-image" alt="logo_transformer" width="60%">
                 </div>
-                <div class="search-container">
+                <div class="w3-half w3-padding w3-right-align search-container">
                     <form action="/action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fto-search-1"></i></button>
+                        <input type="text" placeholder="Buscar..." name="search">
+                        <button type="submit" class="w3-green"><i class="fto-search-1"></i></button>
                     </form>
                 </div>
             </div>
@@ -80,31 +85,57 @@
 
         <!-- BARRA DE MENÚ -->
 
-        <div class="menu" id="myMenu">
-            <a href="index.html" class="fto-home"></a>
+        <div class="w3-row-padding w3-center">
+            <div class="w3-bar topnav" id="myMenu">
+                <a href="index.html" class="fto-home"></a>
+                <a href="#news">News</a>
+                <a href="contact.html">Contact</a>
+                <div class="w3-dropdown-click">
+                    <label for="dropdown-btn" class="dropbtn">
+                        <input type="button" onclick="dropdownNavbar()" id="dropdown-btn" class="w3-hide">Dropdown <i
+                            class="fto-down-dir-2"></i>
+                    </label>
+                    <div id="drop" class="w3-dropdown-content w3-bar-block w3-border">
+                        <a href="documentacion.html" class="w3-bar-item w3-button">Documentación</a>
+                        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                    </div>
+                </div>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon fto-menu" onclick="openNav()"></a>
+            </div>
+        </div>
+
+        <!-- MENU DISPOSITIVOS PEQUEÑOS -->
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <div class="dropdown">
-                <button class="dropbtn">Dropdown <i class="fto-down-dir-2"></i></button>
-                <div class="dropdown-content">
-                    <a href="documentacion.html">Documentación</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+            <a href="contact.html">Contact</a>
+            <div class="w3-dropdown-click">
+                <label for="dropdown-btn-small" class="dropbtn-small">
+                    <input type="button" onclick="myFunction()" id="dropdown-btn-small" class="w3-hide">Dropdown <i
+                        class="fto-down-dir-2"></i>
+                </label>
+                <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+                    <a href="documentacion.html" class="w3-bar-item w3-button">Documentación</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 3</a>
                 </div>
             </div>
             <a href="#about">About</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon fto-menu" onclick="menu()"></a>
         </div>
+
     </div>
 
     <!-- CUERPO DEL DOCUMENTO -->
 
-    <div class="contenedorFooter" style="flex-direction: column">
+    <div class="w3-content">
         <h1>formulario de registro</h1>
-        <p>¿Ya tienes cuenta? <span><a href="#" onclick="document.getElementById('login').style.display='block'" class="topbarButton verde">Inicia sesión</a> en su lugar</span></p>
+        <p>¿Ya estás registrado? <span><a href="#" onclick="document.getElementById('login').style.display='block'" class="w3-text-green">Inicia sesión</a></span></p>
     </div>
-    <div class="contenedorContenido w3-padding-32">
-        <form action="#" name="singin" class="contenedorFooter">
+    <div class="w3-content w3-padding-32">
+        <form action="#" name="singin">
             <section>
                 <div style="width: 100%;" class="w3-padding"><p>Tratamiento</p></div>
                 <div style="display: inline-flex;">
@@ -162,7 +193,7 @@
                     </div>
                 </div>
                 <div class="w3-row w3-section">
-                    <input type="submit" value="enviar" class="w3-button fondo-verde" style="width: 100%;">
+                    <input type="submit" value="enviar" class="w3-button w3-green w3-hover w3-round">
                 </div>
             </section>
         </form>
@@ -171,76 +202,71 @@
 
 
     <!-- Antepié de página-->
-
-    <div class="contenedorContenido espaciado">
-        <div class="cuarto contenedorFooter">
-            <h4>Información</h4>
-            <ul class="elemento-menu">
-                <li><a href="html/aviso-legal.html" class="elemento-menu"><span
-                            class="fto-angle-double-right">Entrega</span></a></li>
-                <li><a href="html/politica-cookies.html" class="elemento-menu"><span
-                            class="fto-angle-double-right">Aviso legal</span></a></li>
-                <li><a href="html/politica-privacidad.html" class="elemento-menu"><span
-                            class="fto-angle-double-right">Pago seguro</span></a></li>
-            </ul>
-        </div>
-        <div class="cuarto contenedorFooter">
-            <h4>Catálogo</h4>
-            <ul class="elemento-menu">
-                <li><a href="html/emplazamiento.html" class="elemento-menu"><span
-                            class="fto-angle-double-right">Promociones especiales</span></a></li>
-                <li><a href="html/contacto.html" class="elemento-menu"><span class="fto-angle-double-right">Nuevos
-                            productos</span></a></li>
-                <li><a href="html/sobre_nosotros.html" class="elemento-menu" target="_blank"><span
-                            class="fto-angle-double-right">Más vendidos</span></a></li>
-            </ul>
-        </div>
-        <div class="cuarto contenedorFooter">
-            <h4>Newsletter</h4>
-            <ul class="elemento-menu">
-                <li><a href="html/aviso-legal.html" class="elemento-menu"><span class="fto-angle-double-right">Aviso
-                            legal</span></a></li>
-                <li><a href="html/politica-cookies.html" class="elemento-menu"><span
-                            class="fto-angle-double-right">Política de cookies</span></a></li>
-                <li><a href="html/politica-privacidad.html" class="elemento-menu"><span
-                            class="fto-angle-double-right">Política de privacidad</span></a></li>
-            </ul>
-        </div>
-        <div class="cuarto contenedorFooter">
-            <h4>Social</h4>
-            <ul class="elemento-menu">
-                <li><a href="html/aviso-legal.html" class="elemento-menu"><span class="fto-angle-double-right">Aviso
-                            legal</span></a></li>
-                <li><a href="html/politica-cookies.html" class="elemento-menu"><span
-                            class="fto-angle-double-right">Política de cookies</span></a></li>
-                <li><a href="html/politica-privacidad.html" class="elemento-menu"><span
-                            class="fto-angle-double-right">Política de privacidad</span></a></li>
-            </ul>
+    
+    <div class="w3-row-padding w3-padding-48">
+        <div class="w3-content">
+            <div class="w3-quarter w3-bar-block">
+                <h4>Información</h4>
+                <a href="html/aviso-legal.html" class="w3-bar-item"><span class="fto-angle-double-right">Entrega</span></a>
+                <a href="html/politica-cookies.html" class="w3-bar-item"><span class="fto-angle-double-right">Aviso
+                        legal</span></a>
+                <a href="html/politica-privacidad.html" class="w3-bar-item"><span class="fto-angle-double-right">Pago
+                        seguro</span></a>
+            </div>
+            <div class="w3-quarter w3-bar-block">
+                <h4>Catálogo</h4>
+                <a href="html/emplazamiento.html" class="w3-bar-item"><span class="fto-angle-double-right">Promociones
+                        especiales</span></a>
+                <a href="html/contacto.html" class="w3-bar-item"><span class="fto-angle-double-right">Nuevos
+                        productos</span></a>
+                <a href="html/sobre_nosotros.html" class="w3-bar-item" target="_blank"><span
+                        class="fto-angle-double-right">Más vendidos</span></a>
+            </div>
+            <div class="w3-quarter w3-bar-block">
+                <h4>Newsletter</h4>
+                <a href="html/aviso-legal.html" class="w3-bar-item"><span class="fto-angle-double-right">Aviso
+                        legal</span></a>
+                <a href="html/politica-cookies.html" class="w3-bar-item"><span class="fto-angle-double-right">Política de
+                        cookies</span></a>
+                <a href="html/politica-privacidad.html" class="w3-bar-item"><span class="fto-angle-double-right">Política de
+                        privacidad</span></a>
+            </div>
+            <div class="w3-quarter w3-bar-block">
+                <h4>Social</h4>
+                <a href="html/aviso-legal.html" class="w3-bar-item"><span class="fto-angle-double-right">Aviso
+                        legal</span></a>
+                <a href="html/politica-cookies.html" class="w3-bar-item"><span class="fto-angle-double-right">Política de
+                        cookies</span></a>
+                <a href="html/politica-privacidad.html" class="w3-bar-item"><span class="fto-angle-double-right">Política de
+                        privacidad</span></a>
+            </div>
         </div>
     </div>
-
+    
     <!-- Pie de página -->
-
-    <footer class="contenedorCentrado pie-de-pagina" style="min-height:75px;">
-        <div class="cuarto texto-centrado">
-            <p>Design by <span class="texto-grande font-densia-sans-regular">dbold</span></p>
+    
+    <footer class="w3-container w3-row w3-dark-grey">
+        <div class="w3-quarter w3-center">
+            <p class="w3-large">Powered by <a class="w3-xlarge" href="#" target="_blank">w3.css</a></p>
         </div>
-        <div class="cuarto texto-centrado">
-            <span class="fto-cc-visa"></span> <span class="fto-cc-mastercard"></span> <span
-                class="fto-cc-discover"></span> <span class="fto-cc-amex"></span> <span class="fto-cc-paypal"></span>
-            <span class="fto-cc-stripe"></span>
+        <div class="w3-half w3-center">
+            <p class="w3-large">Template web transformer. Design by <span class="w3-xlarge font-densia">dbold</span> <span
+                    class="copy-left">©</span> copyleft 2020</p>
         </div>
-        <div class="cuarto texto-centrado">
-            <p>Powered by <a class="texto-grande font-restu-bundah-regular" href="#" target="_blank">Velázquez</a></p>
-        </div>
-        <div class="cuarto texto-centrado">
-            <p>Transformer template <span class="copy-left">©</span> copyleft 2020</p>
+        <div class="w3-quarter w3-center">
+            <p class="w3-xlarge">
+                <span class="fto-cc-mastercard"></span>
+                <span class="fto-cc-discover"></span>
+                <span class="fto-cc-amex"></span>
+                <span class="fto-cc-paypal"></span>
+                <span class="fto-cc-stripe"></span>
+            </p>
         </div>
     </footer>
     <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-    <script type="text/javascript" src="js/coin-slider.js"></script>
+    <script type="text/javascript" src="js/carousel-scripts.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-</body>
-
-</html>
+    </body>
+    
+    </html>
