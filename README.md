@@ -2,12 +2,17 @@
 Plantilla web para e-comerce. 
 
 Elementos actuales:
-login
-singin
+log-in
+sing-in
 Barra de menú
 Carrusel principal
-Formularios
 error404
+Carrusel de productos
+
+Formularios:
+Contacto
+Registro
+Modal
 
 
 Slider, carrusel, elementos web...
