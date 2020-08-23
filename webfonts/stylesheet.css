@@ -9,10 +9,6 @@ AMARATH
     font-style: normal;
 }
 
-.font-amarant {
-    font-family: 'amaranth', sans-serif;
-}
-
 /*=============
 ARIMA-MADURAI
 =============*/
@@ -71,10 +67,6 @@ ARIMA-MADURAI
     src: url('arima-madurai/arima-madurai-v5-latin-regular.woff2') format('woff2'), url('arima-madurai/arima-madurai-v5-latin-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-.font-arima {
-    font-family: 'arima-madurai', sans-serif;
 }
 
 /*=========
@@ -153,10 +145,6 @@ CATAMARAN
     font-style: normal;
 }
 
-.font-catamaran {
-    font-family: 'catamaran', sans-serif;
-}
-
 /*=========
 DE VALENCIA
 =========*/
@@ -166,10 +154,6 @@ DE VALENCIA
     src: url('de-valencia/de_valencia_beta-webfont.woff2') format('woff2'), url('de-valencia/de_valencia_beta-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-.font-de-valencia {
-    font-family: 'de-valencia', sans-serif;
 }
 
 /*=====
@@ -183,10 +167,6 @@ DENSIA
     font-style: normal;
 }
 
-.font-densia {
-    font-family: 'densia-sans', sans-serif;
-}
-
 /*======
 EMBLEM
 ======*/
@@ -198,10 +178,6 @@ EMBLEM
     font-style: normal;
 }
 
-.font-emblem {
-    font-family: 'emblem', sans-serif;
-}
-
 /*===============
 HAETTENSHWEILER
 ===============*/
@@ -211,10 +187,6 @@ HAETTENSHWEILER
     src: url('haetten-schweiler/haettenschweiler-webfont.woff2') format('woff2'), url('haetten-schweiler/haettenschweiler-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-.font-haetten-schweiler {
-    font-family: 'haetten-schweiler', sans-serif;
 }
 
 /*========
@@ -261,10 +233,6 @@ LEMONADA
     font-style: normal;
 }
 
-.font-lemonada {
-    font-family: lemonada, sans-serif;
-}
-
 /*======
  LOBSTER 
  ======*/
@@ -277,12 +245,6 @@ LEMONADA
     font-style: normal;
 }
 
-.font-lobster {
-    font-family: lobster, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-
 /*=======
 MONOTON
 ========*/
@@ -291,12 +253,6 @@ MONOTON
     font-family: 'monoton';
     src: url('monoton/monoton-v9-latin-regular.woff2') format('woff2');
     src: url('monoton/monoton-v9-latin-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.font-monoton {
-    font-family: monoton, sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -449,10 +405,6 @@ MONTSERRAT
     font-style: normal;
 }
 
-.font-montserrat {
-    font-family: 'montserrat', sans-serif;
-}
-
 /*=====
  NUNITO
  =====*/
@@ -569,10 +521,6 @@ MONTSERRAT
     font-style: normal;
 }
 
-.font-nunito {
-    font-family: 'nunito', sans-serif;
-}
-
 /*=====
 OPTIMA
 =====*/
@@ -603,10 +551,6 @@ OPTIMA
     src: url('optima/optimo_b.woff') format('woff');
     font-style: normal;
     font-weight: normal;
-}
-
-.font-optima {
-    font-family: 'optima', sans-serif;
 }
 
 /*======
@@ -661,10 +605,6 @@ OPTIMA
     font-style: normal;
 }
 
-.font-oswald {
-    font-family: 'oswald', sans-serif;
-}
-
 /* ===============
 PERMANENT MAKER
 =============== */
@@ -676,10 +616,6 @@ PERMANENT MAKER
     font-style: normal;
 }
 
-.font-permanent-maker {
-    font-family: 'permanent-maker', sans-serif;
-}
-
 /*====
 RESTU
 ====*/
@@ -689,10 +625,6 @@ RESTU
     src: url('restu/restu_bundah-webfont.woff2') format('woff2'), url('restu/restu_bundah-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-.font-restu {
-    font-family: 'restu', sans-serif;
 }
 
 /*======
@@ -795,10 +727,6 @@ ROBOTO
     font-style: normal;
 }
 
-.font-roboto {
-    font-family: 'roboto', sans-serif;
-}
-
 /*===========
 SAMBLE TRACIE
 ===========*/
@@ -815,10 +743,6 @@ SAMBLE TRACIE
     src: url('samble-tracie/Samble Tracie Bold.woff2') format('woff2'), url('samble-tracie/Samble Tracie Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-.font-samble-tracie {
-    font-family: 'samble-tracie', sans-serif;
 }
 
 /*================
@@ -838,10 +762,6 @@ Samble-tracie-swasch
     font-style: normal;
 }
 
-.font-samble-tracie-swash {
-    font-family: 'samble-tracie-swash', sans-serif;
-}
-
 /*===========
 FAT WANDALS
 ===========*/
@@ -851,10 +771,6 @@ FAT WANDALS
     src: url('spoken/fatwandals_personal-webfont.woff2') format('woff2'), url('spoken/fatwandals_personal-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-.font-fat-wandals {
-    font-family: 'fat-wandals', sans-serif;
 }
 
 /*=====
@@ -882,10 +798,6 @@ SPOKEN
     font-style: normal;
 }
 
-.font-spoken {
-    font-family: 'spoken', sans-serif;
-}
-
 /*===========
 TRANSFORMER
 ============*/
@@ -897,19 +809,11 @@ TRANSFORMER
     font-style: normal;
 }
 
-.font-robofan-symbols {
-    font-family: 'robofan-symbols', sans-serif;
-}
-
 @font-face {
     font-family: 'transformers';
     src: url('transformer/transformers_movie.woff2') format('woff2'), url('transformer/transformers_movie.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-.font-transformers {
-    font-family: 'transformers', sans-serif;
 }
 
 /* =====
@@ -923,6 +827,75 @@ VARELA
     font-style: normal;
 }
 
+.font-amarant {
+    font-family: 'amaranth', sans-serif;
+}
+.font-arima {
+    font-family: 'arima-madurai', sans-serif;
+}
+.font-catamaran {
+    font-family: 'catamaran', sans-serif;
+}
+.font-de-valencia {
+    font-family: 'de-valencia', sans-serif;
+}
+.font-densia {
+    font-family: 'densia-sans', sans-serif;
+}
+.font-emblem {
+    font-family: 'emblem', sans-serif;
+}
+.font-haetten-schweiler {
+    font-family: 'haetten-schweiler', sans-serif;
+}
+.font-lemonada {
+    font-family: 'lemonada', sans-serif;
+}
+.font-lobster {
+    font-family: 'lobster', sans-serif;
+}
+.font-monoton {
+    font-family: 'monoton', sans-serif;
+}
+.font-montserrat {
+    font-family: 'montserrat', sans-serif;
+}
+.font-nunito {
+    font-family: 'nunito', sans-serif;
+}
+.font-optima {
+    font-family: 'optima', sans-serif;
+}
+.font-oswald {
+    font-family: 'oswald', sans-serif;
+}
+.font-permanent-maker {
+    font-family: 'permanent-maker', sans-serif;
+}
+.font-restu {
+    font-family: 'restu', sans-serif;
+}
+.font-roboto {
+    font-family: 'roboto', sans-serif;
+}
+.font-samble-tracie {
+    font-family: 'samble-tracie', sans-serif;
+}
+.font-samble-tracie-swash {
+    font-family: 'samble-tracie-swash', sans-serif;
+}
+.font-fat-wandals {
+    font-family: 'fat-wandals', sans-serif;
+}
+.font-spoken {
+    font-family: 'spoken', sans-serif;
+}
+.font-robofan-symbols {
+    font-family: 'robofan-symbols', sans-serif;
+}
+.font-transformers {
+    font-family: 'transformers', sans-serif;
+}
 .font-varela {
     font-family: 'varela', sans-serif;
 }
