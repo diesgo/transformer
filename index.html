@@ -5,18 +5,22 @@
     <meta charset="utf-8">
     <meta lang="es">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="webfonts/font-fontello/css/fontello.css">
     <link rel="stylesheet" type="text/css" href="webfonts/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/w3.css">
+    <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Transformer | Inicio</title>
 </head>
 <body>
 
-    <!-- Cabecera -->
+    <!-- CABECERA -->
 
-    <div id="navbar" class="w3-white">
-        <div class="menutop w3-green">
+    <div id="navbar">
+
+        <!-- BARRA SUPERIOR -->
+
+        <div class="w3-cell-row w3-green">
             <div class="w3-container w3-content w3-right-align">
                 <a class="w3-button w3-hover-opacity" href="#">Bienvenido</a>
                 <a class="w3-button w3-hover-opacity" href="#"
@@ -27,12 +31,12 @@
     
         <!-- MODAL INICIO SESIÓN -->
     
-        <div id="login" class="w3-modal">
+        <div id="login" class="w3-modal w3-padding">
             <div class="w3-modal-content w3-card-4 w3-animate-zoom">
     
                 <div class="w3-center"><br>
                     <span onclick="document.getElementById('login').style.display='none'"
-                        class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+                        class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Cerrar ventana">×</span>
                     <img src="imgs/design/velazquez-373x273_oscuro_transparente.png" alt="Avatar" style="width:30%"
                         class="w3-circle w3-margin-top">
                 </div>
@@ -46,7 +50,7 @@
                         <input class="w3-input w3-border w3-round" type="text" placeholder="Contraseña" name="psw" required>
                         <div class="w3-row">
                             <div class="w3-half">
-                                <button class="w3-button w3-green w3-section" type="submit">Acceder</button>
+                                <button class="w3-button w3-green w3-section w3-round" type="submit">Acceder</button>
                             </div>
                             <div class="w3-half w3-padding-24">
                                 <label class="checkbox w3-right">Reruérdame
@@ -60,184 +64,250 @@
     
                 <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
                     <button onclick="document.getElementById('login').style.display='none'" type="button"
-                        class="w3-button w3-red">Cancelar</button>
+                        class="w3-button w3-red w3-round">Cancelar</button>
                     <span class="w3-right w3-padding w3-hide-small"><a href="#">Recuperar contraseña</a></span>
                 </div>
             </div>
         </div>
     
         <!-- BARRA DE BÚSQUEDA -->
-    
+
         <div id="searchBar" class="searchBar">
-            <div class="w3-row-padding w3-content">
-                <div id="logo" class="w3-half w3-padding">
-                    <img src="imgs/design/transformer.png" class="w3-image" alt="logo_transformer" width="60%">
+                <div class="w3-row-padding w3-content">
+                    <div id="logo" class="w3-half w3-padding">
+                        <p><span class="font-transformers w3-xxxlarge">transf<span class="font-robofan-symbols w3-text-green">a</span>rmer</span></p>
+                        <!-- <img src="imgs/design/transformer.png" class="w3-image" alt="logo_transformer" width="60%"> -->
+                    </div>
+                    <div class="w3-half w3-padding-32 w3-right-align search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Buscar..." name="search">
+                            <button type="submit" class="w3-green w3-round"><i class="fto-search-1"></i></button>
+                        </form>
+                    </div>
                 </div>
-                <div class="w3-half w3-padding w3-right-align search-container">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Buscar..." name="search">
-                        <button type="submit" class="w3-green"><i class="fto-search-1"></i></button>
-                    </form>
-                </div>
-            </div>
         </div>
     
         <!-- BARRA DE MENÚ -->
-    
-        <div class="w3-row-padding w3-center">
-            <div class="w3-bar topnav" id="myMenu">
-                <a href="index.html" class="fto-home"></a>
-                <a href="#news">News</a>
-                <a href="contact.html">Contact</a>
+
+        <div class="w3-container w3-content">
+            <div class="w3-bar">
+                <a href="index.html" class="w3-bar-item w3-button  w3-hover-white w3-hover-text-green fto-home"></a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green">Blog</a>
+                <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green"">Contacto</a>
+                <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green">Acerca de</a>
+                <div class="w3-dropdown-click w3-hide-small">
+                    <button class="w3-button w3-hover-white w3-hover-text-green" onclick="dropMenuBig()">
+                        Dropdown <i class="fto-down-dir-2"></i>
+                    </button>
+                    <div id="menuDropBig" class="w3-dropdown-content w3-padding w3-bar-block" style="z-index: 1;">
+                        <a href="documentacion.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-green">Documentación</a>
+                        <a href="tipografias.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-green  ">Tipografías</a>
+                        <a href="#" class="w3-bar-item w3-button w3-hover-white w3-hover-text-green">Link 3</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="menuSmall()">&#9776;</a>
+            </div>
+
+            <!-- MENU DISPOSITIVOS PEQUEÑOS -->
+
+            <div id="smallbar" class="w3-bar-block w3-padding w3-hide w3-hide-large w3-hide-medium">
+                <a href="#" class="w3-bar-item w3-button">Blog</a>
+                <a href="contact.html" class="w3-bar-item w3-button">Contacto</a>
+                <a href="about.html" class="w3-bar-item w3-button">Acerca de</a>
                 <div class="w3-dropdown-click">
-                    <label for="dropdown-btn" class="dropbtn">
-                        <input type="button" onclick="dropdownNavbar()" id="dropdown-btn" class="w3-hide">Dropdown <i
-                            class="fto-down-dir-2"></i>
-                    </label>
-                    <div id="drop" class="w3-dropdown-content w3-bar-block w3-border">
+                    <button class="w3-button" onclick="dropMenuSmall()">
+                        Dropdown <i class="fto-down-dir-2"></i>
+                    </button>
+                    <div id="menuDropSmall" class="w3-dropdown-content w3-padding w3-bar-block" style="z-index: 1;">
                         <a href="documentacion.html" class="w3-bar-item w3-button">Documentación</a>
-                        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                        <a href="tipografias.html" class="w3-bar-item w3-button">Tipografías</a>
                         <a href="#" class="w3-bar-item w3-button">Link 3</a>
                     </div>
                 </div>
-                <a href="#about">About</a>
-                <a href="javascript:void(0);" style="font-size:15px;" class="icon fto-menu" onclick="openNav()"></a>
             </div>
         </div>
-    
-        <!-- MENU DISPOSITIVOS PEQUEÑOS -->
-    
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#news">News</a>
-            <a href="contact.html">Contact</a>
-            <div class="w3-dropdown-click">
-                <label for="dropdown-btn-small" class="dropbtn-small">
-                    <input type="button" onclick="myFunction()" id="dropdown-btn-small" class="w3-hide">Dropdown <i
-                        class="fto-down-dir-2"></i>
-                </label>
-                <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-                    <a href="documentacion.html" class="w3-bar-item w3-button">Documentación</a>
-                    <a href="#" class="w3-bar-item w3-button">Link 2</a>
-                    <a href="#" class="w3-bar-item w3-button">Link 3</a>
-                </div>
-            </div>
-            <a href="#about">About</a>
-        </div>
+
     </div>
 
     <!-- CUERPO DEL DOCUMENTO -->
-
+    
     <!-- SLIDER -->
 
-    <div class="contenedor centrado-h w3-light-grey">
-        <div class="contenedor centrado-v">
-            <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev fto-left-open-big w3-black"></a>
+    <div class="contenedor centrado-h  w3-margin-bottom w3-margin-top">
+        <div data-jcarousel-control="true" data-target="-=1" class="contenedor centrado-v jcarousel-control-prev">
+            <p class="fto-left-open-big"></p>
         </div>
         <div class="contenedor centrado-h jcarousel-wrapper">
             <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
                 <ul>
-                    <li><img src="imgs/slider/0-0.jpg" class="w3-image"></li>
-                    <li><img src="imgs/slider/1.jpg" class="w3-image"></li>
-                    <li><img src="imgs/slider/2-0.jpg" class="w3-image"></li>
-                    <li><img src="imgs/slider/3.jpg" class="w3-image"></li>
-                    <li><img src="imgs/slider/4-0.jpg" class="w3-image"></li>
-                    <li><img src="imgs/slider/5.jpg" class="w3-image"></li>
+                    <li><img src="imgs/banner/banner_00.jpg" class="w3-image"></li>
+                    <li><img src="imgs/banner/banner_01.jpg" class="w3-image"></li>
+                    <li><img src="imgs/banner/banner_02.jpg" class="w3-image"></li>
+                    <li><img src="imgs/banner/banner_03.jpg" class="w3-image"></li>
                 </ul>
             </div>
         </div>
-        <div class="contenedor centrado-v">
-            <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next fto-right-open-big w3-black"></a>
+        <div data-jcarousel-control="true" data-target="+=1" class="contenedor centrado-v jcarousel-control-next">
+            <p class="fto-right-open-big"></p>
         </div>
     </div>
-
-    <!-- Cuerpo del documento -->
-
-    <div id="cuerpo">
+    
+    <div class="w3-container w3-content w3-margin-bottom">
 
         <!-- Contenido personalizado -->
 
-        <div class="w3-row-padding w3-content" >
-            <div class="w3-half w3-padding-32 w3-hide-small" style="text-align: right;">
-                <p class="w3-xxxlarge font-oswald" style="font-weight: 700;">Bienvenido a la </p>
-                <p class="w3-xxxlarge font-oswald" style="font-weight: 700;"><span class="w3-text-green">tienda</span> de ejemplo</p>
+        <div class="w3-container w3-padding w3-margin-bottom" >
+            <div class="w3-half  w3-padding" style="text-align: right;">
+                <h2 class="w3-xxlarge font-montserrat w3-text-green" style="font-weight: 700;">Bienvenido</h2>
+                <h3>Navega libremente y descubre todas mis posibilidades</h3>
             </div>
-            <div class="w3-half w3-padding-48">
-                <div>
-                    <p>Transformer es una moderna plantilla para e-comerce basada en el tema ST-THEMES.</p>
-                    <p>Adaptable a cualquier tipo de negocio.</p>
-                </div>
-                <a href="#" class="w3-button w3-dark-grey w3-round">Contacto</a>
+            <div class="w3-half w3-padding">
+                    <p>Transformer es una moderna  plantilla web preparada para e-comerce y blog, adaptable a cualquier tipo de proyecto.</p><br>
+                <a href="contact.html" class="w3-button w3-dark-grey w3-round">Contacto</a>
             </div>
         </div>
 
         <!-- Contenido personalizado -->
 
-        <div class="w3-content">
-            <div class="w3-cell w3-padding-large w3-cell-middle w3-light-grey">
+        <div class="w3-container w3-padding w3-margin-bottom">
+            <div class="w3-third w3-padding-large w3-light-grey">
                 <img src="imgs/design/dbold_373x273_transparente.png" alt="ddbold" width="373">
             </div>
-            <div class="w3-cell w3-padding-large w3-cell-middle w3-light-grey">
+            <div class="w3-third w3-padding-large w3-light-grey">
                 <img src="imgs/design/velazquez-373x273_oscuro_transparente.png" alt="velazquez" width="373">
             </div>
-            <div class="w3-cell w3-padding-large w3-cell-middle w3-light-grey">
+            <div class="w3-third w3-padding-large w3-light-grey">
                 <img src="imgs/design/logo_dbold_373x273_fondot_transparente.png" alt="dbold" width="373">
             </div>
         </div>
 
         <!-- slider productos -->
-
         
         <div id="sliderArticulos" class="sliderArticulos w3-hide-small">
+            <div id="carrusel">
 
-                <div id="carrusel">
-                    <div class="contenedor derecha">
-                        <a href="#" class="left-arrow fto-left-open-3"></a>
-                        <a href="#" class="right-arrow fto-right-open-3"></a>
+                <div class="w3-container w3-right-align">
+                    <a href="#" class="left-arrow fto-left-open-3"></a>
+                    <a href="#" class="right-arrow fto-right-open-3"></a>
+                </div>
+
+                <div class="carrusel">
+                    <div class="w3-half w3-padding" id="product_0">
+                        <div class="containerSliderArticles">
+                            <img src="imgs/products/r/06.jpg" alt="jeans0">
+                            <div class="overlay">
+                                <div class="boton-carrito">
+                                    <a href="#"><span class="fto-basket-3"></span> comprar</a>
+                                </div>
+                                <div class="boton-compartir">
+                                    <a href="product_page.html"><p><span class="fto-eye-2"></span> ver más</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Jeans azules rotos</h3>
+                        <p class="w3-text-green font-oswald">99,90 €</p>
+                        <div class="contenedor centrado-h">
+                            <ul style="padding: 15px 0px; margin: 0px auto;">
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="carrusel">
-                        <div class="w3-half w3-padding" id="product_0">
-                            <div class="containerSliderArticles">
-                                <img src="imgs/products/j/0.jpg" alt="jeans0">
-                                <div class="overlay">
-                                    <div class="boton-carrito">
-                                        <a href="#"><p><span class="fto-basket-3"></span> comprar</p></a>
-                                    </div>
-                                    <div class="boton-compartir">
-                                        <a href="product_page.html"><p><span class="fto-eye-2"></span> ver más</p></a>
-                                    </div>
+                    <div class="w3-half w3-padding" id="product_1">
+                        <div class="containerSliderArticles">
+                            <img src="imgs/products/r/07.jpg" alt="jeans1">
+                            <div class="overlay">
+                                <div class="boton-carrito">
+                                    <a href="#"><span class="fto-basket-3"></span> comprar</a>
+                                </div>
+                                <div class="boton-compartir">
+                                    <a href="product_page.html"><span class="fto-eye-2"></span> ver más</a>
                                 </div>
                             </div>
-                                <h3>Jeans azules rotos</h3>
-                                <p class="w3-text-green font-oswald">99,90 €</p>
-                                <div class="contenedor centrado-h">
-                                    <ul>
-                                        <li style="display: inline-block;" class="fto-star-filled"></li>
-                                        <li style="display: inline-block;" class="fto-star-filled"></li>
-                                        <li style="display: inline-block;" class="fto-star-filled"></li>
-                                        <li style="display: inline-block;" class="fto-star-filled"></li>
-                                        <li style="display: inline-block;" class="fto-star-filled"></li>
-                                    </ul>
-                                </div>
                         </div>
+                        <h3>Jeans gastados rotos</h3>
+                        <p class="w3-text-green font-oswald">85,00 €</p>
+                        <div class="contenedor centrado-h">
+                            <ul style="padding: 15px 0px; margin: 0px auto;">
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                        <div class="w3-half w3-padding" id="product_1">
+                    <div class="w3-half w3-padding" id="product_2">
+                        <div class="containerSliderArticles">
+                            <img src="imgs/products/r/08.jpg" alt="jeans2">
+                            <div class="overlay">
+                                <div class="boton-carrito">
+                                    <a href="#"><span class="fto-basket-3"></span> comprar</a>
+                                </div>
+                                <div class="boton-compartir">
+                                    <a href="#"><span class="fto-eye-2"></span> ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Jeans gastados rotos</h3>
+                        <p class="w3-text-green font-oswald">85,00 €</p>
+                        <div class="contenedor centrado-h">
+                            <ul style="padding: 15px 0px; margin: 0px auto;">
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="w3-half w3-padding" id="product_3">
+                        <div class="containerSliderArticles">
+                            <img src="imgs/products/r/09.jpg" alt="jeans3">
+                            <div class="overlay">
+                                <div class="boton-carrito">
+                                    <a href="#"><span class="fto-basket-3"></span> comprar</a>
+                                </div>
+                                <div class="boton-compartir">
+                                    <a href="#"><span class="fto-eye-2"></span> ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Jeans gastados rotos</h3>
+                        <p class="w3-text-green font-oswald">85,00 €</p>
+                        <div class="contenedor centrado-h">
+                            <ul style="padding: 15px 0px; margin: 0px auto;">
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                                <li style="display: inline-block;" class="fto-star-filled"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="w3-half w3-padding" id="product_4">
                             <div class="containerSliderArticles">
-                                <img src="imgs/products/s/1.jpg" alt="jeans1">
+                                <img src="imgs/products/r/10.jpg" alt="jeans4">
                                 <div class="overlay">
                                     <div class="boton-carrito">
-                                        <a href="#"><p><span class="fto-basket-3"></span> comprar</p></a>
+                                        <a href="#"><span class="fto-basket-3"></span> comprar</a>
                                     </div>
                                     <div class="boton-compartir">
-                                        <a href="product_page.html"><p><span class="fto-eye-2"></span> ver más</p></a>
+                                        <a href="#"><span class="fto-eye-2"></span> ver más</a>
                                     </div>
                                 </div>
                             </div>
                             <h3>Jeans gastados rotos</h3>
                             <p class="w3-text-green font-oswald">85,00 €</p>
                             <div class="contenedor centrado-h">
-                                <ul>
+                                <ul style="padding: 15px 0px; margin: 0px auto;">
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
@@ -245,11 +315,11 @@
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
                                 </ul>
                             </div>
-                        </div>
+                    </div>
 
-                        <div class="w3-half w3-padding" id="product_2">
+                    <div class="w3-half w3-padding" id="product_5">
                             <div class="containerSliderArticles">
-                                <img src="imgs/products/j/2.jpg" alt="jeans2">
+                                <img src="imgs/products/r/11.jpg" alt="jeans5">
                                 <div class="overlay">
                                     <div class="boton-carrito">
                                         <a href="#">
@@ -266,7 +336,7 @@
                             <h3>Jeans gastados rotos</h3>
                             <p class="w3-text-green font-oswald">85,00 €</p>
                             <div class="contenedor centrado-h">
-                                <ul>
+                            <ul style="padding: 15px 0px; margin: 0px auto;">
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
@@ -274,11 +344,11 @@
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
                                 </ul>
                             </div>
-                        </div>
+                    </div>
 
-                        <div class="w3-half w3-padding" id="product_3">
+                    <div class="w3-half w3-padding" id="product_6">
                             <div class="containerSliderArticles">
-                                <img src="imgs/products/j/3.jpg" alt="jeans3">
+                                <img src="imgs/products/r/12.jpg" alt="jeans5">
                                 <div class="overlay">
                                     <div class="boton-carrito">
                                         <a href="#">
@@ -295,7 +365,7 @@
                             <h3>Jeans gastados rotos</h3>
                             <p class="w3-text-green font-oswald">85,00 €</p>
                             <div class="contenedor centrado-h">
-                                <ul>
+                                <ul style="padding: 15px 0px; margin: 0px auto;">
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
@@ -303,11 +373,11 @@
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
                                 </ul>
                             </div>
-                        </div>
+                    </div>
 
-                        <div class="w3-half w3-padding" id="product_4">
+                    <div class="w3-half w3-padding" id="product_7">
                             <div class="containerSliderArticles">
-                                <img src="imgs/products/j/4.jpg" alt="jeans4">
+                                <img src="imgs/products/r/13.jpg" alt="jeans5">
                                 <div class="overlay">
                                     <div class="boton-carrito">
                                         <a href="#">
@@ -324,7 +394,7 @@
                             <h3>Jeans gastados rotos</h3>
                             <p class="w3-text-green font-oswald">85,00 €</p>
                             <div class="contenedor centrado-h">
-                                <ul>
+                                <ul style="padding: 15px 0px; margin: 0px auto;">
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
@@ -332,112 +402,25 @@
                                     <li style="display: inline-block;" class="fto-star-filled"></li>
                                 </ul>
                             </div>
-                        </div>
-
-                        <div class="w3-half w3-padding" id="product_5">
-                            <div class="containerSliderArticles">
-                                <img src="imgs/products/j/5.jpg" alt="jeans5">
-                                <div class="overlay">
-                                    <div class="boton-carrito">
-                                        <a href="#">
-                                            <p><span class="fto-basket-3"></span> comprar</p>
-                                        </a>
-                                    </div>
-                                    <div class="boton-compartir">
-                                        <a href="#">
-                                            <p><span class="fto-eye-2"></span> ver más</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <h3>Jeans gastados rotos</h3>
-                            <p class="w3-text-green font-oswald">85,00 €</p>
-                            <div class="contenedor centrado-h">
-                                <ul>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="w3-half w3-padding" id="product_6">
-                            <div class="containerSliderArticles">
-                                <img src="imgs/products/j/6.jpg" alt="jeans5">
-                                <div class="overlay">
-                                    <div class="boton-carrito">
-                                        <a href="#">
-                                            <p><span class="fto-basket-3"></span> comprar</p>
-                                        </a>
-                                    </div>
-                                    <div class="boton-compartir">
-                                        <a href="#">
-                                            <p><span class="fto-eye-2"></span> ver más</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <h3>Jeans gastados rotos</h3>
-                            <p class="w3-text-green font-oswald">85,00 €</p>
-                            <div class="contenedor centrado-h">
-                                <ul>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="w3-half w3-padding" id="product_7">
-                            <div class="containerSliderArticles">
-                                <img src="imgs/products/j/7.jpg" alt="jeans5">
-                                <div class="overlay">
-                                    <div class="boton-carrito">
-                                        <a href="#">
-                                            <p><span class="fto-basket-3"></span> comprar</p>
-                                        </a>
-                                    </div>
-                                    <div class="boton-compartir">
-                                        <a href="#">
-                                            <p><span class="fto-eye-2"></span> ver más</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <h3>Jeans gastados rotos</h3>
-                            <p class="w3-text-green font-oswald">85,00 €</p>
-                            <div class="contenedor centrado-h">
-                                <ul>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                    <li style="display: inline-block;" class="fto-star-filled"></li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
+            </div>
         </div>
         
 
         <!-- Artículos destacados -->
 
-        <div id="featuredProducts" class="w3-row-padding w3-content margen">
+        <div id="featuredProducts" class="w3-container w3-padding w3-margin-bottom">
             <div class="w3-container w3-threequarter">
 
                 <div class="w3-margin-top w3-third">
                     <div class="w3-half">
-                        <img src="imgs/products/j/9.jpg" class="w3-image" alt="">
+                        <img src="imgs/products/r/00.jpg" class="w3-image" alt="">
                     </div>
                     <div class="w3-half w3-padding w3-left-align">
                         <h3>short</h3>
                         <p class="w3-text-green font-oswald w3-padding-small">49,95 €</p>
-                        <div style="padding: 4px 8px;">
+                        <div class="w3-padding-small">
                             <a class="fto-basket blanco w3-green w3-padding-small" href="#"></a>
                         </div>
                     </div>
@@ -445,12 +428,12 @@
 
                 <div class="w3-margin-top w3-third">
                     <div class="w3-half">
-                        <img src="imgs/products/j/10.jpg" class="w3-image" alt="">
+                        <img src="imgs/products/r/01.jpg" class="w3-image" alt="">
                     </div>
                     <div class="w3-half w3-padding w3-left-align">
                         <h3>short</h3>
                         <p class="w3-text-green font-oswald w3-padding-small">49,95 €</p>
-                        <div style="padding: 4px 8px;">
+                        <div class="w3-padding-small">
                             <a class="fto-basket blanco w3-green w3-padding-small" href="#"></a>
                         </div>
                     </div>
@@ -458,12 +441,12 @@
 
                 <div class="w3-margin-top w3-third">
                     <div class="w3-half">
-                        <img src="imgs/products/j/11.jpg" class="w3-image" alt="">
+                        <img src="imgs/products/r/02.jpg" class="w3-image" alt="">
                     </div>
                     <div class="w3-half w3-padding w3-left-align">
                         <h3>short</h3>
                         <p class="w3-text-green font-oswald w3-padding-small">49,95 €</p>
-                        <div style="padding: 4px 8px;">
+                        <div class="w3-padding-small">
                             <a class="fto-basket blanco w3-green w3-padding-small" href="#"></a>
                         </div>
                     </div>
@@ -471,12 +454,12 @@
 
                 <div class="w3-margin-top w3-third">
                     <div class="w3-half">
-                        <img src="imgs/products/j/12.jpg" class="w3-image" alt="">
+                        <img src="imgs/products/r/03.jpg" class="w3-image" alt="">
                     </div>
                     <div class="w3-half w3-padding w3-left-align">
                         <h3>short</h3>
                         <p class="w3-text-green font-oswald w3-padding-small">49,95 €</p>
-                        <div style="padding: 4px 8px;">
+                        <div class="w3-padding-small">
                             <a class="fto-basket blanco w3-green w3-padding-small" href="#"></a>
                         </div>
                     </div>
@@ -484,12 +467,12 @@
 
                 <div class="w3-margin-top w3-third">
                     <div class="w3-half">
-                        <img src="imgs/products/j/13.jpg" class="w3-image" alt="">
+                        <img src="imgs/products/r/14.jpg" class="w3-image" alt="">
                     </div>
                     <div class="w3-half w3-padding w3-left-align">
                         <h3>short</h3>
                         <p class="w3-text-green font-oswald w3-padding-small">49,95 €</p>
-                        <div style="padding: 4px 8px;">
+                        <div class="w3-padding-small">
                             <a class="fto-basket blanco w3-green w3-padding-small" href="#"></a>
                         </div>
                     </div>
@@ -497,67 +480,76 @@
 
                 <div class="w3-margin-top w3-third">
                     <div class="w3-half">
-                        <img src="imgs/products/j/14.jpg" class="w3-image" alt="">
+                        <img src="imgs/products/r/05.jpg" class="w3-image" alt="">
                     </div>
                     <div class="w3-half w3-padding w3-left-align">
                         <h3>short</h3>
                         <p class="w3-text-green font-oswald w3-padding-small">49,95 €</p>
-                        <div style="padding: 4px 8px;">
+                        <div class="w3-padding-small">
                             <a class="fto-basket blanco w3-green w3-padding-small" href="#"></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="w3-quarter" style="background-color: #c2c2c2;">
-                <img src="imgs/products/s/0.jpg" class="w3-image" alt="">
+            <div class="w3-container w3-padding-32 w3-quarter">
+                    <img class="mySlides w3-image" src="imgs/products/r/07.jpg">
+                    <img class="mySlides w3-image" src="imgs/products/r/08.jpg">
+                    <img class="mySlides w3-image" src="imgs/products/r/09.jpg">
+                    <img class="mySlides w3-image" src="imgs/products/r/10.jpg">
+                    <img class="mySlides w3-image" src="imgs/products/r/11.jpg">
+                    <img class="mySlides w3-image" src="imgs/products/r/12.jpg">
+                    <img class="mySlides w3-image" src="imgs/products/r/13.jpg">
             </div>
             
         </div>
     </div>
 
-    <!-- Antepié de página-->
+    <!-- ANTEPIÉ DE PÁGINA-->
     
-    <div class="w3-row-padding w3-padding-48">
+    <div class="w3-cell-row w3-padding-32 w3-light-grey">
         <div class="w3-content">
-            <div class="w3-quarter w3-bar-block">
-                <h4>Información</h4>
-                <a href="html/aviso-legal.html" class="w3-bar-item"><span class="fto-angle-double-right">Entrega</span></a>
-                <a href="html/politica-cookies.html" class="w3-bar-item"><span class="fto-angle-double-right">Aviso
+            <!-- INFORMACION -->
+            <div class="w3-quarter w3-padding w3-bar-block">
+                <h4 class="upper">Información</h4>
+                <a href="html/aviso-legal.html" class="w3-bar-item w3-hover-text-green"><span class="fto-angle-double-right">Entrega</span></a>
+                <a href="html/politica-cookies.html" class="w3-bar-item w3-hover-text-green"><span class="fto-angle-double-right">Aviso
                         legal</span></a>
-                <a href="html/politica-privacidad.html" class="w3-bar-item"><span class="fto-angle-double-right">Pago
-                        seguro</span></a>
+                <a href="about.html" class="w3-bar-item w3-hover-text-green"><span class="fto-angle-double-right">Acerca de</span></a>
             </div>
-            <div class="w3-quarter w3-bar-block">
-                <h4>Catálogo</h4>
-                <a href="html/emplazamiento.html" class="w3-bar-item"><span class="fto-angle-double-right">Promociones
+            <!-- CATALOGO -->
+            <div class="w3-quarter w3-padding w3-bar-block">
+                <h4 class="upper">Catálogo</h4>
+                <a href="html/emplazamiento.html" class="w3-bar-item w3-hover-text-green"><span class="fto-angle-double-right">Promociones
                         especiales</span></a>
-                <a href="html/contacto.html" class="w3-bar-item"><span class="fto-angle-double-right">Nuevos
+                <a href="html/contacto.html" class="w3-bar-item w3-hover-text-green"><span class="fto-angle-double-right">Nuevos
                         productos</span></a>
-                <a href="html/sobre_nosotros.html" class="w3-bar-item" target="_blank"><span
+                <a href="html/sobre_nosotros.html" class="w3-bar-item w3-hover-text-green" target="_blank"><span
                         class="fto-angle-double-right">Más vendidos</span></a>
             </div>
-            <div class="w3-quarter w3-bar-block">
-                <h4>Newsletter</h4>
-                <a href="html/aviso-legal.html" class="w3-bar-item"><span class="fto-angle-double-right">Aviso
+            <!-- NEWSLETTER -->
+            <div class="w3-quarter w3-padding w3-bar-block">
+                <h4 class="upper">Newsletter</h4>
+                <a href="html/aviso-legal.html" class="w3-bar-item w3-hover-text-green"><span class="fto-angle-double-right">Aviso
                         legal</span></a>
-                <a href="html/politica-cookies.html" class="w3-bar-item"><span class="fto-angle-double-right">Política de
+                <a href="html/politica-cookies.html" class="w3-bar-item w3-hover-text-green"><span class="fto-angle-double-right">Política de
                         cookies</span></a>
-                <a href="html/politica-privacidad.html" class="w3-bar-item"><span class="fto-angle-double-right">Política de
+                <a href="html/politica-privacidad.html" class="w3-bar-item w3-hover-text-green"><span class="fto-angle-double-right">Política de
                         privacidad</span></a>
             </div>
-            <div class="w3-quarter w3-bar-block">
-                <h4>Social</h4>
-                <a href="html/aviso-legal.html" class="w3-bar-item"><span class="fto-angle-double-right">Aviso
+            <!-- SOCIAL -->
+            <div class="w3-quarter w3-padding w3-bar-block">
+                <h4 class="upper">Social</h4>
+                <a href="html/aviso-legal.html" class="w3-bar-item w3-hover-text-green"><span class="fto-angle-double-right">Aviso
                         legal</span></a>
-                <a href="html/politica-cookies.html" class="w3-bar-item"><span class="fto-angle-double-right">Política de
+                <a href="html/politica-cookies.html" class="w3-bar-item w3-hover-text-green"><span class="fto-angle-double-right">Política de
                         cookies</span></a>
-                <a href="html/politica-privacidad.html" class="w3-bar-item"><span class="fto-angle-double-right">Política de
+                <a href="html/politica-privacidad.html" class="w3-bar-item w3-hover-text-green"><span class="fto-angle-double-right">Política de
                         privacidad</span></a>
             </div>
         </div>
     </div>
     
-    <!-- Pie de página -->
+    <!-- PIÉ DE PÁGINA -->
     
     <footer class="w3-container w3-row w3-dark-grey">
         <div class="w3-quarter w3-center">
@@ -581,6 +573,9 @@
     <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
     <script type="text/javascript" src="js/carousel-scripts.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script>
+        carousel();
+    </script>
     </body>
     
     </html>

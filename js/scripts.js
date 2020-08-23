@@ -11,8 +11,6 @@ misFotos = [
 ]
 muestra = misFotos.length;
 
-
-
 // Menú
 
 function menu() {
@@ -44,13 +42,52 @@ function scrollFunction() {
         block.style.position="relative";
         block.classList.remove("w3-animate-top");
     }
+}   
+
+function dropMenuBig() {
+    var x = document.getElementById("menuDropBig");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.classList.add("w3-show");
+        x.classList.add("w3-animate-opacity");
+    } else {
+        x.classList.remove("w3-show");
+        x.classList.remove("w3-animate-opacity");
+    }
+}
+function dropMenuSmall() {
+    var x = document.getElementById("menuDropSmall");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.classList.add("w3-show");
+        x.classList.add("w3-animate-opacity");
+    } else {
+        x.classList.remove("w3-show");
+        x.classList.remove("w3-animate-opacity");
+    }
+}
+function menuSmall() {
+    var x = document.getElementById("smallbar");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.classList.add("w3-show");
+        x.classList.add("w3-animate-opacity");
+    } else {
+        x.classList.remove("w3-show");
+        x.classList.remove("w3-animate-opacity");
+    }
 }
 
-function dropdownNavbar() {
-    var x = document.getElementById("drop");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
+// CAROUSEL
+// AUTOMÁTICO
+
+var myIndex = 0;
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
     }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
 }
