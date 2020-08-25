@@ -828,74 +828,98 @@ VARELA
 }
 
 .font-amarant {
-    font-family: 'amaranth', sans-serif;
+    font-family: 'amaranth',
+    sans-serif !important;
 }
 .font-arima {
-    font-family: 'arima-madurai', sans-serif;
+    font-family: 'arima-madurai',
+    sans-serif !important;
 }
 .font-catamaran {
-    font-family: 'catamaran', sans-serif;
+    font-family: 'catamaran',
+        sans-serif !important;
 }
 .font-de-valencia {
-    font-family: 'de-valencia', sans-serif;
+    font-family: 'de-valencia',
+    sans-serif !important;
 }
 .font-densia {
-    font-family: 'densia-sans', sans-serif;
+    font-family: 'densia-sans',
+    sans-serif !important;
 }
 .font-emblem {
-    font-family: 'emblem', sans-serif;
+    font-family: 'emblem',
+    sans-serif !important;
 }
 .font-haetten-schweiler {
-    font-family: 'haetten-schweiler', sans-serif;
+    font-family: 'haetten-schweiler',
+    sans-serif !important;
 }
 .font-lemonada {
-    font-family: 'lemonada', sans-serif;
+    font-family: 'lemonada',
+    sans-serif !important;
 }
 .font-lobster {
-    font-family: 'lobster', sans-serif;
+    font-family: 'lobster',
+    sans-serif !important;
 }
 .font-monoton {
-    font-family: 'monoton', sans-serif;
+    font-family: 'monoton',
+    sans-serif !important;
 }
 .font-montserrat {
-    font-family: 'montserrat', sans-serif;
+    font-family: 'montserrat',
+    sans-serif !important;
 }
 .font-nunito {
-    font-family: 'nunito', sans-serif;
+    font-family: 'nunito',
+    sans-serif !important;
 }
 .font-optima {
-    font-family: 'optima', sans-serif;
+    font-family: 'optima',
+    sans-serif !important;
 }
 .font-oswald {
-    font-family: 'oswald', sans-serif;
+    font-family: 'oswald',
+    sans-serif !important;
 }
 .font-permanent-maker {
-    font-family: 'permanent-maker', sans-serif;
+    font-family: 'permanent-maker',
+    sans-serif !important;
 }
 .font-restu {
-    font-family: 'restu', sans-serif;
+    font-family: 'restu',
+    sans-serif !important;
 }
 .font-roboto {
-    font-family: 'roboto', sans-serif;
+    font-family: 'roboto',
+    sans-serif !important;
 }
 .font-samble-tracie {
-    font-family: 'samble-tracie', sans-serif;
+    font-family: 'samble-tracie',
+    sans-serif !important;
 }
 .font-samble-tracie-swash {
-    font-family: 'samble-tracie-swash', sans-serif;
+    font-family: 'samble-tracie-swash',
+    sans-serif !important;
 }
 .font-fat-wandals {
-    font-family: 'fat-wandals', sans-serif;
+    font-family: 'fat-wandals',
+    sans-serif !important;
 }
 .font-spoken {
-    font-family: 'spoken', sans-serif;
+    font-family: 'spoken',
+    sans-serif !important;
 }
 .font-robofan-symbols {
-    font-family: 'robofan-symbols', sans-serif;
+    font-family: 'robofan-symbols',
+    sans-serif !important;
 }
 .font-transformers {
-    font-family: 'transformers', sans-serif;
+    font-family: 'transformers',
+    sans-serif !important;
 }
 .font-varela {
-    font-family: 'varela', sans-serif;
+    font-family: 'varela',
+    sans-serif !important;
 }

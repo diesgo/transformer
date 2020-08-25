@@ -23,12 +23,12 @@ function menu() {
 }
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("myNav").style.width = "100%";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+    document.getElementById("myNav").style.width = "0%";
+} 
 
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
@@ -44,28 +44,9 @@ function scrollFunction() {
     }
 }   
 
-function dropMenuBig() {
-    var x = document.getElementById("menuDropBig");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.classList.add("w3-show");
-        x.classList.add("w3-animate-opacity");
-    } else {
-        x.classList.remove("w3-show");
-        x.classList.remove("w3-animate-opacity");
-    }
-}
-function dropMenuSmall() {
-    var x = document.getElementById("menuDropSmall");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.classList.add("w3-show");
-        x.classList.add("w3-animate-opacity");
-    } else {
-        x.classList.remove("w3-show");
-        x.classList.remove("w3-animate-opacity");
-    }
-}
-function menuSmall() {
-    var x = document.getElementById("smallbar");
+function drop(id) {
+    var x = document.getElementById(id);
+    console.log(x);
     if (x.className.indexOf("w3-show") == -1) {
         x.classList.add("w3-show");
         x.classList.add("w3-animate-opacity");
