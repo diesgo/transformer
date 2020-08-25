@@ -4,154 +4,142 @@ dbold DESSIGN
  Versión 1.0
  24 de Julio de 2020*/
 
- a{
-     text-decoration: none;
- }
+body{color: #555555}
+a{text-decoration: none}
 
-
- /* =======
+/* =======
 CABECERA
 ======= */
 
- #navbar {
-     background-color: #FFF;
-     width: 100%;
-     transition: top 0.3s;
-     z-index: 1;
- }
+#navbar {
+    background-color: #FFF;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1;
+}
 
- /* =======
+/* =======
 BARRA DE
 BÚSQUEDA
 ======= */
 
- .searchBar {
-     overflow: hidden;
- }
+.searchBar {
+    overflow: hidden;
+}
+.searchBar input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+}
+.searchBar .search-container button:hover {
+    opacity: 0.6;
+}
+.search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #01a261;
+    color: #ffffff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
 
- .searchBar input[type=text] {
-     padding: 6px;
-     font-size: 17px;
-     border: 1px solid #c7c7c7;
-     border-radius: 4px;
- }
+/*========
+CAROUSEL 
+SLIDER
+=========*/
 
- .searchBar .search-container button:hover {
-     opacity: 0.6;
- }
+.contenedor {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.centrado-h {
+    justify-content: center;
+}
+.centrado-v {
+    align-self: center;
+}
+.jcarousel-wrapper {
+    position: relative;
+    width: 62%;
+    height: auto;
+}
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+.jcarousel ul {
+    width: 10000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li {
+    float: left;
+}
 
- .search-container button {
-     padding: 6px 10px;
-     margin-top: 8px;
-     margin-right: 16px;
-     background: #01a261;
-     color: #ffffff;
-     font-size: 17px;
-     border: none;
-     cursor: pointer;
- }
+/* CAROUSEL CONTROLS */
 
- /*========
- CAROUSEL 
- SLIDER
- =========*/
- .contenedor {
-     display: flex;
-     flex-wrap: nowrap;
- }
-
-  .centrado-h {
-      justify-content: center;
-  }
-
-  .centrado-v {
-      align-self: center;
-  }
-
-  .jcarousel-wrapper {
-      position: relative;
-      width: 62%;
-      height: auto;
-  }
-
-  .jcarousel {
-      position: relative;
-      overflow: hidden;
-  }
-   .jcarousel ul {
-       width: 10000em;
-       position: relative;
-       list-style: none;
-       margin: 0;
-       padding: 0;
-   }
-
-   .jcarousel li {
-       float: left;
-   }
-    /* CAROUSEL CONTROLS */
-    .jcarousel-control-prev,
-    .jcarousel-control-next {
-        position: relative;
-        padding: 4px;
-        font-size: 4.2rem;
-        transition: 0.5 linear;
-        cursor: pointer;
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: relative;
+    padding: 4px;
+    font-size: 4.2rem;
+    transition: 0.5 linear;
+    cursor: pointer;
+}
+.jcarousel-control-next:hover {
+    animation-name: next;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes next {
+    0% {
+        left: 0px;
     }
-   
-    .jcarousel-control-next:hover{
-        animation-name: next;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-    }
-     @keyframes next {
-         0% {
-             left: 0px;
-         }
-        
-         100% {
-             color: #01a261;
-             left: 10px;
-         }
-     }
-    .jcarousel-control-prev:hover {
-        animation-name: prev;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-    }
-      @keyframes prev {
-          0% {
-              right: 0px;
-          }
-
-          100% {
-              color: #01a261;
-              right: 10px;
-          }
-      }
-
-    .jcarousel-control-prev:active,
-    .jcarousel-control-next:active {
+    100% {
         color: #01a261;
-        text-shadow:
-        0 0 10px #FFFFFF,
-        0 0 20px #FFFFFF,
-        0 0 30px #FFFFFF, 
-        0 0 40px #01a261,
-        0 0 70px #01a261,
-        0 0 80px #01a261,
-        0 0 100px #01a261,
-        0 0 150px #01a261;
+        left: 10px;
     }
-
-    .jcarousel-control-prev:hover span,
-    .jcarousel-control-next:hover span {
-        display: block;
+}
+.jcarousel-control-prev:hover {
+    animation-name: prev;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes prev {
+    0% {
+        right: 0px;
     }
+    100% {
+        color: #01a261;
+        right: 10px;
+    }
+}
+.jcarousel-control-prev:active,
+.jcarousel-control-next:active {
+    color: #01a261;
+    text-shadow:
+    0 0 10px #FFFFFF,
+    0 0 20px #FFFFFF,
+    0 0 30px #FFFFFF,
+    0 0 40px #01a261,
+    0 0 70px #01a261,
+    0 0 80px #01a261,
+    0 0 100px #01a261,
+    0 0 150px #01a261;
+}
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
 
-    /* ==================
-    CARRUSEL PRODUCTOS
-    ================== */
+/* ==================
+CARRUSEL PRODUCTOS
+================== */
 
      .sliderArticulos {
          display: flex;
@@ -254,6 +242,49 @@ BÚSQUEDA
             text-decoration: none;
         }
 
+/*==========
+ MENU MOVIL
+ ========= */
+
+.capaOculta {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.capaOculta-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    padding-left:20px ;
+    margin-top: 30px;
+}
+.capaOculta a,
+.capaOculta button {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.capaOculta a:hover,
+.capaOculta a:focus {
+    color: #f1f1f1;
+}
+.capaOculta .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
 /* ========
 CHECKBOX
 Y  RADIO
@@ -353,9 +384,20 @@ VARIOS
     .sidenav {
         padding-top: 15px;
     }
-
     .sidenav a {
         font-size: 18px;
+    }
+    #smallBar{
+        display: block;
+    }
+    .capaOculta a {
+        font-size: 20px
+    }
+
+    .capaOculta .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
     }
 }
 
@@ -366,18 +408,20 @@ VARIOS
         font-size: inherit;
         padding: 4px;
     }
+    #logo,
+    #searchBar {
+        background-color: #f1f1f1;
+        text-align: center;
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+    .top-bar-element{
+        padding: 8px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .w3-content {
-        width: 100%;
-    }
-
-    #logo {
-        text-align: center;
-    }
-
-    img {
         width: 100%;
     }
 
@@ -425,13 +469,5 @@ VARIOS
 @media screen and (max-width: 800px) {
     .w3-content {
         width: 100%;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    div>img {
-        padding: 10px 0;
     }
 }   

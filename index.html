@@ -17,15 +17,18 @@
     <!-- CABECERA -->
 
     <div id="navbar">
-
+    
         <!-- BARRA SUPERIOR -->
-
+    
         <div class="w3-cell-row w3-green">
+    
             <div class="w3-container w3-content w3-right-align">
-                <a class="w3-button w3-hover-opacity" href="#">Bienvenido</a>
-                <a class="w3-button w3-hover-opacity" href="#"
+                <a href="javascript:void(0)" class="w3-button w3-hide-large w3-hide-medium w3-left "
+                    onclick="openNav()">&#9776;</a>
+                <a class="top-bar-element w3-button w3-hover-opacity" href="#">Bienvenido</a>
+                <a class="top-bar-element w3-button w3-hover-opacity" href="#"
                     onclick="document.getElementById('login').style.display='block'">Inicio sesión</a>
-                <a class="w3-button w3-hover-opacity" href="registro.html">Registro</a>
+                <a class="top-bar-element w3-button w3-hover-opacity" href="registro.html">Registro</a>
             </div>
         </div>
     
@@ -71,62 +74,72 @@
         </div>
     
         <!-- BARRA DE BÚSQUEDA -->
-
+    
         <div id="searchBar" class="searchBar">
-                <div class="w3-row-padding w3-content">
-                    <div id="logo" class="w3-half w3-padding">
-                        <p><span class="font-transformers w3-xxxlarge">transf<span class="font-robofan-symbols w3-text-green">a</span>rmer</span></p>
-                        <!-- <img src="imgs/design/transformer.png" class="w3-image" alt="logo_transformer" width="60%"> -->
-                    </div>
-                    <div class="w3-half w3-padding-32 w3-right-align search-container">
-                        <form action="/action_page.php">
-                            <input type="text" placeholder="Buscar..." name="search">
-                            <button type="submit" class="w3-green w3-round"><i class="fto-search-1"></i></button>
-                        </form>
-                    </div>
+            <div class="w3-row-padding w3-content">
+                <div id="logo" class="w3-half w3-padding-32">
+                    <img src="imgs/design/transformer.png" class="w3-image" alt="logo_transformer" width="60%">
                 </div>
+                <div id="searchBar" class="w3-half w3-padding-32 w3-right-align search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Buscar..." name="search">
+                        <button type="submit" class="w3-green w3-round"><i class="fto-search-1"></i></button>
+                    </form>
+                </div>
+            </div>
         </div>
     
         <!-- BARRA DE MENÚ -->
-
-        <div class="w3-container w3-content">
-            <div class="w3-bar">
-                <a href="index.html" class="w3-bar-item w3-button  w3-hover-white w3-hover-text-green fto-home"></a>
-                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green">Blog</a>
-                <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green"">Contacto</a>
-                <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green">Acerca de</a>
-                <div class="w3-dropdown-click w3-hide-small">
-                    <button class="w3-button w3-hover-white w3-hover-text-green" onclick="dropMenuBig()">
-                        Dropdown <i class="fto-down-dir-2"></i>
-                    </button>
-                    <div id="menuDropBig" class="w3-dropdown-content w3-padding w3-bar-block" style="z-index: 1;">
-                        <a href="documentacion.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-green">Documentación</a>
-                        <a href="tipografias.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-green  ">Tipografías</a>
-                        <a href="#" class="w3-bar-item w3-button w3-hover-white w3-hover-text-green">Link 3</a>
+    
+        <div class="w3-container w3-light-grey w3-hide-small">
+            <div class="w3-content">
+                <div class="w3-bar">
+                    <a href="index.html" class="w3-bar-item w3-button  w3-hover-white w3-hover-text-green fto-home"></a>
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green">Blog</a>
+                    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green"">Contacto</a>
+                        <a href=" about.html"
+                        class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green">Acerca de</a>
+                    <div class="w3-dropdown-click w3-hide-small">
+                        <button class="w3-button w3-hover-white w3-hover-text-green" onclick="drop('menuDropBig')">
+                            Dropdown <i class="fto-down-dir-2"></i>
+                        </button>
+                        <div id="menuDropBig" class="w3-dropdown-content w3-padding w3-bar-block" style="z-index: 1;">
+                            <a href="documentacion.html"
+                                class="w3-bar-item w3-button w3-hover-white w3-hover-text-green">Documentación</a>
+                            <a href="tipografias.html"
+                                class="w3-bar-item w3-button w3-hover-white w3-hover-text-green  ">Tipografías</a>
+                            <a href="#" class="w3-bar-item w3-button w3-hover-white w3-hover-text-green">Link 3</a>
+                        </div>
                     </div>
+                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                        onclick="drop('smallbar')">&#9776;</a>
                 </div>
-                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="menuSmall()">&#9776;</a>
             </div>
-
-            <!-- MENU DISPOSITIVOS PEQUEÑOS -->
-
-            <div id="smallbar" class="w3-bar-block w3-padding w3-hide w3-hide-large w3-hide-medium">
-                <a href="#" class="w3-bar-item w3-button">Blog</a>
-                <a href="contact.html" class="w3-bar-item w3-button">Contacto</a>
-                <a href="about.html" class="w3-bar-item w3-button">Acerca de</a>
+        </div>
+    
+        <!-- MENU DISPOSITIVOS PEQUEÑOS -->
+    
+        <div id="myNav" class="capaOculta">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="capaOculta-content">
+                <a href="index.html">Home</a>
+                <a href="#">Blog</a>
+                <a href="contact.html">Contacto</a>
+                <a href=" about.html">Acerca de</a>
                 <div class="w3-dropdown-click">
-                    <button class="w3-button" onclick="dropMenuSmall()">
+                    <button class="w3-button" onclick="drop('menuDropSmall')">
                         Dropdown <i class="fto-down-dir-2"></i>
                     </button>
                     <div id="menuDropSmall" class="w3-dropdown-content w3-padding w3-bar-block" style="z-index: 1;">
-                        <a href="documentacion.html" class="w3-bar-item w3-button">Documentación</a>
-                        <a href="tipografias.html" class="w3-bar-item w3-button">Tipografías</a>
-                        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                        <a href="documentacion.html"
+                            class="w3-bar-item w3-button w3-hover-white w3-hover-text-green">Documentación</a>
+                        <a href="tipografias.html"
+                            class="w3-bar-item w3-button w3-hover-white w3-hover-text-green  ">Tipografías</a>
+                        <a href="#" class="w3-bar-item w3-button w3-hover-white w3-hover-text-green">Link 3</a>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
     <!-- CUERPO DEL DOCUMENTO -->
@@ -162,7 +175,8 @@
                 <h3>Navega libremente y descubre todas mis posibilidades</h3>
             </div>
             <div class="w3-half w3-padding">
-                    <p>Transformer es una moderna  plantilla web preparada para e-comerce y blog, adaptable a cualquier tipo de proyecto.</p><br>
+                    <p>Transformer es la  plantilla web que buscabas. Preparada para e-comerce y blog, se adapta a cualquier tipo de negocio.</p>
+                    <p>Utiliza el formulario de contacto para más información.</p>
                 <a href="contact.html" class="w3-button w3-dark-grey w3-round">Contacto</a>
             </div>
         </div>

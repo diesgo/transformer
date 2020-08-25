@@ -1,12 +1,14 @@
 var fonts = ["amarant", "arima", "catamaran", "de-valencia", "densia", "emblem", "haetten-schweiler", "lemonada", "lobster", "monoton", "montserrat", "nunito", "optima", "oswald", "permanent-maker","restu", "roboto", "samble-tracie", "samble-tracie-swash", "spoken", "fat-wandals","robofan-symbols", "transformers","varela"];
 
-var numFonts = fonts.length;
-var x = document.getElementById("body");
-
 function cambioFuente() {
-    let f = document.getElementById("fuentes").selectedIndex;
-    let font = fonts[f];
-    document.getElementById("uno").classList.add("font-" + font) ;
+    var f = document.getElementById("fuentes").selectedIndex;
+    var font = fonts[f];
+    var x = document.getElementById("muestra");
+    if (x.className.indexOf("font-" + font) == -1) {
+        x.setAttribute("class", "font-" + font); 
+    } else {
+        x.classList.remove("font-" + font);
+    }
     document.getElementById("fuente").innerHTML = font;
 }
 

@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="webfonts/stylesheet.css">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Transformer | Inicio</title>
+    <title>Transformer | Acerca de...</title>
 </head>
 
 <body>
@@ -22,11 +22,14 @@
         <!-- BARRA SUPERIOR -->
     
         <div class="w3-cell-row w3-green">
+    
             <div class="w3-container w3-content w3-right-align">
-                <a class="w3-button w3-hover-opacity" href="#">Bienvenido</a>
-                <a class="w3-button w3-hover-opacity" href="#"
+                <a href="javascript:void(0)" class="w3-button w3-hide-large w3-hide-medium w3-left "
+                    onclick="openNav()">&#9776;</a>
+                <a class="top-bar-element w3-button w3-hover-opacity" href="#">Bienvenido</a>
+                <a class="top-bar-element w3-button w3-hover-opacity" href="#"
                     onclick="document.getElementById('login').style.display='block'">Inicio sesión</a>
-                <a class="w3-button w3-hover-opacity" href="registro.html">Registro</a>
+                <a class="top-bar-element w3-button w3-hover-opacity" href="registro.html">Registro</a>
             </div>
         </div>
     
@@ -34,19 +37,19 @@
     
         <div id="login" class="w3-modal w3-padding">
             <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-        
+    
                 <div class="w3-center"><br>
                     <span onclick="document.getElementById('login').style.display='none'"
                         class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Cerrar ventana">×</span>
                     <img src="imgs/design/velazquez-373x273_oscuro_transparente.png" alt="Avatar" style="width:30%"
                         class="w3-circle w3-margin-top">
                 </div>
-        
+    
                 <form class="w3-container" action="/action_page.php">
                     <div class="w3-section">
                         <label><b>Nombre de usuario</b></label>
-                        <input class="w3-input w3-border w3-margin-bottom w3-round" type="text" placeholder="Nombre de  Usuario"
-                            name="usrname" required>
+                        <input class="w3-input w3-border w3-margin-bottom w3-round" type="text"
+                            placeholder="Nombre de  Usuario" name="usrname" required>
                         <label><b>Contraseña</b></label>
                         <input class="w3-input w3-border w3-round" type="text" placeholder="Contraseña" name="psw" required>
                         <div class="w3-row">
@@ -62,7 +65,7 @@
                         </div>
                     </div>
                 </form>
-        
+    
                 <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
                     <button onclick="document.getElementById('login').style.display='none'" type="button"
                         class="w3-button w3-red w3-round">Cancelar</button>
@@ -75,12 +78,10 @@
     
         <div id="searchBar" class="searchBar">
             <div class="w3-row-padding w3-content">
-                <div id="logo" class="w3-half w3-padding">
-                    <p><span class="font-transformers w3-xxxlarge">transf<span
-                                class="font-robofan-symbols w3-text-green">a</span>rmer</span></p>
-                    <!-- <img src="imgs/design/transformer.png" class="w3-image" alt="logo_transformer" width="60%"> -->
+                <div id="logo" class="w3-half w3-padding-32">
+                    <img src="imgs/design/transformer.png" class="w3-image" alt="logo_transformer" width="60%">
                 </div>
-                <div class="w3-half w3-padding-32 w3-right-align search-container">
+                <div id="searchBar" class="w3-half w3-padding-32 w3-right-align search-container">
                     <form action="/action_page.php">
                         <input type="text" placeholder="Buscar..." name="search">
                         <button type="submit" class="w3-green w3-round"><i class="fto-search-1"></i></button>
@@ -91,18 +92,46 @@
     
         <!-- BARRA DE MENÚ -->
     
-        <div class="w3-container w3-content">
-            <div class="w3-bar">
-                <a href="index.html" class="w3-bar-item w3-button  w3-hover-white w3-hover-text-green fto-home"></a>
-                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green">Blog</a>
-                <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green"">Contacto</a>
-                    <a href=" about.html"
-                    class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green">Acerca de</a>
-                <div class="w3-dropdown-click w3-hide-small">
-                    <button class="w3-button w3-hover-white w3-hover-text-green" onclick="dropMenuBig()">
+        <div class="w3-container w3-light-grey w3-hide-small">
+            <div class="w3-content">
+                <div class="w3-bar">
+                    <a href="index.html" class="w3-bar-item w3-button  w3-hover-white w3-hover-text-green fto-home"></a>
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green">Blog</a>
+                    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green"">Contacto</a>
+                        <a href=" about.html"
+                        class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-hover-text-green">Acerca de</a>
+                    <div class="w3-dropdown-click w3-hide-small">
+                        <button class="w3-button w3-hover-white w3-hover-text-green" onclick="drop('menuDropBig')">
+                            Dropdown <i class="fto-down-dir-2"></i>
+                        </button>
+                        <div id="menuDropBig" class="w3-dropdown-content w3-padding w3-bar-block" style="z-index: 1;">
+                            <a href="documentacion.html"
+                                class="w3-bar-item w3-button w3-hover-white w3-hover-text-green">Documentación</a>
+                            <a href="tipografias.html"
+                                class="w3-bar-item w3-button w3-hover-white w3-hover-text-green  ">Tipografías</a>
+                            <a href="#" class="w3-bar-item w3-button w3-hover-white w3-hover-text-green">Link 3</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                        onclick="drop('smallbar')">&#9776;</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- MENU DISPOSITIVOS PEQUEÑOS -->
+    
+        <div id="myNav" class="capaOculta">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="capaOculta-content">
+                <a href="index.html">Home</a>
+                <a href="#">Blog</a>
+                <a href="contact.html">Contacto</a>
+                <a href=" about.html">Acerca de</a>
+                <div class="w3-dropdown-click">
+                    <button class="w3-button" onclick="drop('menuDropSmall')">
                         Dropdown <i class="fto-down-dir-2"></i>
                     </button>
-                    <div id="menuDropBig" class="w3-dropdown-content w3-padding w3-bar-block" style="z-index: 1;">
+                    <div id="menuDropSmall" class="w3-dropdown-content w3-padding w3-bar-block" style="z-index: 1;">
                         <a href="documentacion.html"
                             class="w3-bar-item w3-button w3-hover-white w3-hover-text-green">Documentación</a>
                         <a href="tipografias.html"
@@ -110,36 +139,15 @@
                         <a href="#" class="w3-bar-item w3-button w3-hover-white w3-hover-text-green">Link 3</a>
                     </div>
                 </div>
-                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-                    onclick="menuSmall()">&#9776;</a>
-            </div>
-    
-            <!-- MENU DISPOSITIVOS PEQUEÑOS -->
-    
-            <div id="smallbar" class="w3-bar-block w3-padding w3-hide w3-hide-large w3-hide-medium">
-                <a href="#" class="w3-bar-item w3-button">Blog</a>
-                <a href="contact.html" class="w3-bar-item w3-button">Contacto</a>
-                <a href="about.html" class="w3-bar-item w3-button">Acerca de</a>
-                <div class="w3-dropdown-click">
-                    <button class="w3-button" onclick="dropMenuSmall()">
-                        Dropdown <i class="fto-down-dir-2"></i>
-                    </button>
-                    <div id="menuDropSmall" class="w3-dropdown-content w3-padding w3-bar-block" style="z-index: 1;">
-                        <a href="documentacion.html" class="w3-bar-item w3-button">Documentación</a>
-                        <a href="tipografias.html" class="w3-bar-item w3-button">Tipografías</a>
-                        <a href="#" class="w3-bar-item w3-button">Link 3</a>
-                    </div>
-                </div>
             </div>
         </div>
-    
     </div>
 
     <!-- CUERPO DEL DOCUMENTO -->
 
     <div class="w3-container w3-content">
         <h2>Sobre <span class="font-transformers w3-xxlarge">transf<span class="font-robofan-symbols w3-text-green">a</span>rmer</span></h2>
-        <p>Esta plantilla no pretende reinventar la rueda, está basada en un tema de prestashop. He aquí la dificultad, traspasar las funcionalidades de un CMS a una web estática; eso sí, lista para ser recibida por el back end.</p>
+        <p>Información útil de la plantilla. La iré añadiendo a medida que surja.</p>
     </div>
 
     <!-- ANTEPIÉ DE PÁGINA-->
