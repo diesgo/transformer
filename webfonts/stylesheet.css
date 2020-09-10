@@ -2,18 +2,15 @@
 BOLD
 ==== */
 
-/*=======
-AMARATH
-=======*/
+/*===========
+AMARAT-BOLD
+===========*/
 @font-face {
-    font-family: 'amaranth';
-    src: url('amarat/amaranth-bold-webfont.woff2') format('woff2'),
-         url('amarat/amaranth-bold-webfont.woff') format('woff');
+    font-family: 'amarat-bold';
+    src: url('amarat-bold/amaranth-bold-webfont.woff2') format('woff2'),
+         url('amarat-bold/amaranth-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-.font-amaranth-bold {
-    font-family: 'amaranth', sans-serif;
 }
 
 /*=============
@@ -82,10 +79,6 @@ ARIMA-MADURAI
         url('arima-madurai/arima-madurai-v5-latin-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-.font-arima-madurai {
-    font-family: 'arima-madurai', sans-serif;
 }
 
 /*=========
@@ -164,16 +157,12 @@ CATAMARAN
     font-style: normal;
 }
 
-.font-catamaran {
-    font-family: 'catamaran', sans-serif;
-}
-
-/* =========
-CONFORTAA
-========= */
+/* =============
+CONFORTA-BOLD
+============= */
 
 @font-face {
-    font-family: 'comfortaa-bold';
+    font-family: 'conforta-bold';
     src: url('conforta-bold/comfortaa-bold.woff2') format('woff2'),
         url('conforta-bold/comfortaa-bold.woff') format('woff'),
         url('conforta-bold/comfortaa-bold.ttf') format('truetype'),
@@ -182,29 +171,22 @@ CONFORTAA
     font-style: normal;
 }
 
-.font-comfortaa-bold {
-    font-family: 'comfortaa-bold', sans-serif;
-}
-
+/* ========
+CONFORTA
+======== */
 
 @font-face {
-    font-family: 'comfortaa-regular';
-    src: url('confortaa-regular/comfortaa-regular.woff2') format('woff2'),
-        url('confortaa-regular/comfortaa-regular.woff') format('woff'),
-        url('confortaa-regular/comfortaa-regular.ttf') format('truetype'),
-        url('confortaa-regular/comfortaa-regular.svg#comfortaaregular') format('svg');
+    font-family: 'conforta';
+    src: url('conforta/comfortaa-regular.woff2') format('woff2'),
+        url('conforta/comfortaa-regular.woff') format('woff'),
+        url('conforta/comfortaa-regular.ttf') format('truetype'),
+        url('conforta/comfortaa-regular.svg#comfortaaregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-.font-confortaa-regular{
-    font-family: 'confortaa-regular', sans-serif;
-}
-
-
-
 /*=========
-DE VALENCIA
+DE-VALENCIA
 =========*/
 
 @font-face {
@@ -215,24 +197,16 @@ DE VALENCIA
     font-style: normal;
 }
 
-.font-de-valencia {
-    font-family: 'de-valencia', sans-serif;
-}
-
 /*=====
 DENSIA
 =====*/
 
 @font-face {
-    font-family: 'densia-sans';
-    src: url('densiasans/densiasans-webfont.woff2') format('woff2'), 
-    url('densiasans/densiasans-webfont.woff') format('woff');
+    font-family: 'densia';
+    src: url('densia/densiasans-webfont.woff2') format('woff2'), 
+    url('densia/densiasans-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-.font-densia {
-    font-family: 'densia-sans', sans-serif;
 }
 
 /*======
@@ -247,8 +221,15 @@ EMBLEM
     font-style: normal;
 }
 
-.font-emblem {
-    font-family: 'emblem', sans-serif;
+/*===========
+FAT-WANDALS
+===========*/
+
+@font-face {
+    font-family: 'fat-wandals';
+    src: url('fat-wandals/fatwandals_personal-webfont.woff2') format('woff2'), url('spoken/fatwandals_personal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*===============
@@ -261,10 +242,6 @@ HAETTENSHWEILER
     url('haetten-schweiler/haettenschweiler-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-.font-haetten-schweiler {
-    font-family: 'haetten-schweiler', sans-serif;
 }
 
 /*========
@@ -311,10 +288,6 @@ LEMONADA
     font-style: normal;
 }
 
-.font-lemonada {
-    font-family: 'lemonada', sans-serif;
-}
-
 /*======
  LOBSTER 
  ======*/
@@ -327,24 +300,18 @@ LEMONADA
     font-style: normal;
 }
 
-.font-lobster {
-    font-family: 'lobster', sans-serif;
-}
-
-/* MANROPE */
+/* =======
+MANROPE
+======= */
 
 @font-face {
-    font-family: 'manrope-extralight';
+    font-family: 'manrope';
     src: url('manrope/manrope-variablefont_wght-webfont.woff2') format('woff2'),
         url('manrope/manrope/manrope-variablefont_wght-webfont.woff') format('woff'),
         url('manrope/manrope-variablefont_wght-webfont.ttf') format('truetype'),
         url('manrope/manrope-variablefont_wght-webfont.svg#manropeextralight') format('svg');
     font-weight: lighter;
     font-style: normal;
-}
-
-.font-manrope-extralight{
-    font-family: 'manropeextralight', sans-serif;
 }
 
 /*=======
@@ -355,12 +322,6 @@ MONOTON
     font-family: 'monoton';
     src: url('monoton/monoton-v9-latin-regular.woff2') format('woff2');
     src: url('monoton/monoton-v9-latin-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.font-monoton {
-    font-family: monoton, sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -513,10 +474,6 @@ MONTSERRAT
     font-style: normal;
 }
 
-.font-montserrat {
-    font-family: 'montserrat', sans-serif;
-}
-
 /*=====
  NUNITO
  =====*/
@@ -633,10 +590,6 @@ MONTSERRAT
     font-style: normal;
 }
 
-.font-nunito {
-    font-family: 'nunito', sans-serif;
-}
-
 /*======
  OSWALD
  ======*/
@@ -689,10 +642,6 @@ MONTSERRAT
     font-style: normal;
 }
 
-.font-oswald {
-    font-family: 'oswald', sans-serif;
-}
-
 /* ===============
 PERMANENT MAKER
 =============== */
@@ -704,25 +653,18 @@ PERMANENT MAKER
     font-style: normal;
 }
 
-.font-permanent-maker {
-    font-family: 'permanent-maker', sans-serif;
-}
-
 /* =======
 POMPIERE
 ======= */
 
 @font-face {
-    font-family: 'pompiere-regular';
+    font-family: 'pompiere';
     src: url('pompiere/pompiere-regular-webfont.woff2') format('woff2'),
         url('pompiere/pompiere-regular-webfont.woff') format('woff'),
         url('pompiere/pompiere-regular-webfont.ttf') format('truetype'),
         url('pompiere/pompiere-regular-webfont.svg#pompiere_regular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-.font-pompiere-regular{
-    font-family: 'pompiere-regular', sans-serif;
 }
 
 /*====
@@ -734,10 +676,6 @@ RESTU
     src: url('restu/restu_bundah-webfont.woff2') format('woff2'), url('restu/restu_bundah-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-.font-restu {
-    font-family: 'restu', sans-serif;
 }
 
 /*======
@@ -840,66 +778,15 @@ ROBOTO
     font-style: normal;
 }
 
-.font-roboto {
-    font-family: 'roboto', sans-serif;
-}
-
-/*===========
-SAMBLE TRACIE
-===========*/
+/* =======
+ROBOFAN
+======= */
 
 @font-face {
-    font-family: 'samble-tracie';
-    src: url('samble-tracie/Samble Tracie.woff2') format('woff2'), url('samble-tracie/Samble Tracie.woff') format('woff');
+    font-family: 'robofan';
+    src: url('robofan/robofan_symbol.woff2') format('woff2'), url('transformer/robofan_symbol.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'samble-tracie';
-    src: url('samble-tracie/Samble Tracie Bold.woff2') format('woff2'), url('samble-tracie/Samble Tracie Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.font-samble-tracie {
-    font-family: 'samble-tracie', sans-serif;
-}
-
-/*================
-Samble-tracie-swasch
-================*/
-
-@font-face {
-    font-family: 'samble-tracie-swash';
-    src: url('samble-tracie/Samble Tracie_Swash.woff2') format('woff2'), url('samble-tracie/Samble Tracie_Swash.woff') format('woff'); font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'samble-tracie-swash';
-    src: url('samble-tracie/Samble Tracie_Swash Bold.woff2') format('woff2'), url('samble-tracie/Samble Tracie_Swash Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.font-samble-tracie-swash {
-    font-family: 'samble-tracie-swash', sans-serif;
-}
-
-/*===========
-FAT WANDALS
-===========*/
-
-@font-face {
-    font-family: 'fat-wandals';
-    src: url('spoken/fatwandals_personal-webfont.woff2') format('woff2'), url('spoken/fatwandals_personal-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.font-fat-wandals {
-    font-family: 'fat-wandals', sans-serif;
 }
 
 /*=====
@@ -927,34 +814,15 @@ SPOKEN
     font-style: normal;
 }
 
-.font-spoken {
-    font-family: 'spoken', sans-serif;
-}
-
 /*===========
 TRANSFORMER
 ============*/
 
 @font-face {
-    font-family: 'robofan-symbols';
-    src: url('transformer/robofan_symbol.woff2') format('woff2'), url('transformer/robofan_symbol.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.font-robofan-symbols {
-    font-family: 'robofan-symbols', sans-serif;
-}
-
-@font-face {
-    font-family: 'transformers';
+    font-family: 'transformer';
     src: url('transformer/transformers_movie.woff2') format('woff2'), url('transformer/transformers_movie.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-.font-transformers {
-    font-family: 'transformers', sans-serif;
 }
 
 /* =====
@@ -968,22 +836,42 @@ VARELA
     font-style: normal;
 }
 
-.font-varela {
-    font-family: 'varela', sans-serif;
-}
-
 /* =========
 ZANZABAR
 ========== */
 
 @font-face {
-    font-family: 'zanzabar-regular';
+    font-family: 'zanzabar';
     src: url('zanzabar/zanzabar_d-webfont.woff2') format('woff2'),
         url('zanzabar/zanzabar_d-webfont.woff') format('woff'),
         url('zanzabar/zanzabar_d-webfont.svg#zanzabarregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-.font-zanzabar{
-    font-family: 'zanzabar-regular', serif;
-}
+
+.font-amaranth-bold {font-family: 'amarat-bold', sans-serif}
+.font-arima-madurai {font-family: 'arima-madurai', sans-serif}
+.font-catamaran {font-family: 'catamaran', sans-serif}
+.font-comforta-bold {font-family: 'conforta-bold', sans-serif}
+.font-conforta {font-family: 'conforta', sans-serif}
+.font-de-valencia {font-family: 'de-valencia', sans-serif}
+.font-densia {font-family: 'densia', sans-serif}
+.font-emblem {font-family: 'emblem', sans-serif}
+.font-fat-wandals {font-family: 'fat-wandals', sans-serif}
+.font-haetten-schweiler {font-family: 'haetten-schweiler', sans-serif}
+.font-lemonada {font-family: 'lemonada', sans-serif}
+.font-lobster {font-family: 'lobster', sans-serif}
+.font-manrope {font-family: 'manrope', sans-serif}
+.font-monoton {font-family: 'monoton', sans-serif}
+.font-montserrat {font-family: 'montserrat', sans-serif}
+.font-nunito {font-family: 'nunito', sans-serif}
+.font-oswald {font-family: 'oswald', sans-serif}
+.font-permanent-maker {font-family: 'permanent-maker', sans-serif}
+.font-pompiere {font-family: 'pompiere', sans-serif}
+.font-restu {font-family: 'restu', sans-serif}
+.font-robofan {font-family: 'robofan', sans-serif}
+.font-roboto {font-family: 'roboto', sans-serif}
+.font-spoken {font-family: 'spoken', sans-serif}
+.font-transformer {font-family: 'transformer', sans-serif}
+.font-varela {font-family: 'varela', sans-serif}
+.font-zanzabar {font-family: 'zanzabar', serif}

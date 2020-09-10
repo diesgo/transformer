@@ -1,4 +1,4 @@
-var fonts = ["amaranth-bold", "arima-madurai", "catamaran", "comfortaa-bold", "confortaa-regular", "de-valencia", "densia", "emblem", "haetten-schweiler", "lemonada", "lobster", "manrope-extralight", "monoton", "montserrat", "nunito", "oswald", "permanent-maker", "pompiere-regular", "restu", "roboto", "samble-tracie", "samble-tracie-swash", "fat-wandals", "spoken", "robofan-symbols", "transformers","varela", "zanzabar"];
+var fonts = ["amarat-bold", "arima-madurai", "catamaran", "conforta", "conforta-bold", "de-valencia", "densia", "emblem","fat-wandals", "haetten-schweiler", "lemonada", "lobster", "manrope", "monoton", "montserrat", "nunito", "oswald", "permanent-maker", "pompiere", "restu","robofan", "roboto","spoken","transformer", "varela", "zanzabar"];
 
 var numFonts = fonts.length;
 var x = document.getElementById("body");
