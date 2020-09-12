@@ -9,12 +9,4 @@ function cambioFuente() {
     document.getElementById("muestra").className = "font-" + font;
     document.getElementById("fuente").innerHTML = font;
 }
-
-function cambioFuente2() {
-    var f2 = document.getElementById("fuentes2").selectedIndex;
-    font2 = fonts[f2];
-    document.getElementById("dos").className = "font-" + font2;
-    document.getElementById("fuente2").innerHTML = font2;
-}
 cambioFuente();
-cambioFuente2();
