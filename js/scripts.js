@@ -1,5 +1,4 @@
 // Slider básico
-
 // Array con la ruta de las imágenes
 misFotos = [
     "<img id='diapositiva' src='imgs/slider/0.jpg' alt='Primera diapositiva' name='fotos0'>",
