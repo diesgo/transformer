@@ -15,4 +15,13 @@ Registro
 Modal
 
 
-Slider, carrusel, elementos web...
+Elementos de la Home:
+
+Slider.
+Carrusel.
+
+Elementos básicos:
+
+formulario de contacto
+formulario de registro
+Inicio de sesión

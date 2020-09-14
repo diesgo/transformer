@@ -1,5 +1,4 @@
 // Slider básico
-
 // Array con la ruta de las imágenes
 misFotos = [
     "<img id='diapositiva' src='imgs/slider/0.jpg' alt='Primera diapositiva' name='fotos0'>",
@@ -37,10 +36,12 @@ function scrollFunction() {
         block.style.top = "0px";
         block.style.position="fixed";
         block.classList.add("w3-animate-top");
+        block.classList.add("bottom-shadow");
     } else {
         block.style.top = "";
         block.style.position="relative";
         block.classList.remove("w3-animate-top");
+        block.classList.remove("bottom-shadow");
     }
 }   
 
